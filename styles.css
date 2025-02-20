@@ -47,6 +47,9 @@ a:hover {
   font-size: 18px;
 }
 
+.fs-56 {
+  font-size: 56px;
+}
 .fs-64 {
   font-size: 64px;
 }
@@ -89,6 +92,10 @@ a:hover {
   padding-right: 12px;
 }
 
+.pt-100 {
+  padding-top: 100px;
+}
+
 /* Max width */
 .max-w-40 {
   max-width: 40px;
@@ -97,6 +104,7 @@ a:hover {
 .max-w-200 {
   max-width: 200px;
 }
+
 .max-w-732 {
   max-width: 732px;
 }
@@ -104,11 +112,23 @@ a:hover {
   max-width: 943px;
 }
 
+/* Min height */
+
+.min-h-354 {
+  min-height: 354px;
+}
+
 /* Z index */
 .z-2 {
   z-index: 2;
 }
 
+/* Images */
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /* Buttons */
 
 .main-btn {
@@ -163,13 +183,6 @@ header .navbar .link.active {
 }
 /* Hero */
 
-/* #hero {
-  max-height: 676px;
-} */
-
-#hero img {
-  width: 100%;
-}
 #hero .swiper .swiper-pagination-bullet {
   background: var(--white);
   width: 12px;
@@ -185,6 +198,7 @@ header .navbar .link.active {
 
 #hero img {
   position: absolute;
+  object-fit: cover;
   top: 0;
   width: 100%;
   height: 100%;
@@ -193,3 +207,5 @@ header .navbar .link.active {
   height: 676px;
   position: relative;
 }
+
+/* Kas ir kaip section */
