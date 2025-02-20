@@ -3,8 +3,10 @@
   --txt-grey: #939393;
   --txt-grey-hover: #939393cc;
   --txt-purple: #6a398e;
+  --txt-light-purple: #a588ba;
   --txt-nav-black: #4e4e4e;
   --bg-light-grey: #f7f7f7;
+  --bg-grey: #b3b3b3;
 }
 
 * {
@@ -17,6 +19,10 @@
 
 .main-container {
   max-width: 1400px;
+  margin: auto;
+}
+.medium-container {
+  max-width: 1100px;
   margin: auto;
 }
 ul {
@@ -46,6 +52,9 @@ a:hover {
 .fs-18 {
   font-size: 18px;
 }
+.fs-30 {
+  font-size: 30px;
+}
 
 .fs-56 {
   font-size: 56px;
@@ -54,9 +63,18 @@ a:hover {
   font-size: 64px;
 }
 
+.fs-60 {
+  font-size: 60px;
+}
 /* Font weight */
 .fw-500 {
   font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
 }
 
 /* Font colors and hover */
@@ -76,6 +94,16 @@ a:hover {
   color: var(--txt-grey-hover);
 }
 
+.light-purple-txt-color {
+  color: var(--txt-light-purple);
+}
+
+/* Backgrounds */
+
+.light-grey {
+  background: var(--bg-light-grey);
+}
+
 .opacity-8:hover {
   opacity: 0.8;
 }
@@ -83,6 +111,14 @@ a:hover {
 /* Borders */
 .border-15 {
   border-radius: 15px !important;
+}
+
+.border-light-grey {
+  border-color: var(--bg-light-grey);
+}
+
+.border-width-2 {
+  border-width: 2px;
 }
 
 /* Paddings */
@@ -96,6 +132,11 @@ a:hover {
   padding-top: 100px;
 }
 
+/* Margins */
+
+.mb-100 {
+  margin-bottom: 100px;
+}
 /* Max width */
 .max-w-40 {
   max-width: 40px;
@@ -103,6 +144,9 @@ a:hover {
 
 .max-w-200 {
   max-width: 200px;
+}
+.max-w-475 {
+  max-width: 475px;
 }
 
 .max-w-732 {
@@ -121,6 +165,13 @@ a:hover {
 /* Z index */
 .z-2 {
   z-index: 2;
+}
+
+/* Grid */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 /* Images */
@@ -208,4 +259,27 @@ header .navbar .link.active {
   position: relative;
 }
 
-/* Kas ir kaip section */
+/* Kodel musu kalbu mokykla section */
+
+#kdl .spirale {
+  position: absolute;
+  top: -140px;
+  right: -60px;
+  z-index: 2;
+}
+
+.swiper-kodel .swiper-button-next:after,
+.swiper-kodel .swiper-button-prev:after {
+  font-size: 20px;
+  color: var(--bg-grey);
+}
+
+.swiper-kodel .slider-arrow-wraper {
+  width: 550px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+}
