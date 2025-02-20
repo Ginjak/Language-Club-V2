@@ -7,6 +7,7 @@
   --txt-nav-black: #4e4e4e;
   --bg-light-grey: #f7f7f7;
   --bg-grey: #b3b3b3;
+  --bg-orange: #fe715f;
 }
 
 * {
@@ -36,6 +37,9 @@ a {
 }
 a:hover {
   color: inherit !important;
+}
+a.white {
+  color: var(--white);
 }
 
 .cursor-pointer {
@@ -103,12 +107,18 @@ a:hover {
 .light-grey {
   background: var(--bg-light-grey);
 }
+.orange {
+  background: var(--bg-orange);
+}
 
 .opacity-8:hover {
   opacity: 0.8;
 }
 
 /* Borders */
+.border-10 {
+  border-radius: 10px !important;
+}
 .border-15 {
   border-radius: 15px !important;
 }
@@ -116,9 +126,15 @@ a:hover {
 .border-light-grey {
   border-color: var(--bg-light-grey);
 }
+.border-white {
+  background-color: var(--white);
+}
 
 .border-width-2 {
   border-width: 2px;
+}
+.border-width-1 {
+  border-width: 1px;
 }
 
 /* Paddings */
@@ -142,8 +158,14 @@ a:hover {
   max-width: 40px;
 }
 
+.max-w-170 {
+  max-width: 170px;
+}
 .max-w-200 {
   max-width: 200px;
+}
+.max-w-390 {
+  max-width: 390px;
 }
 .max-w-475 {
   max-width: 475px;
@@ -151,6 +173,10 @@ a:hover {
 
 .max-w-732 {
   max-width: 732px;
+}
+
+.max-w-850 {
+  max-width: 850px;
 }
 .max-w-943 {
   max-width: 943px;
@@ -162,6 +188,11 @@ a:hover {
   min-height: 354px;
 }
 
+/* Height */
+
+.h-600 {
+  height: 600px;
+}
 /* Z index */
 .z-2 {
   z-index: 2;
@@ -188,8 +219,17 @@ a:hover {
   text-align: center;
 }
 
+.small-btn {
+  padding: 8px 4px;
+  text-align: center;
+}
+
 .transparent-btn {
   background: transparent;
+}
+
+.white-hover-btn:hover {
+  background: var(--white);
 }
 
 .outline-white-btn {
@@ -282,4 +322,35 @@ header .navbar .link.active {
   position: absolute;
   margin: auto;
   z-index: 2;
+}
+
+/* Kreiptis section */
+#kreiptis .man {
+  position: absolute;
+  max-width: 600px;
+  top: 0;
+  right: -175px;
+  z-index: 4;
+}
+
+#kreiptis .green-comment-box {
+  position: absolute;
+  max-width: 375px;
+  top: 106px;
+  right: -55px;
+  z-index: 3;
+}
+
+#kreiptis .purple-comment-box {
+  position: absolute;
+  max-width: 250px;
+  top: 55px;
+  right: 135px;
+  z-index: 2;
+}
+
+#kreiptis .purple-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 300px;
 }
