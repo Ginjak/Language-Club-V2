@@ -1,15 +1,17 @@
 :root {
   --white: #fff;
   --txt-main-black: #211926;
+  --txt-black-shade-1: #4e4e4e;
   --txt-grey: #939393;
   --txt-grey-hover: #939393cc;
   --txt-purple: #6a398e;
+  --txt-purple_shade-1: #8c66a7;
   --txt-light-purple: #a588ba;
   --txt-nav-black: #4e4e4e;
   --bg-light-grey: #f7f7f7;
   --bg-grey: #b3b3b3;
   --bg-orange: #fe715f;
-  --bg-purpe-btn: #8860a4;
+  --bg-purple-btn: #8860a4;
   --bg-purpe-ligth: #c3b0d1;
   --bg-main-green: #4dcfc3;
   --bg-info-bar-green: #34c8bb;
@@ -84,6 +86,9 @@ a.white {
   font-size: 30px;
 }
 
+.fs-48 {
+  font-size: 48px;
+}
 .fs-54 {
   font-size: 54px;
 }
@@ -114,7 +119,9 @@ a.white {
 .black-nav-txt-color {
   color: var(--txt-nav-black);
 }
-
+.black-nav-txt-color:hover {
+  color: var(--txt-purple_shade-1) !important;
+}
 .white-txt-color {
   color: var(--white);
 }
@@ -122,6 +129,14 @@ a.white {
 .black-txt-color {
   color: var(--txt-main-black);
 }
+
+.black-txt-shade-1 {
+  color: var(--txt-black-shade-1);
+}
+a.black-txt-shade-1:hover {
+  color: var(--txt-purple_shade-1) !important;
+}
+
 .grey-txt-color {
   color: var(--txt-grey);
 }
@@ -272,6 +287,9 @@ a.white-txt:hover {
 .max-w-46 {
   max-width: 46px;
 }
+.max-w-50 {
+  max-width: 50px;
+}
 
 .max-w-140 {
   max-width: 140px;
@@ -309,6 +327,9 @@ a.white-txt:hover {
   min-height: 354px;
 }
 
+.max-h-495 {
+  max-height: 495px;
+}
 .max-h-650 {
   max-height: 650px;
 }
@@ -378,7 +399,7 @@ a.white-txt:hover {
 }
 
 .purple-btn {
-  background: var(--bg-purpe-btn);
+  background: var(--bg-purple-btn);
 }
 
 .purple-btn:hover {
@@ -426,8 +447,22 @@ header #search-btn {
   transform: translateY(-50%);
 }
 
-header .navbar .link.active {
+header .navbar .link.active.black-nav-txt-color {
   font-weight: 500;
+  color: var(--txt-purple_shade-1);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 4px;
+}
+
+header .navbar .link.active.black-nav-txt-color:hover {
+  color: var(--txt-purple_shade-1) !important;
+}
+
+/* Breadcrumbs navigation */
+
+.category-navigation li:last-child .cat-arrow {
+  display: none;
 }
 /* Hero */
 
@@ -591,5 +626,14 @@ header .navbar .link.active {
 .info-bar {
   position: absolute;
   width: 100%;
-  top: calc(50% - 24px);
+  top: 50%;
+}
+
+/* Top bar */
+.top-bar {
+  top: -49px;
+}
+.watermark-logo {
+  top: -5px;
+  right: 24px;
 }
