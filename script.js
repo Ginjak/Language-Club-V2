@@ -75,5 +75,34 @@ document.addEventListener("DOMContentLoaded", function () {
         prevEl: ".swiper-button-custom-prev",
       },
     });
+
+    var brandSwiper = new Swiper(".swiper-brands", {
+      loop: true,
+      slidesPerView: 7,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        480: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      },
+    });
   }
 });
