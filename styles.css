@@ -15,6 +15,7 @@
   --bg-info-bar-green: #34c8bb;
   --bg-deep-purple: #794d98;
   --bg-purple-shade-1: #fdfaff;
+  --bg-purple-shade-2: #6b398e;
 }
 
 * {
@@ -70,6 +71,9 @@ a.white {
 
 /* Font sizes */
 
+.fs-14 {
+  font-size: 14px;
+}
 .fs-18 {
   font-size: 18px;
 }
@@ -130,6 +134,14 @@ a.white {
   color: var(--txt-light-purple);
 }
 
+a.white-txt {
+  color: var(--white);
+}
+
+a.white-txt:hover {
+  color: var(--white) !important;
+}
+
 /* Backgrounds */
 
 .light-grey {
@@ -154,9 +166,15 @@ a.white {
 .opacity-8:hover {
   opacity: 0.8;
 }
+.opacity-9:hover {
+  opacity: 0.9;
+}
 
 .purple-shade-1 {
   background: var(--bg-purple-shade-1);
+}
+.purple-shade-2 {
+  background: var(--bg-purple-shade-2);
 }
 
 /* Borders */
@@ -219,8 +237,14 @@ a.white {
   padding-left: 80px;
   padding-right: 80px;
 }
+.pt-80 {
+  padding-top: 80px;
+}
 .pt-100 {
   padding-top: 100px;
+}
+.pb-60 {
+  padding-bottom: 60px;
 }
 .pb-100 {
   padding-bottom: 100px;
@@ -231,6 +255,9 @@ a.white {
 .mx-80 {
   margin-left: 80px;
   margin-right: 80px;
+}
+.mt-60 {
+  margin-bottom: 60px;
 }
 .mt-100 {
   margin-top: 100px;
@@ -347,6 +374,21 @@ a.white {
 .outline-black-btn:hover {
   border-color: var(--bg-purpe-btn);
   background: var(--bg-purpe-btn);
+  color: var(--white) !important;
+}
+
+.purple-btn {
+  background: var(--bg-purpe-btn);
+}
+
+.purple-btn:hover {
+  background: var(--bg-deep-purple);
+}
+
+.white-btn-txt {
+  color: var(--white);
+}
+.white-btn-txt:hover {
   color: var(--white) !important;
 }
 
@@ -533,4 +575,21 @@ header .navbar .link.active {
 #musu-klientai .small-green-box {
   top: -25px;
   right: -70px;
+}
+
+.info-bar .green-lines {
+  bottom: -15px;
+  left: -15px;
+  z-index: 1;
+}
+
+/* Info bar */
+#info-bar-id {
+  height: 112px;
+}
+
+.info-bar {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 24px);
 }

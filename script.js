@@ -105,4 +105,16 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // Footer current year
+  function displayCurrentYear() {
+    const currentYear = new Date().getFullYear(); // Get the current year
+    const elements = document.querySelectorAll(".current-year"); // Select all elements with the class 'current-year'
+
+    // Update the text content of each selected element
+    elements.forEach((element) => {
+      element.textContent = currentYear;
+    });
+  }
+  displayCurrentYear();
 });
