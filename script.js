@@ -60,5 +60,20 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
+
+    const swiperAtsiliepimai = new Swiper(".swiper-atsiliepimai", {
+      loop: true, // Infinite loop
+      autoplay: {
+        delay: 3000, // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+      },
+      slidesPerView: 3,
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+      },
+    });
   }
 });
