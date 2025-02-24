@@ -174,8 +174,12 @@ a.white-txt:hover {
   background: var(--bg-info-bar-green);
 }
 
+.purple-light {
+  background: var(--bg-purpe-ligth);
+}
+
 .purple {
-  background: var(--bg-purpe-btn);
+  background: var(--bg-purple-btn);
 }
 
 .opacity-8:hover {
@@ -214,6 +218,10 @@ a.white-txt:hover {
   border-radius: 15px 15px 15px 0;
 }
 
+.border-15-top-right {
+  border-radius: 0 15px 0 0;
+}
+
 .border-light-grey {
   border-color: var(--bg-light-grey);
 }
@@ -222,7 +230,7 @@ a.white-txt:hover {
 }
 
 .border-purple {
-  border-color: var(--bg-purpe-btn) !important;
+  border-color: var(--bg-purple-btn) !important;
 }
 
 .border-deep-purple {
@@ -267,6 +275,10 @@ a.white-txt:hover {
 
 /* Margins */
 
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
 .mx-80 {
   margin-left: 80px;
   margin-right: 80px;
@@ -280,6 +292,7 @@ a.white-txt:hover {
 .mb-100 {
   margin-bottom: 100px;
 }
+
 /* Max width */
 .max-w-40 {
   max-width: 40px;
@@ -306,6 +319,9 @@ a.white-txt:hover {
 .max-w-390 {
   max-width: 390px;
 }
+.max-w-440 {
+  max-width: 440px;
+}
 .max-w-475 {
   max-width: 475px;
 }
@@ -323,10 +339,16 @@ a.white-txt:hover {
 
 /* Min height */
 
+.min-h-300 {
+  min-height: 300px;
+}
 .min-h-354 {
   min-height: 354px;
 }
 
+.max-h-300 {
+  max-height: 300px;
+}
 .max-h-495 {
   max-height: 495px;
 }
@@ -393,8 +415,8 @@ a.white-txt:hover {
   color: var(--txt-main-black);
 }
 .outline-black-btn:hover {
-  border-color: var(--bg-purpe-btn);
-  background: var(--bg-purpe-btn);
+  border-color: var(--bg-purple-btn);
+  background: var(--bg-purple-btn);
   color: var(--white) !important;
 }
 
@@ -571,13 +593,12 @@ header .navbar .link.active.black-nav-txt-color:hover {
   border-radius: 0 0 0 15px;
 }
 
-#atsiliepimai .comment-bottom {
+.comment-bottom {
   margin-left: auto;
   margin-top: -1px;
   width: 25px;
   height: 20px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 100%);
-  background: var(--bg-purpe-ligth);
 }
 
 #atsiliepimai .atsiliepimai-img {
@@ -636,4 +657,8 @@ header .navbar .link.active.black-nav-txt-color:hover {
 .watermark-logo {
   top: -5px;
   right: 24px;
+}
+
+#top-bar .purple-btn:hover {
+  background: var(--bg-purple-btn);
 }
