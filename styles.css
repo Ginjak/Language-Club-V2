@@ -320,6 +320,9 @@ a.white-txt:hover {
 .max-w-260 {
   max-width: 260px;
 }
+.max-w-300 {
+  max-width: 300px;
+}
 .max-w-390 {
   max-width: 390px;
 }
@@ -354,6 +357,10 @@ a.white-txt:hover {
 }
 .min-h-354 {
   min-height: 354px;
+}
+
+.min-h-495 {
+  min-height: 495px;
 }
 
 .max-h-300 {
@@ -427,6 +434,16 @@ a.white-txt:hover {
 .outline-black-btn:hover {
   border-color: var(--bg-purple-btn);
   background: var(--bg-purple-btn);
+  color: var(--white) !important;
+}
+
+.outline-purple-btn {
+  border: 1px solid var(--txt-purple);
+  color: var(--txt-purple);
+}
+.outline-purple-btn:hover {
+  border: 1px solid var(--txt-purple);
+  background: var(--txt-purple);
   color: var(--white) !important;
 }
 
@@ -585,11 +602,11 @@ header .navbar .link.active.black-nav-txt-color:hover {
 }
 
 /* Atsiliepimai section */
-#atsiliepimai .avatar-img {
+.swiper-atsiliepimai .avatar-img {
   margin-top: -70px;
 }
 
-#atsiliepimai .atilpieimai-nav {
+.atilpieimai-nav {
   margin-top: 40px;
   top: 50%;
   transform: translateY(-50);
@@ -671,4 +688,27 @@ header .navbar .link.active.black-nav-txt-color:hover {
 
 #top-bar .purple-btn:hover {
   background: var(--bg-purple-btn);
+}
+
+/* Kursai page */
+
+.orange-spilare {
+  top: 255px;
+  right: -95px;
+}
+
+/* Musu tikslai */
+#musu-tikslai .orange-spilare {
+  top: calc(-50% - 20px);
+  left: calc(50% + 250px);
+}
+.comment-box-wraper {
+  width: 154px;
+  height: 169px;
+}
+.box-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
