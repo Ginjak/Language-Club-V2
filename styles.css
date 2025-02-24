@@ -18,6 +18,7 @@
   --bg-deep-purple: #794d98;
   --bg-purple-shade-1: #fdfaff;
   --bg-purple-shade-2: #6b398e;
+  --bg-purple-shade-3: #f7f5f9;
 }
 
 * {
@@ -195,6 +196,9 @@ a.white-txt:hover {
 .purple-shade-2 {
   background: var(--bg-purple-shade-2);
 }
+.purple-shade-3 {
+  background: var(--bg-purple-shade-3);
+}
 
 /* Borders */
 .border-10 {
@@ -326,6 +330,9 @@ a.white-txt:hover {
   max-width: 475px;
 }
 
+.max-w-635 {
+  max-width: 635px;
+}
 .max-w-732 {
   max-width: 732px;
 }
@@ -339,6 +346,9 @@ a.white-txt:hover {
 
 /* Min height */
 
+.min-h-270 {
+  min-height: 270px;
+}
 .min-h-300 {
   min-height: 300px;
 }
