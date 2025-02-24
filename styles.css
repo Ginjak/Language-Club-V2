@@ -11,6 +11,7 @@
   --bg-light-grey: #f7f7f7;
   --bg-grey: #b3b3b3;
   --bg-orange: #fe715f;
+  --bg-orange-shade-1: #ff705f;
   --bg-purple-btn: #8860a4;
   --bg-purpe-ligth: #c3b0d1;
   --bg-main-green: #4dcfc3;
@@ -252,6 +253,9 @@ a.white-txt:hover {
   border-color: var(--bg-purple-btn) !important;
 }
 
+.border-orange-shade-1 {
+  border-color: var(--bg-orange-shade-1) !important;
+}
 .border-deep-purple {
   border-color: var(--bg-deep-purple) !important;
 }
@@ -303,7 +307,10 @@ a.white-txt:hover {
   margin-right: 80px;
 }
 .mt-60 {
-  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.mt-80 {
+  margin-top: 80px;
 }
 .mt-100 {
   margin-top: 100px;
@@ -335,11 +342,17 @@ a.white-txt:hover {
 .max-w-200 {
   max-width: 200px;
 }
+.max-w-240 {
+  max-width: 240px;
+}
 .max-w-260 {
   max-width: 260px;
 }
 .max-w-300 {
   max-width: 300px;
+}
+.max-w-350 {
+  max-width: 350px;
 }
 .max-w-390 {
   max-width: 390px;
@@ -417,12 +430,19 @@ a.white-txt:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .gap-15 {
   gap: 15px;
 }
 .gap-30 {
   gap: 30px;
+}
+.gap-60 {
+  gap: 60px;
 }
 
 .column-gap-20 {
@@ -467,6 +487,15 @@ a.white-txt:hover {
 .outline-white-btn:hover {
   background: var(--white);
   color: var(--txt-nav-black) !important;
+}
+
+.outline-green-btn {
+  border: 2px solid var(--bg-green-shade-1);
+  color: var(--bg-green-shade-1);
+}
+.outline-green-btn:hover {
+  background: var(--bg-green-shade-1);
+  color: var(--white) !important;
 }
 
 .outline-black-btn {
@@ -760,4 +789,21 @@ header .navbar .link.active.black-nav-txt-color:hover {
 .purple-circle-wraper {
   width: 98px;
   height: 67px;
+}
+
+/* Kontaktu tab */
+
+.white-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--white);
+}
+
+/* Info burbulas */
+
+#info-burbulas .orange-circle {
+  width: 80px;
+  top: -5px;
+  left: -5px;
 }
