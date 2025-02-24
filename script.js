@@ -62,17 +62,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const swiperAtsiliepimai = new Swiper(".swiper-atsiliepimai", {
-      loop: true, // Infinite loop
+      loop: true,
       autoplay: {
-        delay: 3000, // Auto-slide every 3 seconds
+        delay: 3000,
         disableOnInteraction: false,
       },
       slidesPerView: 3,
       spaceBetween: 20,
+      slidesPerGroup: 1,
 
       navigation: {
         nextEl: ".swiper-button-custom-next",
         prevEl: ".swiper-button-custom-prev",
+      },
+    });
+
+    const swiperGallery = new Swiper(".swiper-gallery", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-gallery-next",
+        prevEl: ".swiper-button-gallery-prev",
       },
     });
 

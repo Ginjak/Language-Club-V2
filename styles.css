@@ -19,6 +19,7 @@
   --bg-purple-shade-1: #fdfaff;
   --bg-purple-shade-2: #6b398e;
   --bg-purple-shade-3: #f7f5f9;
+  --bg-green-shade-1: #00baaa;
 }
 
 * {
@@ -27,6 +28,11 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s linear;
+}
+
+.slider-galler-container {
+  max-width: 1560px;
+  margin: auto;
 }
 
 .main-container {
@@ -39,6 +45,11 @@
 }
 .lg-container {
   max-width: 1660px;
+  margin: auto;
+}
+
+.container-1600 {
+  max-width: 1600px;
   margin: auto;
 }
 ul {
@@ -134,10 +145,14 @@ a.white {
 .black-txt-shade-1 {
   color: var(--txt-black-shade-1);
 }
+
 a.black-txt-shade-1:hover {
   color: var(--txt-purple_shade-1) !important;
 }
 
+.green-txt-shade-1 {
+  color: var(--bg-green-shade-1);
+}
 .grey-txt-color {
   color: var(--txt-grey);
 }
@@ -307,6 +322,9 @@ a.white-txt:hover {
 .max-w-50 {
   max-width: 50px;
 }
+.max-w-72 {
+  max-width: 72px;
+}
 
 .max-w-140 {
   max-width: 140px;
@@ -349,6 +367,9 @@ a.white-txt:hover {
 
 /* Min height */
 
+.min-h-60 {
+  min-height: 60px;
+}
 .min-h-270 {
   min-height: 270px;
 }
@@ -357,6 +378,10 @@ a.white-txt:hover {
 }
 .min-h-354 {
   min-height: 354px;
+}
+
+.min-h-400 {
+  min-height: 400px;
 }
 
 .min-h-495 {
@@ -384,10 +409,27 @@ a.white-txt:hover {
 }
 
 /* Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-15 {
   gap: 15px;
+}
+.gap-30 {
+  gap: 30px;
+}
+
+.column-gap-20 {
+  column-gap: 10px;
+}
+.row-gap-50 {
+  row-gap: 50px;
 }
 
 /* Images */
@@ -711,4 +753,11 @@ header .navbar .link.active.black-nav-txt-color:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Mokymo organizavimo procesas */
+
+.purple-circle-wraper {
+  width: 98px;
+  height: 67px;
 }
