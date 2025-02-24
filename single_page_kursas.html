@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Language Club</title>
+  </head>
+  <body>
+    <!-- Header pradzia -->
+    <header>
+      <div id="top-nav" class="border-bottom grey-txt-color">
+        <div
+          class="main-container d-flex justify-content-between align-items-center py-3 px-12"
+        >
+          <div class="social-wraper d-flex gap-3 d-none d-md-block">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              alt="Facebook icon"
+              class="opacity-8"
+              ><img src="./icons/FB.svg"
+            /></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              alt="Instagram icon"
+              class="opacity-8"
+              ><img src="./icons/IG.svg"
+            /></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              alt="Linkedin icon"
+              class="opacity-8"
+              ><img src="./icons/Lin.svg"
+            /></a>
+          </div>
+
+          <div class="contacts-wraper gap-3 d-none d-md-flex">
+            <div class="d-flex gap-1 align-items-center">
+              <img src="./icons/phone.svg" class="p-icon" alt="Phone icon" /><a
+                href="tel:37061863185"
+                class="fs-5 grey-txt-color fw-500 grey-txt-color-hover"
+                >+370 618 63 185</a
+              >
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+              <img src="./icons/envelope.svg" class="envelope-icon" /><a
+                href="mailto:info@languageclub.lt5"
+                class="fs-5 grey-txt-color fw-500 grey-txt-color-hover"
+                >info@languageclub.lt</a
+              >
+            </div>
+          </div>
+
+          <div class="faq-wraper d-flex gap-3">
+            <a
+              href="/"
+              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              >Kontaktai</a
+            >
+            <a
+              href="/"
+              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              >DUK</a
+            >
+            <div
+              class="language-wraper d-flex gap-1 align-items-center position-relative"
+            >
+              <img src="./icons/language.svg" alt="World icon" />
+              <div class="d-flex flex-column">
+                <a href="#" class="fs-6 grey-txt-color grey-txt-color-hover"
+                  >Lietuvių</a
+                >
+                <a
+                  href="#"
+                  class="fs-6 grey-txt-color grey-txt-color-hover language-english d-none position-absolute top-20"
+                  >English</a
+                >
+              </div>
+              <img
+                src="./icons/arrow_down_nav.svg"
+                id="select-lng"
+                class="cursor-pointer"
+                alt="Arrow down icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="middle-nav"
+        class="main-container d-flex align-items-center gap-1 py-4 px-12"
+      >
+        <div class="logo-wraper">
+          <a href="/">
+            <img
+              class="header-logo"
+              src="./logo/main_logo.svg"
+              alt="Language Club Logo"
+            />
+          </a>
+        </div>
+        <div class="search-wraper flex-grow-1">
+          <div class="input-group position-relative max-w-732 m-auto">
+            <input
+              type="text"
+              class="form-control search-bar border-15"
+              placeholder="Ieškoti"
+              aria-label="search-bar"
+              aria-describedby="search-btn"
+            />
+            <button class="position-absolute" type="button" id="search-btn">
+              <img
+                src="./icons/maginifying_glass.svg"
+                alt="Magnifying glass icon"
+                alt="Search icon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="user-cart-wraper d-flex gap-3 align-items-center">
+          <div class="d-flex paskyra-wraper gap-2">
+            <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+            <div class="paskyra-txt-wraper d-flex flex-column">
+              <p class="m-0 fs-16 fw-500 fs-16 grey-txt-color">Paskyra</p>
+              <div class="">
+                <a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                  >Prisijungti</a
+                ><span class="fs-16 grey-txt-color"> / </span
+                ><a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                  >Registruotis</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-wraper position-relative d-flex align-items-center">
+            <a href="#" class="opacity-8">
+              <img src="./icons/cart.svg" alt="Cart icon" class="max-w-40" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar main-container py-0 text-center flex-nowrap">
+        <ul class="d-flex flex-column flex-md-row gap-3 container-fluid pb-4">
+          <li>
+            <a
+              class="link active fs-18 black-nav-txt-color"
+              aria-current="page"
+              href="#"
+              >ANGLŲ KALBOS KURSAI</a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#">ĮMONĖMS</a>
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#"
+              >MOKSLEIVIAMS IR VAIKAMS</a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#"
+              >KITŲ UŽSIENIO KALBŲ KURSAI </a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#"
+              >LYGIO NUSTATYMO TESTAI</a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#">APIE MUS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header pabaiga -->
+    <!-- Breadcrums pradzia -->
+    <div class="category-nav d-none d-md-block pb-3">
+      <div class="main-container px-12">
+        <ul
+          class="category-navigation d-flex justify-content-start gap-3 align-items-center"
+        >
+          <li>
+            <a href="/" class="d-flex gap-3 fs-14 black-txt-shade-1">
+              <img src="./icons/home.svg" alt="Home icon" /><img
+                class="cat-arrow"
+                src="./icons/arrow_breadcrumbs.svg"
+                alt="Arrow icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex gap-3 fs-14 black-txt-shade-1"
+              >Anglų kalbos kursai
+              <img
+                class="cat-arrow"
+                src="./icons/arrow_breadcrumbs.svg"
+                alt="Arrow icon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex gap-3 fs-14 black-txt-shade-1"
+              >Anglų kalbos kursai suaugusiems
+              <img
+                class="cat-arrow"
+                src="./icons/arrow_breadcrumbs.svg"
+                alt="Arrow icon"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Breadcrums pabaiga -->
+    <!-- Single image hero pradzia -->
+    <section id="single-img-hero">
+      <div class="min-h-495 h-100 position-relative">
+        <img
+          src="./img/hero_img_3.jpg"
+          alt="Hero image"
+          class="img-cover position-absolute top-0"
+        />
+      </div>
+    </section>
+    <!-- Single image hero pabaiga -->
+
+    <!-- Top bar pradzia -->
+    <section class="main-container position-relative" id="top-bar">
+      <div
+        class="top-bar d-flex purple-btn justify-content-center align-items-center border-15 position-absolute py-4 w-100"
+      >
+        <div class="position-relative w-100 text-center">
+          <h1 class="mb-0 white-txt-color fs-48 fw-500 ibm-serif lh-1">
+            <span class="fst-italic">Bendrinės anglų</span> kalbos kursai
+          </h1>
+          <img
+            src="./logo/LC-logo-Mark-white-500x600 4.svg"
+            alt="Logo"
+            class="max-w-50 position-absolute watermark-logo"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Top bar pabaiga -->
+    <div class="main-container">
+      <p class="mt-100 fs-4 text-center mb-0">
+        Ketinate gyventi Ispanijoje ir norėtumėte išmokti ispanų kalbos? Žavitės
+        ispanų kultūra ar dairotės verslo galimybių Lotynų Amerikoje? Ispanų
+        kalba yra viena iš populiariausių pasaulyje, ja kalba apie 500 milijonų
+        žmonių. Mokydamiesi ispanų kalbos, ne tik praturtinsite savo kultūrines
+        žinias, bet ir atversite duris į naujas profesines perspektyvas. Mūsų
+        užsienio kalbų mokykla kviečia jus prisijungti prie ispanų kalbos kursų.
+      </p>
+    </div>
+
+    <!-- Svarbi informacija pradzia -->
+    <section class="mt-80">
+      <div class="main-container">
+        <h2
+          class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+        >
+          <span class="fst-italic">Svarbi</span> informacija
+        </h2>
+        <div class="svarbi-info-scroll">
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-center align-items-center gap-4 px-3 pt-5 pb-4 max-w-300 scroll-item"
+          >
+            <div>
+              <img src="./icons/notes.svg" alt="Notes" />
+            </div>
+            <p class="fs-5 mb-0 text-center">
+              Norėdami mokytis, pirmiausia atlikite
+              <span class="fw-500 fst-italic">nemokamą</span> anglų kalbos žinių
+              lygio <span class="fw-500 fst-italic">testą</span>.
+            </p>
+          </div>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-center align-items-center gap-4 px-3 pt-5 pb-4 max-w-300 scroll-item"
+          >
+            <div>
+              <img src="./icons/notes.svg" alt="Notes" />
+            </div>
+            <p class="fs-5 mb-0 text-center">
+              Norėdami mokytis, pirmiausia atlikite
+              <span class="fw-500 fst-italic">nemokamą</span> anglų kalbos žinių
+              lygio <span class="fw-500 fst-italic">testą</span>.
+            </p>
+          </div>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-center align-items-center gap-4 px-3 pt-5 pb-4 max-w-300 scroll-item"
+          >
+            <div>
+              <img src="./icons/notes.svg" alt="Notes" />
+            </div>
+            <p class="fs-5 mb-0 text-center">
+              Norėdami mokytis, pirmiausia atlikite
+              <span class="fw-500 fst-italic">nemokamą</span> anglų kalbos žinių
+              lygio <span class="fw-500 fst-italic">testą</span>.
+            </p>
+          </div>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-center align-items-center gap-4 px-3 pt-5 pb-4 max-w-300 scroll-item"
+          >
+            <div>
+              <img src="./icons/notes.svg" alt="Notes" />
+            </div>
+            <p class="fs-5 mb-0 text-center">
+              Norėdami mokytis, pirmiausia atlikite
+              <span class="fw-500 fst-italic">nemokamą</span> anglų kalbos žinių
+              lygio <span class="fw-500 fst-italic">testą</span>.
+            </p>
+          </div>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-center align-items-center gap-4 px-3 pt-5 pb-4 max-w-300 scroll-item"
+          >
+            <div>
+              <img src="./icons/notes.svg" alt="Notes" />
+            </div>
+            <p class="fs-5 mb-0 text-center">
+              Norėdami mokytis, pirmiausia atlikite
+              <span class="fw-500 fst-italic">nemokamą</span> anglų kalbos žinių
+              lygio <span class="fw-500 fst-italic">testą</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Svarbi informacija pabaiga -->
+
+    <!-- Klientu atsiliepimai pradzia -->
+    <section class="mt-100">
+      <div class="lg-container px-12">
+        <div class="atisliepimai main-green border-15 pt-100 pb-100">
+          <h2 class="fs-54 text-center mb-5 ibm-serif">
+            Klientų <span class="fst-italic">atsiliepimai</span>
+          </h2>
+
+          <div class="position-relative">
+            <div
+              class="atilpieimai-nav position-absolute d-flex justify-content-between lg-container w-100"
+            >
+              <div class="swiper-button-custom-prev opacity-8">
+                <img src="./icons/arrow_left_white.svg" alt="Arrow left" />
+              </div>
+              <div class="swiper-button-custom-next opacity-8">
+                <img src="./icons/arrow_right_white.svg" alt="Arrow right" />
+              </div>
+            </div>
+            <div class="px-80">
+              <div class="swiper swiper-atsiliepimai">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_one.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Tautvydas</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">anglų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_two.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Inda</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">rusų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_one.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Robertas</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">anglų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_one.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Tautvydas</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">anglų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_two.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Inda</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">rusų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide border-15 pt-100 black-txt-color">
+                    <div
+                      class="bg-white border-15 px-4 py-3 d-flex flex-column"
+                    >
+                      <div class="position-relative d-flex gap-3 mb-2">
+                        <div>
+                          <img
+                            src="./img/avatar_one.jpg"
+                            alt="Avatar image"
+                            class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
+                          />
+                        </div>
+                        <div class="d-flex flex-column gap-2">
+                          <p class="fw-700 fs-4 mb-0 lh-1">Robertas</p>
+                          <p class="fw-500 fs-6 mb-0 lh-1">
+                            Mokėsi <span class="fst-italic">anglų</span> kalbos
+                          </p>
+                        </div>
+                      </div>
+
+                      <p>
+                        Su kolegomis pasirinkome mokytis AMES dėl jų ilgametės
+                        patirties. Esu patenkintas, kad visiems kolegoms buvo
+                        rastas tinkamas laikas ir būdas mokytis anglų ir
+                        vokiečių kalbų. Po kelių metų bendradarbiavimo jaučiame
+                        ženklią pažangą bendraudami verslo klausimais ir
+                        neabejojame rašydami oficialius laiškus užsienio
+                        partneriams.
+                      </p>
+                      <img
+                        src="./icons/qoute_down.svg"
+                        alt="Qoute icon"
+                        class="max-w-46 ms-auto"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Klientu atsiliepimai pabaiga -->
+    <!-- Turite klausimu pradzia -->
+    <section class="main-container position-relative z-2" id="info-bar-id">
+      <div
+        class="info-bar bar-green d-flex justify-content-between align-items-center"
+      >
+        <p class="mb-0 white-txt-color fs-4 fw-500 ibm-serif">
+          Turite
+          <span class="position-relative fst-italic z-2"
+            >klausimų?
+            <img
+              src="./icons/tw_green_lines.svg"
+              alt="Two green lines"
+              class="position-absolute green-lines"
+          /></span>
+        </p>
+        <a href="#" class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
+          >Kreiptis</a
+        >
+      </div>
+    </section>
+    <!-- Turite klausimu pabaiga -->
+
+    <!-- Footer pradzia -->
+    <footer class="purple-shade-2">
+      <div class="main-container pt-80 d-flex pb-60">
+        <div class="col-7">
+          <img
+            src="./logo/LC-logo-2line-white 2.png"
+            alt="White logo"
+            class="mt-60"
+          />
+          <div class="d-flex flex-column gap-2">
+            <div class="footer-social d-flex gap-2">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="./icons/facebook_white.svg"
+                  alt="Facebook icon"
+                  class="opacity-8"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="./icons/insta_white.svg"
+                  alt="instagram icon"
+                  class="opacity-8"
+              /></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><img
+                  src="./icons/lin_white.svg"
+                  alt="Linkedin icon"
+                  class="opacity-8"
+              /></a>
+            </div>
+            <div class="footer-contacts d-flex flex-column gap-2">
+              <a
+                href="mailto:info@languageclub.lt"
+                class="fs-5 fw-normal white-txt opacity-8"
+                >info@languageclub.lt</a
+              >
+              <a
+                href="tel:+37061863185"
+                class="fs-5 fw-normal white-txt opacity-8"
+                >+370 618 63 185</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-5 d-flex justify-content-between">
+          <div class="d-flex flex-column gap-3">
+            <h5 class="fs-5 fw-bold white-txt-color mb-0">Language club</h5>
+            <ul class="d-flex flex-column gap-3 fw-normal">
+              <li><a href="#" class="white-txt opacity-8">Apie MUS</a></li>
+              <li><a href="#" class="white-txt opacity-8">Karjera</a></li>
+              <li>
+                <a href="#" class="white-txt opacity-8"
+                  >Lygio nustatymo TESTAI</a
+                >
+              </li>
+              <li>
+                <a href="#" class="white-txt opacity-8">Dovanų kuponas</a>
+              </li>
+              <li><a href="#" class="white-txt opacity-8">D.U.K.</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="d-flex flex-column gap-3">
+              <h5 class="fs-5 fw-bold white-txt-color mb-0">Informacija</h5>
+              <ul class="d-flex flex-column gap-3 fw-normal">
+                <li>
+                  <a href="#" class="white-txt opacity-8">Užklausos forma </a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Pinigų grąžinimas</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8"
+                    >Kitos sąlygos ir taisyklės</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Privatumo politika</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Slapukų politika</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">ES projektai</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="text-center white-txt-color fs-14 py-4">
+          <p class="mb-0">
+            &copy; <span class="current-year"></span> Language club. Visos
+            teisės saugomos.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer pabaiga -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

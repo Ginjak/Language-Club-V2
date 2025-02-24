@@ -807,3 +807,21 @@ header .navbar .link.active.black-nav-txt-color:hover {
   top: -5px;
   left: -5px;
 }
+
+/* Svarbi informacija */
+
+.svarbi-info-scroll {
+  display: flex;
+  gap: 30px;
+  white-space: nowrap;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+}
+.svarbi-info-scroll p {
+  white-space: normal !important;
+  display: block !important;
+}
