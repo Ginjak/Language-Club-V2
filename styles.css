@@ -22,6 +22,8 @@
   --bg-purple-shade-3: #f7f5f9;
   --bg-purple-shade-4: #d8d4db;
   --bg-green-shade-1: #00baaa;
+  --bg-grey-shade-1: #dbdde1;
+  --bg-grey-shade-2: #858585;
 }
 
 * {
@@ -164,6 +166,10 @@ a.black-txt-shade-1:hover {
 
 .grey-txt-color-hover:hover {
   color: var(--txt-grey-hover);
+}
+
+.grey-shade-2-txt {
+  color: var(--bg-grey-shade-2);
 }
 
 .light-purple-txt-color {
@@ -585,6 +591,41 @@ a.white-txt:hover {
   color: var(--white) !important;
 }
 
+/* Inputs */
+
+.grey-input {
+  border: 2px solid var(--bg-grey-shade-1);
+  border-radius: 10px;
+  padding: 12px 22px;
+  width: 100%;
+  flex: 1;
+}
+
+.grey-input:focus-visible {
+  outline: none;
+  border-color: var(--txt-purple);
+}
+
+.orange-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--bg-orange);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.orange-radio:checked {
+  background-color: var(--bg-orange); /* Fully orange */
+  border-color: var(--bg-orange);
+}
+
 /* Info bar */
 
 .info-bar {
@@ -962,4 +1003,13 @@ header .navbar .link.active.black-nav-txt-color:hover {
   width: 130%;
   top: 27px;
   background: var(--bg-green-shade-1);
+}
+
+/* Neradote */
+
+#neradote .orange-spirale {
+  position: absolute;
+  top: -75px;
+  right: 20px;
+  transform: scaleX(-1) rotate(-30deg);
 }
