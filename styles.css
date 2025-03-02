@@ -20,6 +20,7 @@
   --bg-purple-shade-1: #fdfaff;
   --bg-purple-shade-2: #6b398e;
   --bg-purple-shade-3: #f7f5f9;
+  --bg-purple-shade-4: #d8d4db;
   --bg-green-shade-1: #00baaa;
 }
 
@@ -222,6 +223,9 @@ a.white-txt:hover {
 .purple-shade-3 {
   background: var(--bg-purple-shade-3);
 }
+.purple-shade-4 {
+  background: var(--bg-purple-shade-4);
+}
 
 /* Borders */
 .border-10 {
@@ -266,6 +270,11 @@ a.white-txt:hover {
 .border-deep-purple {
   border-color: var(--bg-deep-purple) !important;
 }
+
+.border-purple-shade-4 {
+  border-color: var(-bg-purple-shade-4) !important;
+}
+
 .border-width-1 {
   border-width: 1px !important;
 }
@@ -355,6 +364,9 @@ a.white-txt:hover {
 .max-w-260 {
   max-width: 260px;
 }
+.max-w-280 {
+  max-width: 280px;
+}
 .max-w-300 {
   max-width: 300px;
 }
@@ -377,6 +389,9 @@ a.white-txt:hover {
 .max-w-635 {
   max-width: 635px;
 }
+.max-w-680 {
+  max-width: 680px;
+}
 .max-w-732 {
   max-width: 732px;
 }
@@ -392,6 +407,9 @@ a.white-txt:hover {
 
 .min-h-60 {
   min-height: 60px;
+}
+.min-h-84 {
+  min-height: 84px;
 }
 .min-h-270 {
   min-height: 270px;
@@ -888,4 +906,40 @@ header .navbar .link.active.black-nav-txt-color:hover {
   top: 100px;
   left: calc(50% + 100px);
   z-index: 2;
+}
+
+/* Apie kursus */
+#apie-kursus .purple-underline {
+  bottom: -10px;
+  left: 0;
+}
+
+/* Apie mus comment box */
+#apie-mus-comment-box .main-container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#apie-mus-comment-box .comment-box {
+  margin-left: 10%;
+}
+
+#apie-mus-comment-box .single-orange-underline {
+  top: 25px;
+  left: -7px;
+}
+
+#apie-mus-comment-box .purple-arrow {
+  margin-left: 32%;
+}
+
+#apie-mus-comment-box .comment-box-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#apie-mus-comment-box .purple-box {
+  position: absolute;
+  top: 0px;
+  left: calc(50% + 180px);
 }
