@@ -280,6 +280,9 @@ a.white-txt:hover {
 .border-purple-shade-4 {
   border-color: var(-bg-purple-shade-4) !important;
 }
+.border-green-shade-1 {
+  border-color: var(--bg-green-shade-1) !important;
+}
 
 .border-width-1 {
   border-width: 1px !important;
@@ -287,6 +290,9 @@ a.white-txt:hover {
 
 .border-width-2 {
   border-width: 2px !important;
+}
+.border-width-3 {
+  border-width: 3px !important;
 }
 .border-width-4 {
   border-width: 4px !important;
@@ -313,6 +319,9 @@ a.white-txt:hover {
 }
 .pb-60 {
   padding-bottom: 60px;
+}
+.pb-80 {
+  padding-bottom: 80px;
 }
 .pb-100 {
   padding-bottom: 100px;
@@ -389,6 +398,9 @@ a.white-txt:hover {
   max-width: 475px;
 }
 
+.max-w-550 {
+  max-width: 550px;
+}
 .max-w-600 {
   max-width: 600px;
 }
@@ -402,6 +414,9 @@ a.white-txt:hover {
   max-width: 732px;
 }
 
+.max-w-800 {
+  max-width: 800px;
+}
 .max-w-850 {
   max-width: 850px;
 }
@@ -442,6 +457,12 @@ a.white-txt:hover {
   min-height: 590px;
 }
 
+.min-h-680 {
+  min-height: 680px;
+}
+
+/* Max height */
+
 .max-h-300 {
   max-height: 300px;
 }
@@ -457,6 +478,10 @@ a.white-txt:hover {
 
 .h-600 {
   height: 600px;
+}
+
+.h-912 {
+  height: 912px;
 }
 /* Z index */
 .z-2 {
@@ -1012,4 +1037,52 @@ header .navbar .link.active.black-nav-txt-color:hover {
   top: -75px;
   right: 20px;
   transform: scaleX(-1) rotate(-30deg);
+}
+
+/* orange comment box with btn - Musu mokytojai */
+
+#orange-comment-box-with-btn .orange-box-wraper {
+  padding-top: 150px;
+}
+#orange-comment-box-with-btn .orange-box {
+  margin-left: 10%;
+}
+#orange-comment-box-with-btn .orange-box-img {
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+#musu-mokytojai-top .single-orange-underline {
+  bottom: 0;
+  left: -5px;
+  max-width: 100px;
+}
+
+/* Musu mokytojai 2 columns */
+
+#musu-mokytojai-two-columns .musu-klientai-info {
+  border-radius: 15px 15px 15px 0;
+  margin: auto;
+  /* max-width: 415px; */
+}
+
+#musu-mokytojai-two-columns .comment-bottom-orange {
+  margin-right: auto;
+  margin-top: -1px;
+  width: 25px;
+  height: 20px;
+  clip-path: polygon(0 0, 100% 0, 20% 100%, 0% 100%);
+  background: var(--bg-orange);
+}
+
+#musu-mokytojai-two-columns .orange-circle {
+  top: -8px;
+  left: -8px;
+  max-width: 78px;
+}
+
+#musu-mokytojai-two-columns .small-green-box {
+  top: -35px;
+  right: -30px;
+  max-width: 120px;
 }
