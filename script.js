@@ -118,6 +118,39 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
     });
+
+    var mokytojaiSwiper = new Swiper(".swiper-mokytojai", {
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-custom-next",
+        prevEl: ".swiper-button-custom-prev",
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        480: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
   }
 
   // Footer current year

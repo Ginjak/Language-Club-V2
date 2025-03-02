@@ -1086,3 +1086,17 @@ header .navbar .link.active.black-nav-txt-color:hover {
   right: -30px;
   max-width: 120px;
 }
+
+.swiper-mokytojai a {
+  color: var(--txt-main-black);
+}
+.swiper-mokytojai a:hover p {
+  opacity: 0.8;
+}
+.mokytojai-nav {
+  top: 80px;
+  transform: translateY(-50);
+  left: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
