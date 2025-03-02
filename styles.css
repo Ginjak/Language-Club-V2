@@ -117,6 +117,9 @@ a.white {
   font-size: 60px;
 }
 /* Font weight */
+.fw-400 {
+  font-weight: 400;
+}
 .fw-500 {
   font-weight: 500;
 }
@@ -181,6 +184,10 @@ a.white-txt:hover {
 }
 .orange {
   background: var(--bg-orange);
+}
+
+.orange-shade-1 {
+  background: var(--bg-orange-shade-1);
 }
 
 .main-green {
@@ -364,6 +371,9 @@ a.white-txt:hover {
   max-width: 475px;
 }
 
+.max-w-600 {
+  max-width: 600px;
+}
 .max-w-635 {
   max-width: 635px;
 }
@@ -401,12 +411,17 @@ a.white-txt:hover {
   min-height: 495px;
 }
 
+.min-h-590 {
+  min-height: 590px;
+}
+
 .max-h-300 {
   max-height: 300px;
 }
 .max-h-495 {
   max-height: 495px;
 }
+
 .max-h-650 {
   max-height: 650px;
 }
@@ -419,6 +434,18 @@ a.white-txt:hover {
 /* Z index */
 .z-2 {
   z-index: 2;
+}
+.z-3 {
+  z-index: 3;
+}
+.z-4 {
+  z-index: 4;
+}
+.z-5 {
+  z-index: 5;
+}
+.z-6 {
+  z-index: 6;
 }
 
 /* Grid */
@@ -824,4 +851,41 @@ header .navbar .link.active.black-nav-txt-color:hover {
 .svarbi-info-scroll p {
   white-space: normal !important;
   display: block !important;
+}
+
+/* Anglu kalbos lygis */
+#anglu-klabos-lygis .akl-wraper {
+  height: 912px;
+}
+
+#anglu-klabos-lygis .akl-comment-wraper {
+  position: absolute;
+  top: 175px;
+  left: calc(50% - 120px);
+  transform: translateX(-50%);
+  height: 281px;
+  z-index: 3;
+}
+
+#anglu-klabos-lygis .akl-comment-wraper.behind {
+  z-index: 1 !important;
+}
+
+#anglu-klabos-lygis .lady-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#anglu-klabos-lygis .purple-arrow {
+  position: absolute;
+  top: 500px;
+  left: calc(50% - 200px);
+}
+
+#anglu-klabos-lygis .ligth-p-box {
+  position: absolute;
+  top: 100px;
+  left: calc(50% + 100px);
+  z-index: 2;
 }
