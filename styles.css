@@ -56,6 +56,10 @@
   max-width: 1600px;
   margin: auto;
 }
+.container-920 {
+  max-width: 920px;
+  margin: auto;
+}
 ul {
   list-style: none;
   margin: 0;
@@ -66,7 +70,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: inherit !important;
+  color: none;
 }
 a.white {
   color: var(--white);
@@ -184,11 +188,22 @@ a.white-txt:hover {
   color: var(--white) !important;
 }
 
+/* Link colors */
+
+a.purple-link-hover-opacity-8 {
+  color: var(--txt-purple);
+}
+
+a.purple-link-hover-opacity-8:hover {
+  opacity: 0.8 !important;
+}
+
 /* Backgrounds */
 
 .light-grey {
   background: var(--bg-light-grey);
 }
+
 .orange {
   background: var(--bg-orange);
 }
@@ -631,13 +646,16 @@ a.white-txt:hover {
   border-color: var(--txt-purple);
 }
 
-.orange-radio {
+.checkbox-round {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 15px;
   height: 15px;
-  border: 1px solid var(--bg-orange);
+  min-width: 15px;
+  min-height: 15px;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -645,10 +663,46 @@ a.white-txt:hover {
   background-color: white;
   transition: all 0.2s ease-in-out;
 }
+.checkbox-square {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.checkbox-square-purple {
+  border-color: var(--bg-grey-shade-1);
+}
+.checkbox-square-purple:checked {
+  background-color: var(--txt-purple);
+  border-color: var(--txt-main-black);
+}
 
-.orange-radio:checked {
-  background-color: var(--bg-orange); /* Fully orange */
+.checkbox-round-orange {
   border-color: var(--bg-orange);
+}
+
+.checkbox-round-orange:checked {
+  background-color: var(--bg-orange);
+  border-color: var(--bg-orange);
+}
+.checkbox-round-purple {
+  border-color: var(--bg-grey-shade-1);
+}
+
+.checkbox-round-purple:checked {
+  background-color: var(--txt-purple); /* Fully orange */
+  border-color: var(--txt-main-black);
 }
 
 /* Info bar */
