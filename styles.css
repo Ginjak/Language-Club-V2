@@ -21,6 +21,7 @@
   --bg-purple-shade-2: #6b398e;
   --bg-purple-shade-3: #f7f5f9;
   --bg-purple-shade-4: #d8d4db;
+  --bg-purple-shade-5: #ac90bf;
   --bg-green-shade-1: #00baaa;
   --bg-grey-shade-1: #dbdde1;
   --bg-grey-shade-2: #858585;
@@ -124,6 +125,9 @@ a.white {
   font-size: 60px;
 }
 /* Font weight */
+.fw-300 {
+  font-weight: 300;
+}
 .fw-400 {
   font-weight: 400;
 }
@@ -206,6 +210,13 @@ a.grey-shade-2-hover-purple:hover {
   color: var(--txt-purple);
 }
 
+a.green-shade-1-hover-opacity-8 {
+  color: var(--bg-green-shade-1);
+}
+a.green-shade-1-hover-opacity-8:hover {
+  opacity: 0.8;
+}
+
 /* Backgrounds */
 
 .light-grey {
@@ -276,6 +287,9 @@ a.grey-shade-2-hover-purple:hover {
 
 .border-15-no-left {
   border-radius: 15px 15px 15px 0;
+}
+.border-15-no-right {
+  border-radius: 15px 15px 0 15px;
 }
 
 .border-15-top-right {
@@ -413,6 +427,9 @@ a.grey-shade-2-hover-purple:hover {
 }
 .max-w-390 {
   max-width: 390px;
+}
+.max-w-420 {
+  max-width: 420px;
 }
 .max-w-440 {
   max-width: 440px;
@@ -630,6 +647,19 @@ a.grey-shade-2-hover-purple:hover {
 
 .purple-btn:hover {
   background: var(--bg-deep-purple);
+}
+
+.purple-light-btn {
+  background: var(--bg-purple-shade-5);
+}
+.purple-light-btn:hover {
+  background: var(--bg-purple-btn);
+}
+.purple-light-btn.active {
+  background: var(--bg-purple-btn);
+}
+.purple-light-btn:focus {
+  color: var(--white);
 }
 
 .white-btn-txt {
