@@ -197,40 +197,16 @@
     <!-- Header pabaiga -->
 
     <!-- Registracija pradzia -->
-    <section id="registracija" class="mt-100 mb-100">
+    <section id="prisijungimas" class="mt-100 mb-100">
       <div class="container-920 px-12">
         <h2
           class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
         >
-          Naujo vartotojo registracija
+          Prisijungimas
         </h2>
         <div class="border-15 p-5 purple-shade-3">
           <form action="" id="susisiekti-form">
             <div class="d-flex flex-column gap-3 mb-4">
-              <label
-                for="vardas"
-                class="visually-hidden"
-                aria-label="Vardas"
-              ></label>
-              <input
-                type="text"
-                class="grey-input"
-                placeholder="Vardas"
-                id="vardas"
-                required
-              />
-              <label
-                for="pavarde"
-                class="visually-hidden"
-                aria-label="pavarde"
-              ></label>
-              <input
-                type="text"
-                class="grey-input"
-                placeholder="Pavardė"
-                id="pavarde"
-                required
-              />
               <label
                 for="pastas"
                 class="visually-hidden"
@@ -244,53 +220,15 @@
                 required
               />
               <label
-                for="telefonas"
+                for="slaptazodis"
                 class="visually-hidden"
-                aria-label="telefonas"
+                aria-label="slaptazodis"
               ></label>
               <input
-                type="tel"
+                type="text"
                 class="grey-input"
-                placeholder="Tel. nr."
-                id="telefonas"
-                required
-              />
-              <label
-                for="miestas"
-                class="visually-hidden"
-                aria-label="miestas"
-              ></label>
-              <input
-                type="tel"
-                class="grey-input"
-                placeholder="Miestas"
-                id="miestas"
-                required
-              />
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-round checkbox-round-purple"
-                  type="checkbox"
-                  name="sutikimas"
-                  id="sutikimas"
-                />
-                <label
-                  for="sutikimas"
-                  aria-label="sutikimas"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Kalbų kursus inicijuoja Jūsų įmonė</label
-                >
-              </div>
-              <label
-                for="darbuoviete"
-                class="visually-hidden"
-                aria-label="darbuoviete"
-              ></label>
-              <input
-                type="tel"
-                class="grey-input"
-                placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
-                id="darbuoviete"
+                placeholder="Slaptažodis"
+                id="slaptazodis"
                 required
               />
 
@@ -298,56 +236,30 @@
                 <input
                   class="checkbox-square checkbox-square-purple"
                   type="checkbox"
-                  name="privatumo-politika"
-                  id="privatumo-politika"
+                  name="prisiminti-duomenis"
+                  id="prisiminti-duomenis"
                 />
                 <label
-                  for="privatumo-politika"
-                  aria-label="privatumo-politika"
+                  for="prisiminti-duomenis"
+                  aria-label="prisiminti-duomenis"
                   class="cursor-pointer grey-shade-2-txt"
-                  >Sutinku su
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="purple-link-hover-opacity-8"
-                    >privatumo politika</a
-                  ></label
-                >
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-square checkbox-square-purple"
-                  type="checkbox"
-                  name="susisiekti"
-                  id="susisiekti"
-                />
-                <label
-                  for="susisiekti"
-                  aria-label="susisiekti"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Noriu, kad su manimi susisiektų aptarti testo rezultatą,
-                  nustatytą kalbos lygį, gauti rekomendacijas dėl kalbos
-                  tobulinimo.</label
-                >
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-square checkbox-square-purple"
-                  type="checkbox"
-                  name="rinkodara"
-                  id="rinkodara"
-                />
-                <label
-                  for="rinkodara"
-                  aria-label="rinkodara"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Sutinku, kad mano duomenys būti naudojami LC rinkodaros
-                  tikslais, gauti man pritaikytus pasiūlymus, kvietimus
-                  dalyvauti apklausose, žaidimuose bei loterijose</label
+                  >Prisiminti mano duomenis.</label
                 >
               </div>
             </div>
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                <a
+                  href="#"
+                  class="text-decoration-underline grey-shade-2-hover-purple"
+                  >Pamiršote slaptažodį</a
+                >
+                <a
+                  href="#"
+                  class="text-decoration-underline grey-shade-2-hover-purple"
+                  >Registracija</a
+                >
+              </div>
               <a
                 href="#"
                 class="main-btn purple-btn white-btn-txt fs-5 max-w-170 w-100"

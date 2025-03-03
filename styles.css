@@ -198,6 +198,14 @@ a.purple-link-hover-opacity-8:hover {
   opacity: 0.8 !important;
 }
 
+a.grey-shade-2-hover-purple {
+  color: var(--bg-grey-shade-2);
+}
+
+a.grey-shade-2-hover-purple:hover {
+  color: var(--txt-purple);
+}
+
 /* Backgrounds */
 
 .light-grey {
