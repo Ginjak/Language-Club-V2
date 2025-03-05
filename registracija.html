@@ -281,19 +281,20 @@
                   >Kalbų kursus inicijuoja Jūsų įmonė</label
                 >
               </div>
-              <label
-                for="darbuoviete"
-                class="visually-hidden"
-                aria-label="darbuoviete"
-              ></label>
-              <input
-                type="tel"
-                class="grey-input"
-                placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
-                id="darbuoviete"
-                required
-              />
-
+              <div id="darbuoviete-wraper" class="d-none">
+                <label
+                  for="darbuoviete"
+                  class="visually-hidden"
+                  aria-label="darbuoviete"
+                ></label>
+                <input
+                  type="tel"
+                  class="grey-input"
+                  placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
+                  id="darbuoviete"
+                  required
+                />
+              </div>
               <div class="d-flex align-items-center gap-2">
                 <input
                   class="checkbox-square checkbox-square-purple"
@@ -488,6 +489,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./registracija.js"></script>
   </body>
 </html>
