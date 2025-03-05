@@ -57,6 +57,10 @@
   max-width: 1600px;
   margin: auto;
 }
+.container-1300 {
+  max-width: 1300px;
+  margin: auto;
+}
 .container-920 {
   max-width: 920px;
   margin: auto;
@@ -278,6 +282,9 @@ a.green-shade-1-hover-opacity-8:hover {
 .border-top-15 {
   border-radius: 15px 15px 0 0;
 }
+.border-bottom-15 {
+  border-radius: 0 0 15px 15px;
+}
 .border-left-15 {
   border-radius: 15px 0 0 15px;
 }
@@ -347,6 +354,9 @@ a.green-shade-1-hover-opacity-8:hover {
 .px-80 {
   padding-left: 80px;
   padding-right: 80px;
+}
+.pt-60 {
+  padding-top: 60px;
 }
 .pt-80 {
   padding-top: 80px;
@@ -468,6 +478,9 @@ a.green-shade-1-hover-opacity-8:hover {
 
 .min-h-60 {
   min-height: 60px;
+}
+.min-h-65 {
+  min-height: 65px;
 }
 .min-h-80 {
   min-height: 80px;
@@ -649,6 +662,15 @@ a.green-shade-1-hover-opacity-8:hover {
   background: var(--bg-deep-purple);
 }
 
+.purple-btn:disabled {
+  cursor: not-allowed;
+  background: var(--bg-purple-shade-5);
+}
+.purple-btn:disabled {
+  cursor: not-allowed;
+  background: var(--bg-purple-shade-5);
+}
+
 .purple-light-btn {
   background: var(--bg-purple-shade-5);
 }
@@ -677,6 +699,11 @@ a.green-shade-1-hover-opacity-8:hover {
   padding: 12px 22px;
   width: 100%;
   flex: 1;
+}
+.quiz-grey-input {
+  border: 2px solid var(--bg-grey-shade-1);
+  border-radius: 10px;
+  padding: 12px 22px;
 }
 
 .grey-input:focus-visible {
@@ -1191,4 +1218,59 @@ header .navbar .link.active.black-nav-txt-color:hover {
   left: 0;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+/* Quiz */
+#timer {
+  color: var(--txt-main-black);
+}
+
+#timer.outline-purple-btn:hover {
+  background: transparent;
+  color: var(--txt-main-black) !important;
+}
+
+.question {
+  border-bottom: 1px solid var(--bg-grey-shade-1);
+}
+
+.question .outline-green-btn:hover {
+  background: var(--white) !important;
+  color: var(--bg-green-shade-1) !important;
+}
+
+.question .option {
+  min-width: 170px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 8px 12px;
+  background: var(--bg-purple-shade-5);
+  color: var(--white);
+}
+.question .option:hover {
+  background: var(--bg-purple-btn);
+}
+
+.question .answer-input {
+  border: none;
+  border-bottom: 1px solid var(--bg-grey-shade-1);
+  background: transparent;
+  width: 40px;
+  min-width: 160px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.question .cancel-wraper {
+  width: 20px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.question .cancel-btn {
+  font-size: 14px;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  top: 0;
 }
