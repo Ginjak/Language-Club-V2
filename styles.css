@@ -853,8 +853,7 @@ header .navbar .link.active.black-nav-txt-color:hover {
 #kdl .spirale {
   position: absolute;
   top: -140px;
-  /* right: -60px; */
-  right: 0;
+  right: -60px;
   z-index: 2;
 }
 
@@ -1282,6 +1281,11 @@ header .navbar .link.active.black-nav-txt-color:hover {
 }
 
 /* Media queries */
+@media (max-width: 1400px) {
+  #kdl .spirale {
+    right: 2%;
+  }
+}
 
 @media (max-width: 1230px) {
   /* Kreiptis */
@@ -1378,6 +1382,10 @@ header .navbar .link.active.black-nav-txt-color:hover {
     bottom: -14px;
     left: -10px;
   }
+  #kdl .spirale {
+    right: 2%;
+    top: -80px;
+  }
 }
 
 /* Media utilities */
@@ -1412,6 +1420,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   }
   .mt-100 {
     margin-top: 60px !important;
+  }
+  .mb-100 {
+    margin-bottom: 60px;
   }
   .main-btn {
     padding: 8px 5px;
