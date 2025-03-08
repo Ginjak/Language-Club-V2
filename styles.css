@@ -971,7 +971,7 @@ header .navbar .link.active.black-nav-txt-color:hover {
 .info-bar .green-lines {
   bottom: -15px;
   left: -15px;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* Info bar */
@@ -1274,6 +1274,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   position: absolute;
   top: 0;
 }
+footer img {
+  max-width: 230px;
+}
 
 /* Media queries */
 @media (max-width: 1400px) {
@@ -1282,6 +1285,10 @@ header .navbar .link.active.black-nav-txt-color:hover {
   }
   #key-info .fs-60 {
     font-size: 48px;
+  }
+  .info-bar {
+    width: calc(100% - 24px);
+    left: 12px;
   }
 }
 
@@ -1386,6 +1393,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
     padding: 0 12px;
     max-width: 400px;
   }
+  footer .mt-60 {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1415,15 +1425,6 @@ header .navbar .link.active.black-nav-txt-color:hover {
     top: -80px;
   }
 
-  /* #atsiliepimai .card-wraper.max-w-420 {
-    max-width: 100%;
-    padding-bottom: 20px;
-  } */
-
-  /* #atsiliepimai .card-wraper {
-    max-width: 600px !important;
-    margin: auto;
-  } */
   #atsiliepimai .atsiliepimai-img {
     max-height: 250px;
     border-radius: 15px 15px 0 0;
@@ -1438,8 +1439,29 @@ header .navbar .link.active.black-nav-txt-color:hover {
   #atsiliepimai .fs-2 {
     font-size: 20px !important;
   }
+  .info-bar {
+    padding: 16px 20px;
+  }
+  #info-bar-id .fs-4 {
+    font-size: 20px !important;
+  }
+
+  footer .footer-contacts-main {
+    margin-top: 30px;
+  }
 }
 
+@media (max-width: 430px) {
+  footer .footer-contact-wraper {
+    flex-direction: column !important;
+  }
+  footer .footer-contact-wraper img {
+    margin-bottom: 0 !important;
+  }
+  footer .footer-contacts-main {
+    margin-top: 20px;
+  }
+}
 /* Media utilities */
 @media (max-width: 992px) {
   .fs-64 {
