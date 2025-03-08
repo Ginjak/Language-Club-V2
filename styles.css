@@ -1310,6 +1310,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   #hero .swiper-slide p {
     max-width: 700px;
   }
+  #kas-kaip .max-w-200 {
+    max-width: 100%;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -1387,6 +1390,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   .fs-4 {
     font-size: 20px !important;
   }
+  .fs-56 {
+    font-size: 48px !important;
+  }
   .fs-64 {
     font-size: 32px !important;
   }
@@ -1398,10 +1404,15 @@ header .navbar .link.active.black-nav-txt-color:hover {
   .fs-5 {
     font-size: 16px !important;
   }
+  .fs-56 {
+    font-size: 40px !important;
+  }
   .fs-64 {
     font-size: 26px !important;
   }
-
+  .mt-100 {
+    margin-top: 60px !important;
+  }
   .main-btn {
     padding: 8px 5px;
   }
