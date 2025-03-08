@@ -103,55 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Swiper
   if (typeof Swiper !== "undefined") {
-    const swiper = new Swiper(".swiper", {
-      loop: true, // Infinite loop
-      autoplay: {
-        delay: 3000, // Auto-slide every 3 seconds
-        disableOnInteraction: false,
-      },
-
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-    const swiperKodel = new Swiper(".swiper-kodel", {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
-          return `<span class="${currentClass}"></span> / <span class="${totalClass}"></span>`;
-        },
-      },
-    });
-
-    const swiperAtsiliepimai = new Swiper(".swiper-atsiliepimai", {
-      loop: true, // Enable looping
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      slidesPerView: 3, // Show 3 slides at a time
-      slidesPerGroup: 1, // Move only 1 slide at a time
-      spaceBetween: 20, // Space between slides
-      speed: 600, // Make transitions smooth
-
-      navigation: {
-        nextEl: ".swiper-button-custom-next",
-        prevEl: ".swiper-button-custom-prev",
-      },
-    });
-
     const swiperGallery = new Swiper(".swiper-gallery", {
       loop: true,
       autoplay: {

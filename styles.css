@@ -1567,6 +1567,11 @@ footer img {
   header .header-logo {
     max-width: 170px;
   }
+
+  #klientu-atsiliepimai .px-80 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   footer .footer-contacts-main {
     margin-top: 30px;
   }
