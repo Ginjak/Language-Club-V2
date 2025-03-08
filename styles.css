@@ -1425,6 +1425,12 @@ footer img {
   header nav a.link {
     font-size: 16px;
   }
+
+  #musu-klientai .small-green-box {
+    top: -95px;
+    right: -5%;
+  }
+
   #kreiptis .green-comment-box {
     right: 0;
   }
@@ -1462,6 +1468,12 @@ footer img {
   #key-info .grid-3 {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 40px;
+  }
+
+  #musu-klientai .small-green-box {
+    top: -80px;
+    right: -5%;
+    max-width: 150px;
   }
 
   #atsiliepimai .card-wraper.max-w-420 {
@@ -1547,6 +1559,16 @@ footer img {
     border-radius: 0 0 15px 15px !important;
   }
 
+  #musu-klientai .image-wraper img {
+    max-height: 400px;
+    border-radius: 15px 15px 0 0;
+  }
+  #musu-klientai .content-wraper {
+    border-radius: 0 0 15px 15px;
+    border: none !important;
+    border-top: 4px solid var(--bg-deep-purple) !important;
+  }
+
   .orange-spilare {
     top: calc(100% - 65px);
     max-width: 120px;
@@ -1620,6 +1642,9 @@ footer img {
   #info-bar-id .fs-4 {
     font-size: 20px !important;
   }
+  #musu-klientai .orange-circle {
+    max-width: 73px;
+  }
 
   header .header-logo {
     max-width: 170px;
@@ -1675,6 +1700,9 @@ footer img {
   }
   .fs-5 {
     font-size: 16px !important;
+  }
+  .fs-28 {
+    font-size: 20px !important;
   }
   .fs-30 {
     font-size: 24px !important;
