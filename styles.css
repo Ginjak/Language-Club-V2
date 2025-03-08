@@ -1285,6 +1285,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   #kdl .spirale {
     right: 2%;
   }
+  #key-info .fs-60 {
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 1230px) {
@@ -1316,6 +1319,10 @@ header .navbar .link.active.black-nav-txt-color:hover {
   }
   #kas-kaip .max-w-200 {
     max-width: 100%;
+  }
+  #key-info .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
   }
 }
 @media (max-width: 900px) {
@@ -1357,6 +1364,11 @@ header .navbar .link.active.black-nav-txt-color:hover {
     bottom: 60px;
     left: 85%;
     transform: translateX(-85%);
+  }
+  #key-info .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 12px;
+    max-width: 400px;
   }
 }
 
@@ -1411,6 +1423,9 @@ header .navbar .link.active.black-nav-txt-color:hover {
   }
   .fs-5 {
     font-size: 16px !important;
+  }
+  .fs-30 {
+    font-size: 24px !important;
   }
   .fs-56 {
     font-size: 40px !important;
