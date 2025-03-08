@@ -621,6 +621,7 @@ a.green-shade-1-hover-opacity-8:hover {
 
 .white-hover-btn:hover {
   background: var(--white);
+  color: var(--txt-nav-black) !important;
 }
 
 .outline-white-btn {
