@@ -1591,6 +1591,15 @@ footer img {
     top: -80px;
   }
 
+  #kursai .kursai-card img {
+    border-radius: 15px 15px 0 0;
+  }
+  #kursai .kursai-card .content-wraper {
+    border-radius: 0 0 0 15px;
+    border: none !important;
+    border-top: 4px solid var(--bg-purple-btn) !important;
+  }
+
   #atsiliepimai .atsiliepimai-img {
     max-height: 250px;
     border-radius: 15px 15px 0 0;
