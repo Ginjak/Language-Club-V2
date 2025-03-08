@@ -1,4 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // 🌟 Hamburger Menu
+  const menuToggle = document.querySelector(".hamburger-menu-toggle-wraper");
+  const bottomNav = document.getElementById("bottom-nav");
+  const closeButton = document.querySelector(".close");
+
+  if (bottomNav) {
+    bottomNav.style.transition = "top 0.3s ease-in-out"; // Smooth transition
+
+    function toggleMenu() {
+      bottomNav.classList.toggle("menu-open"); // Add or remove class
+    }
+
+    // Open menu
+    if (menuToggle) {
+      menuToggle.addEventListener("click", toggleMenu);
+    }
+
+    // Close menu
+    if (closeButton) {
+      closeButton.addEventListener("click", toggleMenu);
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (event) => {
+      if (
+        !bottomNav.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        bottomNav.classList.remove("menu-open");
+      }
+    });
+  }
+
   // Kalbu pasirinkimas
   const selectLng = document.getElementById("select-lng");
   const languageEnglish = document.querySelector(".language-english");
