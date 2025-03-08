@@ -29,7 +29,26 @@
         <div
           class="main-container d-flex justify-content-between align-items-center py-3 px-12"
         >
-          <div class="social-wraper d-flex gap-3 d-none d-md-block">
+          <div class="d-lg-none">
+            <a href="/Language-Club-V2/paskyra.html" class="cursor-pointer">
+              <img
+                class="max-w-25 me-2"
+                src="./icons/user.svg"
+                alt="User icon"
+              />
+            </a>
+            <a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/prisijungimas.html"
+              >Prisijungti</a
+            ><span class="fs-16 grey-txt-color"> / </span
+            ><a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/registracija.html"
+              >Registruotis</a
+            >
+          </div>
+          <div class="social-wraper d-flex gap-3 d-none d-lg-block">
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -53,7 +72,7 @@
             /></a>
           </div>
 
-          <div class="contacts-wraper gap-3 d-none d-md-flex">
+          <div class="contacts-wraper gap-3 d-none d-lg-flex">
             <div class="d-flex gap-1 align-items-center">
               <img src="./icons/phone.svg" class="p-icon" alt="Phone icon" /><a
                 href="tel:37061863185"
@@ -72,13 +91,13 @@
 
           <div class="faq-wraper d-flex gap-3">
             <a
-              href="/"
-              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/kontaktai.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
               >Kontaktai</a
             >
             <a
-              href="/"
-              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club/duk.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
               >DUK</a
             >
             <div
@@ -108,10 +127,10 @@
 
       <div
         id="middle-nav"
-        class="main-container d-flex align-items-center gap-1 py-4 px-12"
+        class="main-container d-flex justify-content-between align-items-center gap-2 py-4 px-12"
       >
         <div class="logo-wraper">
-          <a href="/">
+          <a href="/Language-Club-V2/">
             <img
               class="header-logo"
               src="./logo/main_logo.svg"
@@ -119,7 +138,7 @@
             />
           </a>
         </div>
-        <div class="search-wraper flex-grow-1">
+        <div class="d-none d-lg-block search-wraper flex-grow-1">
           <div class="input-group position-relative max-w-732 m-auto">
             <input
               type="text"
@@ -137,16 +156,35 @@
             </button>
           </div>
         </div>
+
         <div class="user-cart-wraper d-flex gap-3 align-items-center">
-          <div class="d-flex paskyra-wraper gap-2">
-            <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+          <a href="#" class="d-lg-none">
+            <img
+              src="./icons/maginifying_glass.svg"
+              alt="Maginifying Glass"
+              class="search-ico cursor-pointer"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex paskyra-wraper gap-2 align-items-center">
+            <a href="/Language-Club-V2/paskyra.html">
+              <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+            </a>
             <div class="paskyra-txt-wraper d-flex flex-column">
-              <p class="m-0 fs-16 fw-500 fs-16 grey-txt-color">Paskyra</p>
+              <a
+                href="/Language-Club-V2/paskyra.html"
+                class="m-0 fs-16 fw-500 fs-16 grey-txt-color"
+                >Paskyra</a
+              >
               <div class="">
-                <a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                <a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/prisijungimas.html"
                   >Prisijungti</a
                 ><span class="fs-16 grey-txt-color"> / </span
-                ><a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                ><a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/registracija.html"
                   >Registruotis</a
                 >
               </div>
@@ -158,29 +196,41 @@
               <img src="./icons/cart.svg" alt="Cart icon" class="max-w-40" />
             </a>
           </div>
+          <div
+            class="hamburger-menu-toggle-wraper position-relative d-flex align-items-center d-lg-none"
+            role="button"
+          >
+            <div class="ham-line"></div>
+          </div>
         </div>
       </div>
       <nav class="navbar main-container py-0 text-center flex-nowrap">
-        <ul class="d-flex flex-column flex-md-row gap-3 container-fluid pb-4">
+        <ul class="d-none d-lg-flex gap-3 container-fluid pb-4">
           <li>
             <a
               class="link active fs-18 black-nav-txt-color"
               aria-current="page"
-              href="#"
+              href="/Language-Club-V2/kategorijos.html"
               >ANGLŲ KALBOS KURSAI</a
             >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#">ĮMONĖMS</a>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
+              >ĮMONĖMS</a
+            >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#"
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
               >MOKSLEIVIAMS IR VAIKAMS</a
             >
           </li>
           <li>
             <a class="link fs-18 black-nav-txt-color" href="#"
-              >KITŲ UŽSIENIO KALBŲ KURSAI </a
+              >KITŲ UŽSIENIO KALBŲ KURSAI</a
             >
           </li>
           <li>
@@ -189,17 +239,99 @@
             >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#">APIE MUS</a>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie.html"
+              >APIE MUS</a
+            >
           </li>
         </ul>
       </nav>
+      <div
+        id="bottom-nav"
+        class="py-28 d-flex flex-column align-items-center justify-content-center d-lg-none"
+      >
+        <div>
+          <div class="close max-w-300 m-auto d-flex justify-content-end px-4">
+            <button class="btn-close mb-4"></button>
+          </div>
+          <nav class="navbar container-xxl py-0 text-center flex-nowrap">
+            <ul class="d-flex flex-column gap-3 container-fluid fw-500">
+              <li>
+                <a
+                  class="link active fs-18 black-nav-txt-color"
+                  aria-current="page"
+                  href="/Language-Club-V2/kategorijos.html"
+                  >ANGLŲ KALBOS KURSAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >ĮMONĖMS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >MOKSLEIVIAMS IR VAIKAMS</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >KITŲ UŽSIENIO KALBŲ KURSAI</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >LYGIO NUSTATYMO TESTAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie.html"
+                  >APIE MUS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="search-bar-mobile" class="d-none px-12">
+        <div class="search-wraper position-relative text-end">
+          <div class="search-close-btn">
+            <img
+              id="close-search"
+              src="./icons/close.svg"
+              alt="Close button"
+              class="cursor-pointer"
+            />
+          </div>
+          <form action="">
+            <label
+              for="search"
+              class="visually-hidden"
+              aria-label="search"
+            ></label>
+            <input
+              type="text"
+              class="grey-input"
+              placeholder="Ieškoti"
+              id="search"
+            />
+          </form>
+        </div>
+      </div>
     </header>
     <!-- Header pabaiga -->
     <!-- Breadcrums pradzia -->
-    <div class="category-nav d-none d-md-block pb-3">
+    <div class="category-nav pb-3 d-none d-lg-block">
       <div class="main-container px-12">
         <ul
-          class="category-navigation d-flex justify-content-start gap-3 align-items-center"
+          class="category-navigation d-flex justify-content-start gap-2 gap-md-3 align-items-center"
         >
           <li>
             <a href="/" class="d-flex gap-3 fs-14 black-txt-shade-1">
@@ -251,9 +383,9 @@
       <div
         class="top-bar d-flex bar-green justify-content-center align-items-center border-15 position-absolute py-4 w-100"
       >
-        <div class="position-relative w-100 text-center">
+        <div class="position-relative w-100 text-center px-12">
           <h1 class="mb-0 white-txt-color fs-48 fw-500 ibm-serif lh-1">
-            <span class="fst-italic">Anglų</span> kalbos kursai
+            Anglų kalbos kursai <span class="fst-italic">suaugusiems</span>
           </h1>
           <img
             src="./logo/LC-logo-Mark-white-500x600 4.svg"
@@ -268,14 +400,16 @@
     <!-- Kursas pradzia -->
     <section id="kursas" class="mt-100 px-12">
       <div class="main-container d-flex flex-column gap-5 position-relative">
-        <img
-          src="./icons/orange_spirale.svg"
-          alt=" Orange"
-          class="position-absolute orange-spilare"
-        />
-        <div class="kursas-card">
-          <div class="d-flex">
-            <div class="col-5 position-relative min-h-270 h-100">
+        <div class="kursas-card position-relative">
+          <img
+            src="./icons/orange_spirale.svg"
+            alt=" Orange"
+            class="position-absolute orange-spilare"
+          />
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="col-12 col-md-5 position-relative min-h-270 h-100 img-wraper"
+            >
               <img
                 src="./img/kursas_1.webp"
                 alt="Kursas"
@@ -283,13 +417,13 @@
               />
             </div>
             <div
-              class="col-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between p-4"
+              class="col-12 col-md-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between px-3 py-4 p-sm-4 content-wraper"
             >
               <div>
                 <h3 class="ibm-serif fs-2 fw-500 mb-2">
                   <span class="fst-italic">Bendrinės</span> anglų kalbos kursai
                 </h3>
-                <p class="mb-0 max-w-635">
+                <p class="mb-0 max-w-635 mb-3 mb-md-0">
                   Ar Jums reikia anglų kalbos keliaujant, bendraujant su
                   užsieniečiais, klausantis muzikos, žiūrint filmus, naudojantis
                   internetu? O gal Jūs planuojate gyventi užsienyje? Mes norime
@@ -297,16 +431,23 @@
                 </p>
               </div>
               <a
-                href="#"
+                href="/Language-Club-V2/single_page_kursas.html"
                 class="main-btn outline-black-btn max-w-200 fw-500 lh-1"
                 >Daugiau</a
               >
             </div>
           </div>
         </div>
-        <div class="kursas-card">
-          <div class="d-flex">
-            <div class="col-5 position-relative min-h-270 h-100">
+        <div class="kursas-card position-relative">
+          <img
+            src="./icons/orange_spirale.svg"
+            alt=" Orange"
+            class="position-absolute orange-spilare"
+          />
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="col-12 col-md-5 position-relative min-h-270 h-100 img-wraper"
+            >
               <img
                 src="./img/kursas_2.webp"
                 alt="Kursas"
@@ -314,14 +455,14 @@
               />
             </div>
             <div
-              class="col-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between p-4"
+              class="col-12 col-md-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between px-3 py-4 p-sm-4 content-wraper"
             >
               <div>
                 <h3 class="ibm-serif fs-2 fw-500 mb-2">
                   <span class="fst-italic">Individualios</span> anglų kalbos
                   pamokos
                 </h3>
-                <p class="mb-0 max-w-635">
+                <p class="mb-0 max-w-635 mb-3 mb-md-0">
                   Ar Jūs turite individualių pageidavimų, kaip norėtumėte
                   mokytis anglų kalbos? Galbūt esate labai užsiėmęs? Mes siūlome
                   Jums galimybę rinktis mokymosi laiką, trukmę, intensyvumą ir
@@ -330,16 +471,23 @@
                 </p>
               </div>
               <a
-                href="#"
+                href="/Language-Club-V2/single_page_kursas.html"
                 class="main-btn outline-black-btn max-w-200 fw-500 lh-1"
                 >Daugiau</a
               >
             </div>
           </div>
         </div>
-        <div class="kursas-card">
-          <div class="d-flex">
-            <div class="col-5 position-relative min-h-270 h-100">
+        <div class="kursas-card position-relative">
+          <img
+            src="./icons/orange_spirale.svg"
+            alt=" Orange"
+            class="position-absolute orange-spilare"
+          />
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="col-12 col-md-5 position-relative min-h-270 h-100 img-wraper"
+            >
               <img
                 src="./img/kursas_3.webp"
                 alt="Kursas"
@@ -347,13 +495,13 @@
               />
             </div>
             <div
-              class="col-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between p-4"
+              class="col-12 col-md-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between px-3 py-4 p-sm-4 content-wraper"
             >
               <div>
                 <h3 class="ibm-serif fs-2 fw-500 mb-2">
                   <span class="fst-italic">Verslo</span> anglų kalbos kursai
                 </h3>
-                <p class="mb-0 max-w-635">
+                <p class="mb-0 max-w-635 mb-3 mb-md-0">
                   Ar Jums reikia anglų kalbos darbe? Jeigu norite pasitikėti
                   savimi verslo susitikimų, derybų, telefoninių pokalbių metu,
                   bendraudami su kolegomis užsieniečiais, mes padėsime Jums visa
@@ -361,16 +509,23 @@
                 </p>
               </div>
               <a
-                href="#"
+                href="/Language-Club-V2/single_page_kursas.html"
                 class="main-btn outline-black-btn max-w-200 fw-500 lh-1"
                 >Daugiau</a
               >
             </div>
           </div>
         </div>
-        <div class="kursas-card">
-          <div class="d-flex">
-            <div class="col-5 position-relative min-h-270 h-100">
+        <div class="kursas-card position-relative">
+          <img
+            src="./icons/orange_spirale.svg"
+            alt=" Orange"
+            class="position-absolute orange-spilare"
+          />
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="col-12 col-md-5 position-relative min-h-270 h-100 img-wraper"
+            >
               <img
                 src="./img/kursas_4.webp"
                 alt="Kursas"
@@ -378,13 +533,13 @@
               />
             </div>
             <div
-              class="col-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between p-4"
+              class="col-12 col-md-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between px-3 py-4 p-sm-4 content-wraper"
             >
               <div>
                 <h3 class="ibm-serif fs-2 fw-500 mb-2">
                   <span class="fst-italic">Intensyvūs</span> anglų kalbos kursai
                 </h3>
-                <p class="mb-0 max-w-635">
+                <p class="mb-0 max-w-635 mb-3 mb-md-0">
                   Greitai ir efektyviai patobulinti savo anglų kalbos žinias?
                   Intensyvūs kursai yra skirti Jums, jeigu siekiate greito
                   rezultato ir norite patobulinti kalbos žinias per trumpą
@@ -393,16 +548,23 @@
                 </p>
               </div>
               <a
-                href="#"
+                href="/Language-Club-V2/single_page_kursas.html"
                 class="main-btn outline-black-btn max-w-200 fw-500 lh-1"
                 >Daugiau</a
               >
             </div>
           </div>
         </div>
-        <div class="kursas-card">
-          <div class="d-flex">
-            <div class="col-5 position-relative min-h-270 h-100">
+        <div class="kursas-card position-relative">
+          <img
+            src="./icons/orange_spirale.svg"
+            alt=" Orange"
+            class="position-absolute orange-spilare"
+          />
+          <div class="d-flex flex-column flex-md-row">
+            <div
+              class="col-12 col-md-5 position-relative min-h-270 h-100 img-wraper"
+            >
               <img
                 src="./img/kursas_5.webp"
                 alt="Kursas"
@@ -410,11 +572,11 @@
               />
             </div>
             <div
-              class="col-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between p-4"
+              class="col-12 col-md-7 purple-shade-3 border-rigth-15 border-start border-width-4 border-purple d-flex flex-column justify-content-between px-3 py-4 p-sm-4 content-wraper"
             >
               <div>
                 <h3 class="ibm-serif fs-2 fw-500 mb-2 text-uppercase">IELTS</h3>
-                <p class="mb-0 max-w-635">
+                <p class="mb-0 max-w-635 mb-3 mb-md-0">
                   Ketinate stoti į aukštąją mokyklą ar dirbti užsienyje ir Jums
                   reikia išlaikyti IELTS (International English Language Testing
                   System) egzaminą? Jaučiate, kad reikia pagalbos norint
@@ -423,7 +585,7 @@
                 </p>
               </div>
               <a
-                href="#"
+                href="/Language-Club-V2/single_page_kursas.html"
                 class="main-btn outline-black-btn max-w-200 fw-500 lh-1"
                 >Daugiau</a
               >
@@ -434,9 +596,9 @@
     </section>
     <!-- Kursas pabaiga -->
     <!-- Turite klausimu pradzia -->
-    <section class="main-container position-relative z-2" id="info-bar-id">
+    <section class="main-container position-relative z-2 aaaa" id="info-bar-id">
       <div
-        class="info-bar bar-green d-flex justify-content-between align-items-center"
+        class="info-bar bar-green d-flex flex-column gap-4 gap-sm-0 flex-sm-row justify-content-between align-items-center"
       >
         <p class="mb-0 white-txt-color fs-4 fw-500 ibm-serif">
           Turite
@@ -448,7 +610,9 @@
               class="position-absolute green-lines"
           /></span>
         </p>
-        <a href="#" class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
+        <a
+          href="/Language-Club-V2/kontaktai.html"
+          class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
           >Kreiptis</a
         >
       </div>
@@ -457,14 +621,18 @@
 
     <!-- Footer pradzia -->
     <footer class="purple-shade-2">
-      <div class="main-container pt-80 d-flex pb-60">
-        <div class="col-7">
+      <div
+        class="main-container pt-80 d-flex pb-60 px-12 d-flex flex-column flex-sm-row"
+      >
+        <div
+          class="footer-contact-wraper col-sm-5 col-lg-7 d-flex flex-sm-column justify-content-between justify-content-sm-start"
+        >
           <img
             src="./logo/LC-logo-2line-white 2.png"
             alt="White logo"
-            class="mt-60"
+            class="mt-60 mb-5"
           />
-          <div class="d-flex flex-column gap-2">
+          <div class="footer-contacts-main d-flex flex-column gap-2">
             <div class="footer-social d-flex gap-2">
               <a href="https://www.facebook.com/" target="_blank"
                 ><img
@@ -499,7 +667,9 @@
             </div>
           </div>
         </div>
-        <div class="col-5 d-flex justify-content-between">
+        <div
+          class="col-sm-7 col-lg-5 d-flex justify-content-between mt-60 gap-2"
+        >
           <div class="d-flex flex-column gap-3">
             <h5 class="fs-5 fw-bold white-txt-color mb-0">Language club</h5>
             <ul class="d-flex flex-column gap-3 fw-normal">
@@ -561,6 +731,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
