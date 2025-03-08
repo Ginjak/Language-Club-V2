@@ -17,16 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
       clickable: true, // Enable pagination clicks
     },
     navigation: {
-      nextEl: null,
-      prevEl: null,
+      nextEl: ".swiper-button-custom-next", // Next button
+      prevEl: ".swiper-button-custom-prev", // Previous button
     },
     breakpoints: {
-      576: {
-        navigation: {
-          nextEl: ".swiper-button-custom-next", // Next button
-          prevEl: ".swiper-button-custom-prev", // Previous button
-        },
-      },
       900: {
         slidesPerView: 2,
       },
