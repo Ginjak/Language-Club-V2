@@ -881,6 +881,57 @@ header .search-ico:hover {
   top: 0;
 }
 
+#search-bar-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 6;
+
+  /* Initially hidden with opacity 0 */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+#search-bar-mobile.show {
+  visibility: visible; /* Make it visible */
+  opacity: 1; /* Fade in */
+  transition: opacity 0.3s ease, visibility 0s 0s; /* Control timing for fade-in */
+}
+
+#search-bar-mobile.d-none {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Control timing for fade-out */
+}
+
+#search-bar-mobile .search-wraper {
+  max-width: 400px;
+  width: 100%;
+}
+
+#search-bar-mobile .search-wraper input {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid var(--white);
+  border-radius: 0;
+  color: var(--white);
+}
+
+#search-bar-mobile .search-wraper input::placeholder {
+  color: var(--white);
+}
+
+#search-bar-mobile .search-close-btn img {
+  max-width: 20px;
+}
+
 /* Breadcrumbs navigation */
 
 .category-navigation li:last-child .cat-arrow {

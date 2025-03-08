@@ -32,6 +32,47 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const searchIcon = document.querySelector(".search-ico"); // Search icon
+  const searchBarMobile = document.getElementById("search-bar-mobile"); // Search bar
+  const closeSearch = document.getElementById("close-search"); // Close button
+  const searchInput = document.getElementById("search"); // Search input field
+
+  // Show search bar with fade-in effect
+  if (searchIcon) {
+    searchIcon.addEventListener("click", function () {
+      // Remove the d-none class, and add show class to trigger fade-in
+      searchBarMobile.classList.remove("d-none");
+      setTimeout(() => {
+        searchBarMobile.classList.add("show"); // Trigger fade-in transition
+      }, 10); // Small delay to ensure transition works
+    });
+  }
+
+  // Hide search bar with fade-out effect when close button is clicked
+  if (closeSearch) {
+    closeSearch.addEventListener("click", function () {
+      searchBarMobile.classList.remove("show"); // Remove show class to trigger fade-out
+      // After the fade-out is complete, add the d-none class to hide the element
+      setTimeout(() => {
+        searchBarMobile.classList.add("d-none");
+      }, 300); // Wait for fade-out transition to complete (300ms)
+    });
+  }
+
+  // Close the search bar when the Enter key is pressed
+  if (searchInput) {
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        // Check if the pressed key is Enter
+        searchBarMobile.classList.remove("show"); // Remove the show class for fade-out
+        // After the fade-out is complete, add the d-none class to hide the element
+        setTimeout(() => {
+          searchBarMobile.classList.add("d-none");
+        }, 300); // Wait for fade-out transition to complete (300ms)
+      }
+    });
+  }
+
   // Kalbu pasirinkimas
   const selectLng = document.getElementById("select-lng");
   const languageEnglish = document.querySelector(".language-english");
