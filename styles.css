@@ -227,6 +227,10 @@ a.green-shade-1-hover-opacity-8:hover {
 
 /* Backgrounds */
 
+.white {
+  background: var(--white);
+}
+
 .light-grey {
   background: var(--bg-light-grey);
 }
@@ -994,14 +998,10 @@ header .search-ico:hover {
 #kreiptis .man {
   position: absolute;
   right: 0;
-  /* max-width: 415px; */
+
   bottom: 25px;
-  /* width: 100%; */
+
   z-index: 4;
-  /* max-width: 600px;
-  top: 0;
-  right: -175px;
-  z-index: 4; */
 }
 
 #kreiptis .green-comment-box {
@@ -1029,6 +1029,63 @@ header .search-ico:hover {
 #kreiptis .orange-lines {
   bottom: -20px;
   left: -34px;
+}
+/* Svarbi informacija section */
+#svarbi-info {
+  padding-bottom: 40px;
+}
+
+#svarbi-info .half-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 45%;
+  width: 100%;
+  background: var(--bg-main-green);
+}
+#svarbi-info .timeline {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 30px;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  cursor: grab;
+}
+
+#svarbi-info .timeline-item {
+  flex: 0 0 auto;
+  position: relative;
+}
+#svarbi-info .timeline-item > div {
+  width: 430px;
+  min-height: 300px;
+}
+#svarbi-info .timeline-item p {
+  white-space: normal !important;
+  display: block !important;
+}
+
+#svarbi-info .timeline-content {
+  padding: 30px;
+}
+
+#svarbi-info .timeline-item:last-child {
+  margin-right: 0;
+}
+
+#svarbi-info .timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+#svarbi-info .timeline::-webkit-scrollbar-track {
+  background: var(--white);
+  border-radius: 5px;
+}
+
+#svarbi-info .timeline::-webkit-scrollbar-thumb {
+  background: var(--bg-green-shade-1);
+  border-radius: 5px;
 }
 
 /* Atsiliepimai section */
@@ -1720,6 +1777,12 @@ footer img {
   }
   #apie-kursus .image-wraper {
     min-height: 300px !important;
+  }
+
+  #svarbi-info .timeline-item > div {
+    width: 100%;
+    max-width: 320px;
+    min-height: 260px;
   }
   footer .footer-contacts-main {
     margin-top: 30px;
