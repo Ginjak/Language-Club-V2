@@ -1575,6 +1575,20 @@ footer img {
     max-width: 120px;
     z-index: 3;
   }
+  #apie-kursus .image-wraper {
+    min-height: 400px !important;
+  }
+  #apie-kursus .image-wraper img {
+    border-radius: 15px 15px 0 0;
+  }
+
+  #apie-kursus .content-wraper {
+    border-radius: 0 0 15px 15px;
+  }
+  #apie-kursus .content-wraper h5 {
+    border-radius: 0;
+  }
+
   footer .mt-60 {
     margin-top: 30px;
   }
@@ -1655,6 +1669,10 @@ footer img {
     padding-left: 12px;
     padding-right: 12px;
   }
+
+  #apie-kursus .image-wraper {
+    min-height: 300px !important;
+  }
   footer .footer-contacts-main {
     margin-top: 30px;
   }
@@ -1700,6 +1718,10 @@ footer img {
     font-size: 16px !important;
   }
   .fs-5 {
+    font-size: 16px !important;
+  }
+
+  .fs-18 {
     font-size: 16px !important;
   }
   .fs-28 {
