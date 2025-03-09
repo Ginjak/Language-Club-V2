@@ -1439,6 +1439,10 @@ footer img {
   #kreiptis .purple-comment-box {
     right: 175px;
   }
+
+  #anglu-klabos-lygis .lady-img {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1496,6 +1500,13 @@ footer img {
     border-radius: 0 15px 0 0;
     border-top: none !important;
     border-left: 4px solid var(--bg-purple-btn);
+  }
+  #anglu-klabos-lygis .akl-comment-wraper {
+    left: 24px;
+    transform: translateX(0);
+  }
+  #anglu-klabos-lygis .purple-arrow {
+    top: 440px;
   }
 }
 @media (max-width: 900px) {
@@ -1588,7 +1599,22 @@ footer img {
   #apie-kursus .content-wraper h5 {
     border-radius: 0;
   }
+  #anglu-klabos-lygis .akl-comment-wraper {
+    max-width: calc(100% - 48px) !important;
+  }
 
+  #anglu-klabos-lygis .ligth-p-box {
+    top: 100px;
+    left: auto;
+    right: 0;
+    max-width: 170px;
+  }
+  #anglu-klabos-lygis .akl-wraper {
+    height: 700px;
+  }
+  #anglu-klabos-lygis .lady-img {
+    max-width: 400px;
+  }
   footer .mt-60 {
     margin-top: 30px;
   }
@@ -1670,6 +1696,28 @@ footer img {
     padding-right: 12px;
   }
 
+  #anglu-klabos-lygis .akl-wraper {
+    height: 700px;
+  }
+  #anglu-klabos-lygis .lady-img {
+    max-width: 300px;
+  }
+  #anglu-klabos-lygis .purple-arrow {
+    display: none;
+  }
+  #anglu-klabos-lygis .akl-comment-wraper {
+    padding: 48px 24px !important;
+  }
+  #anglu-klabos-lygis .akl-comment-wraper {
+    height: 250px;
+  }
+  #anglu-klabos-lygis .akl-comment-wraper {
+    max-width: calc(100% - 24px) !important;
+    left: 12px;
+  }
+  #anglu-klabos-lygis .akl-wraper {
+    height: 660px;
+  }
   #apie-kursus .image-wraper {
     min-height: 300px !important;
   }
@@ -1702,6 +1750,9 @@ footer img {
   .fs-4 {
     font-size: 20px !important;
   }
+  .fs-48 {
+    font-size: 36px !important;
+  }
   .fs-56,
   .fs-54 {
     font-size: 48px !important;
@@ -1729,6 +1780,9 @@ footer img {
   }
   .fs-30 {
     font-size: 24px !important;
+  }
+  .fs-48 {
+    font-size: 28px !important;
   }
   .fs-56,
   .fs-54 {
