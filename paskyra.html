@@ -29,7 +29,26 @@
         <div
           class="main-container d-flex justify-content-between align-items-center py-3 px-12"
         >
-          <div class="social-wraper d-flex gap-3 d-none d-md-block">
+          <div class="d-lg-none">
+            <a href="/Language-Club-V2/paskyra.html" class="cursor-pointer">
+              <img
+                class="max-w-25 me-2"
+                src="./icons/user.svg"
+                alt="User icon"
+              />
+            </a>
+            <a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/prisijungimas.html"
+              >Prisijungti</a
+            ><span class="fs-16 grey-txt-color"> / </span
+            ><a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/registracija.html"
+              >Registruotis</a
+            >
+          </div>
+          <div class="social-wraper d-flex gap-3 d-none d-lg-block">
             <a
               href="https://www.facebook.com/"
               target="_blank"
@@ -53,7 +72,7 @@
             /></a>
           </div>
 
-          <div class="contacts-wraper gap-3 d-none d-md-flex">
+          <div class="contacts-wraper gap-3 d-none d-lg-flex">
             <div class="d-flex gap-1 align-items-center">
               <img src="./icons/phone.svg" class="p-icon" alt="Phone icon" /><a
                 href="tel:37061863185"
@@ -72,13 +91,13 @@
 
           <div class="faq-wraper d-flex gap-3">
             <a
-              href="/"
-              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/kontaktai.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
               >Kontaktai</a
             >
             <a
-              href="/"
-              class="d-none d-md-block fs-6 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club/duk.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
               >DUK</a
             >
             <div
@@ -108,10 +127,10 @@
 
       <div
         id="middle-nav"
-        class="main-container d-flex align-items-center gap-1 py-4 px-12"
+        class="main-container d-flex justify-content-between align-items-center gap-2 py-4 px-12"
       >
         <div class="logo-wraper">
-          <a href="/">
+          <a href="/Language-Club-V2/">
             <img
               class="header-logo"
               src="./logo/main_logo.svg"
@@ -119,7 +138,7 @@
             />
           </a>
         </div>
-        <div class="search-wraper flex-grow-1">
+        <div class="d-none d-lg-block search-wraper flex-grow-1">
           <div class="input-group position-relative max-w-732 m-auto">
             <input
               type="text"
@@ -137,16 +156,35 @@
             </button>
           </div>
         </div>
+
         <div class="user-cart-wraper d-flex gap-3 align-items-center">
-          <div class="d-flex paskyra-wraper gap-2">
-            <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+          <a href="#" class="d-lg-none">
+            <img
+              src="./icons/maginifying_glass.svg"
+              alt="Maginifying Glass"
+              class="search-ico cursor-pointer"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex paskyra-wraper gap-2 align-items-center">
+            <a href="/Language-Club-V2/paskyra.html">
+              <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+            </a>
             <div class="paskyra-txt-wraper d-flex flex-column">
-              <p class="m-0 fs-16 fw-500 fs-16 grey-txt-color">Paskyra</p>
+              <a
+                href="/Language-Club-V2/paskyra.html"
+                class="m-0 fs-16 fw-500 fs-16 grey-txt-color"
+                >Paskyra</a
+              >
               <div class="">
-                <a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                <a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/prisijungimas.html"
                   >Prisijungti</a
                 ><span class="fs-16 grey-txt-color"> / </span
-                ><a class="fs-16 grey-txt-color grey-txt-color-hover" href="#"
+                ><a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/registracija.html"
                   >Registruotis</a
                 >
               </div>
@@ -154,33 +192,45 @@
           </div>
 
           <div class="cart-wraper position-relative d-flex align-items-center">
-            <a href="#" class="opacity-8">
+            <a href="/Language-Club-V2/krepselis.html" class="opacity-8">
               <img src="./icons/cart.svg" alt="Cart icon" class="max-w-40" />
             </a>
+          </div>
+          <div
+            class="hamburger-menu-toggle-wraper position-relative d-flex align-items-center d-lg-none"
+            role="button"
+          >
+            <div class="ham-line"></div>
           </div>
         </div>
       </div>
       <nav class="navbar main-container py-0 text-center flex-nowrap">
-        <ul class="d-flex flex-column flex-md-row gap-3 container-fluid pb-4">
+        <ul class="d-none d-lg-flex gap-3 container-fluid pb-4">
           <li>
             <a
               class="link active fs-18 black-nav-txt-color"
               aria-current="page"
-              href="#"
+              href="/Language-Club-V2/kategorijos.html"
               >ANGLŲ KALBOS KURSAI</a
             >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#">ĮMONĖMS</a>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
+              >ĮMONĖMS</a
+            >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#"
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
               >MOKSLEIVIAMS IR VAIKAMS</a
             >
           </li>
           <li>
             <a class="link fs-18 black-nav-txt-color" href="#"
-              >KITŲ UŽSIENIO KALBŲ KURSAI </a
+              >KITŲ UŽSIENIO KALBŲ KURSAI</a
             >
           </li>
           <li>
@@ -189,10 +239,92 @@
             >
           </li>
           <li>
-            <a class="link fs-18 black-nav-txt-color" href="#">APIE MUS</a>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie.html"
+              >APIE MUS</a
+            >
           </li>
         </ul>
       </nav>
+      <div
+        id="bottom-nav"
+        class="py-28 d-flex flex-column align-items-center justify-content-center d-lg-none"
+      >
+        <div>
+          <div class="close max-w-300 m-auto d-flex justify-content-end px-4">
+            <button class="btn-close mb-4"></button>
+          </div>
+          <nav class="navbar container-xxl py-0 text-center flex-nowrap">
+            <ul class="d-flex flex-column gap-3 container-fluid fw-500">
+              <li>
+                <a
+                  class="link active fs-18 black-nav-txt-color"
+                  aria-current="page"
+                  href="/Language-Club-V2/kategorijos.html"
+                  >ANGLŲ KALBOS KURSAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >ĮMONĖMS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >MOKSLEIVIAMS IR VAIKAMS</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >KITŲ UŽSIENIO KALBŲ KURSAI</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >LYGIO NUSTATYMO TESTAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie.html"
+                  >APIE MUS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="search-bar-mobile" class="d-none px-12">
+        <div class="search-wraper position-relative text-end">
+          <div class="search-close-btn">
+            <img
+              id="close-search"
+              src="./icons/close.svg"
+              alt="Close button"
+              class="cursor-pointer"
+            />
+          </div>
+          <form action="">
+            <label
+              for="search"
+              class="visually-hidden"
+              aria-label="search"
+            ></label>
+            <input
+              type="text"
+              class="grey-input"
+              placeholder="Ieškoti"
+              id="search"
+            />
+          </form>
+        </div>
+      </div>
     </header>
     <!-- Header pabaiga -->
 
@@ -204,7 +336,7 @@
         >
           Paskyra
         </h2>
-        <div class="d-flex">
+        <div class="d-flex gap-3">
           <div class="left max-w-420 w-100 text-center">
             <div class="border-15-no-right purple-shade-3 p-5">
               <div class="duomenys mb-4">
@@ -243,12 +375,70 @@
             </div>
             <div class="comment-bottom purple-shade-3"></div>
           </div>
-          <div class="right">
+          <div class="right w-100">
             <div class="tab-content" id="paskyros-info">
               <div class="tab-pane fade show active" id="paskyros-nustatymai-info" role="tabpanel" aria-labelledby="paskyros-nustatymai">Paskyros nustatymai</div>
               <div class="tab-pane fade" id="uzsakymo-istorija-info" role="tabpanel" aria-labelledby="uzsakymo-istorija">Paskyros istorija</div>
               <div class="tab-pane fade" id="sertifikatai-info" role="tabpanel" aria-labelledby="sertifikatai">Sertifikatai</div>
-              <div class="tab-pane fade" id="duk-info" role="tabpanel" aria-labelledby="duk">DUK</div>
+              <div class="tab-pane fade border-15 purple-shade-3" id="duk-info" role="tabpanel" aria-labelledby="duk" >
+                <h2 class="fs-36 fw-400 ibm-serif purple border-top-15 white-txt-color py-4 px-5 mb-0">Šiuo metu vykstantys mokymai</h2>
+                <ul class="d-flex flex-column mb-4 ">
+                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    
+                      <p class="pe-2 mb-0 fs-5 fw-500">Bendrinės anglų  kalbos kursai <span class="d-block fw-400 fs-18">348957</span></p>
+                    
+                    
+                  </li>
+                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                      <p class="mb-0">Kursų pradžia</p>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                      <p class="mb-0">Lapkričio 22 d.</p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                      <p class="mb-0">Kursų trukmė</p>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                      <p class="mb-0">
+                        2 kartus per savaitę po 2 ak.val. (90 min.)
+                      </p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                      <p class="mb-0">Pamokų laikas</p>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                      <p class="mb-0">Pirmadieniais ir trečiaideniais 17:00-18:30</p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                      <p class="mb-0">Kursai vyksta</p>
+                    </div>
+                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                      <p class="mb-0">Online - (http) <span>Gyvai - (http)</span></p>
+                    </div>
+                  </li>
+                  <li class="d-flex flex-column flex-lg-row py-3 border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-lg-4 d-flex align-items-start pe-2 mb-0 fs-18 ">
+                      <p class="mb-0">Mano mokytojas</p>
+                    </div>
+                    <ul class="col-12 col-lg-8 d-flex flex-column align-items-start fs-18">
+                      <li>Vardas</li>
+                      <li>Tel nr.: +370 688 99234</li>
+                      <li>El. Paštas: info@pavyzdis.com</li>
+                      <li><a href="#" class="green-shade-1-hover-opacity-8 text-decoration-underline">Siųsti žinutę</a></li>
+                    </ul>
+                    
+                  </li>
+                  
+                  
+                </ul>
+              </div>
             </div>
         </div>
       </div>
@@ -258,7 +448,7 @@
     <!-- Turite klausimu pradzia -->
     <section class="main-container position-relative z-2 aaaa" id="info-bar-id">
       <div
-        class="info-bar bar-green d-flex justify-content-between align-items-center"
+        class="info-bar bar-green d-flex flex-column gap-4 gap-sm-0 flex-sm-row justify-content-between align-items-center"
       >
         <p class="mb-0 white-txt-color fs-4 fw-500 ibm-serif">
           Turite
@@ -270,7 +460,9 @@
               class="position-absolute green-lines"
           /></span>
         </p>
-        <a href="#" class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
+        <a
+          href="/Language-Club-V2/kontaktai.html"
+          class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
           >Kreiptis</a
         >
       </div>
@@ -279,14 +471,18 @@
 
     <!-- Footer pradzia -->
     <footer class="purple-shade-2">
-      <div class="main-container pt-80 d-flex pb-60">
-        <div class="col-7">
+      <div
+        class="main-container pt-80 d-flex pb-60 px-12 d-flex flex-column flex-sm-row"
+      >
+        <div
+          class="footer-contact-wraper col-sm-5 col-lg-7 d-flex flex-sm-column justify-content-between justify-content-sm-start"
+        >
           <img
             src="./logo/LC-logo-2line-white 2.png"
             alt="White logo"
-            class="mt-60"
+            class="mt-60 mb-5"
           />
-          <div class="d-flex flex-column gap-2">
+          <div class="footer-contacts-main d-flex flex-column gap-2">
             <div class="footer-social d-flex gap-2">
               <a href="https://www.facebook.com/" target="_blank"
                 ><img
@@ -321,7 +517,9 @@
             </div>
           </div>
         </div>
-        <div class="col-5 d-flex justify-content-between">
+        <div
+          class="col-sm-7 col-lg-5 d-flex justify-content-between mt-60 gap-2"
+        >
           <div class="d-flex flex-column gap-3">
             <h5 class="fs-5 fw-bold white-txt-color mb-0">Language club</h5>
             <ul class="d-flex flex-column gap-3 fw-normal">
@@ -383,6 +581,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
