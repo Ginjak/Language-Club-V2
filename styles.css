@@ -1568,6 +1568,10 @@ footer img {
   #anglu-klabos-lygis .purple-arrow {
     top: 440px;
   }
+
+  #paskyra .max-w-420 {
+    max-width: 100%;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -1815,6 +1819,10 @@ footer img {
 @media (max-width: 768px) {
   .fs-4 {
     font-size: 20px !important;
+  }
+
+  .fs-36 {
+    font-size: 24px;
   }
   .fs-48 {
     font-size: 36px !important;

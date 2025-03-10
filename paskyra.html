@@ -336,9 +336,10 @@
         >
           Paskyra
         </h2>
-        <div class="d-flex gap-3">
+        <div class="d-flex flex-column flex-lg-row gap-3">
           <div class="left max-w-420 w-100 text-center">
-            <div class="border-15-no-right purple-shade-3 p-5">
+            <div class="border-15-no-right purple-shade-3 px-3 py-4 p-sm-5 d-flex flex-column flex-sm-row justify-content-between flex-lg-column">
+              <div class="duomenys-wraper">
               <div class="duomenys mb-4">
                 <div class="d-flex flex-column justify-content-center">
                   <p class="mb-0 fs-2">Vardas Pavardė</p>
@@ -362,13 +363,14 @@
                   <p class="mb-0 fw-700">A2</p>
                 </div>
               </div>
+            </div>
               <div class="tab-navigation">
                 <div class="nav flex-column gap-2" id="paskyros-menu" role="tablist" >
 
-                  <a class="nav-link active main-btn purple-light-btn white-btn-txt fs-5" id="paskyros-nustatymai" data-bs-toggle="pill" href="#paskyros-nustatymai-info" type="button" role="tab" aria-controls="paskyros-nustatymai-info" aria-selected="true">Paskyros nustatymai</a>
-                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5" id="uzsakymo-istorija" data-bs-toggle="pill" href="#uzsakymo-istorija-info" type="button" role="tab" aria-controls="uzsakymo-istorija-info" aria-selected="false">Užsakymų istorija</a>
-                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5" id="sertifikatai" data-bs-toggle="pill" href="#sertifikatai-info" type="button" role="tab" aria-controls="sertifikatai-info" aria-selected="false">Sertifikatai</a>
-                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5" id="duk" data-bs-toggle="pill" href="#duk-info" type="button" role="tab" aria-controls="duk-info" aria-selected="false">DUK</a>
+                  <a class="nav-link active main-btn purple-light-btn white-btn-txt fs-5 px-3" id="paskyros-nustatymai" data-bs-toggle="pill" href="#paskyros-nustatymai-info" type="button" role="tab" aria-controls="paskyros-nustatymai-info" aria-selected="true">Paskyros nustatymai</a>
+                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5 px-3" id="uzsakymo-istorija" data-bs-toggle="pill" href="#uzsakymo-istorija-info" type="button" role="tab" aria-controls="uzsakymo-istorija-info" aria-selected="false">Užsakymų istorija</a>
+                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5 px-3" id="sertifikatai" data-bs-toggle="pill" href="#sertifikatai-info" type="button" role="tab" aria-controls="sertifikatai-info" aria-selected="false">Sertifikatai</a>
+                  <a class="nav-link main-btn purple-light-btn white-btn-txt fs-5 px-3" id="duk" data-bs-toggle="pill" href="#duk-info" type="button" role="tab" aria-controls="duk-info" aria-selected="false">DUK</a>
                 </div>
               
               </div>
@@ -377,57 +379,236 @@
           </div>
           <div class="right w-100">
             <div class="tab-content" id="paskyros-info">
-              <div class="tab-pane fade show active" id="paskyros-nustatymai-info" role="tabpanel" aria-labelledby="paskyros-nustatymai">Paskyros nustatymai</div>
+              <div class="tab-pane fade show active purple-shade-3 border-15" id="paskyros-nustatymai-info" role="tabpanel" aria-labelledby="paskyros-nustatymai">
+                <h2 class="fs-36 fw-400 ibm-serif purple border-top-15 white-txt-color py-4 px-3 px-sm-5 mb-0">Profilio duomenys</h2>
+                <form action="" id="susisiekti-form" class=" py-4 px-3 px-sm-5 mb-0">
+                  <div class="d-flex flex-column gap-3 mb-4">
+                    <label
+                      for="vardas"
+                      class="visually-hidden"
+                      aria-label="Vardas"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Vardas"
+                      id="vardas"
+                      required
+                    />
+                    <label
+                      for="pavarde"
+                      class="visually-hidden"
+                      aria-label="pavarde"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Pavardė"
+                      id="pavarde"
+                      required
+                    />
+                    <label
+                      for="pastas"
+                      class="visually-hidden"
+                      aria-label="pastas"
+                    ></label>
+                    <input
+                      type="email"
+                      class="grey-input"
+                      placeholder="El. paštas"
+                      id="pastas"
+                      required
+                    />
+                    <label
+                      for="telefonas"
+                      class="visually-hidden"
+                      aria-label="telefonas"
+                    ></label>
+                    <input
+                      type="tel"
+                      class="grey-input"
+                      placeholder="Tel. nr."
+                      id="telefonas"
+                      required
+                    />
+                    <label
+                      for="miestas"
+                      class="visually-hidden"
+                      aria-label="miestas"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Miestas"
+                      id="miestas"
+                      required
+                    />
+                    <label
+                      for="adresas"
+                      class="visually-hidden"
+                      aria-label="adresas"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Adresas (Reikalinga sutarčiai sudaryti)"
+                      id="adresas"
+                      required
+                    />
+                    <label
+                      for="gimimo-data"
+                      class="visually-hidden"
+                      aria-label="gimimo-data"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Gimimo data"
+                      id="gimimo-data"
+                      required
+                    />
+                    <label
+                      for="darbuoviete"
+                      class="visually-hidden"
+                      aria-label="darbuoviete"
+                    ></label>
+                    <input
+                      type="text"
+                      class="grey-input"
+                      placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
+                      id="darbuoviete"
+                      required
+                    />
+                   
+                    <div id="darbuoviete-wraper" class="d-none">
+                      <label
+                        for="darbuoviete"
+                        class="visually-hidden"
+                        aria-label="darbuoviete"
+                      ></label>
+                      <input
+                        type="tel"
+                        class="grey-input"
+                        placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
+                        id="darbuoviete"
+                        required
+                      />
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <input
+                        class="checkbox-square checkbox-square-purple"
+                        type="checkbox"
+                        name="privatumo-politika"
+                        id="privatumo-politika"
+                      />
+                      <label
+                        for="privatumo-politika"
+                        aria-label="privatumo-politika"
+                        class="cursor-pointer grey-shade-2-txt"
+                        >Sutinku su
+                        <a
+                          href="#"
+                          target="_blank"
+                          class="purple-link-hover-opacity-8"
+                          >privatumo politika</a
+                        ></label
+                      >
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <input
+                        class="checkbox-square checkbox-square-purple"
+                        type="checkbox"
+                        name="susisiekti"
+                        id="susisiekti"
+                      />
+                      <label
+                        for="susisiekti"
+                        aria-label="susisiekti"
+                        class="cursor-pointer grey-shade-2-txt"
+                        >Noriu, kad su manimi susisiektų aptarti testo rezultatą,
+                        nustatytą kalbos lygį, gauti rekomendacijas dėl kalbos
+                        tobulinimo.</label
+                      >
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <input
+                        class="checkbox-square checkbox-square-purple"
+                        type="checkbox"
+                        name="rinkodara"
+                        id="rinkodara"
+                      />
+                      <label
+                        for="rinkodara"
+                        aria-label="rinkodara"
+                        class="cursor-pointer grey-shade-2-txt"
+                        >Sutinku, kad mano duomenys būti naudojami LC rinkodaros
+                        tikslais, gauti man pritaikytus pasiūlymus, kvietimus
+                        dalyvauti apklausose, žaidimuose bei loterijose</label
+                      >
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <a href="#" class="text-decoration-underline grey-shade-2-hover-purple">Keisti slaptažodį</a>
+                    <a
+                      href="#"
+                      class="main-btn purple-btn white-btn-txt fs-5 max-w-170 w-100"
+                      >Išsaugoti</a
+                    >
+                  </div>
+                </form>
+
+
+              </div>
               <div class="tab-pane fade" id="uzsakymo-istorija-info" role="tabpanel" aria-labelledby="uzsakymo-istorija">Paskyros istorija</div>
               <div class="tab-pane fade" id="sertifikatai-info" role="tabpanel" aria-labelledby="sertifikatai">Sertifikatai</div>
               <div class="tab-pane fade border-15 purple-shade-3" id="duk-info" role="tabpanel" aria-labelledby="duk" >
-                <h2 class="fs-36 fw-400 ibm-serif purple border-top-15 white-txt-color py-4 px-5 mb-0">Šiuo metu vykstantys mokymai</h2>
+                <h2 class="fs-36 fw-400 ibm-serif purple border-top-15 white-txt-color py-4 px-3 px-sm-5 mb-0">Šiuo metu vykstantys mokymai</h2>
                 <ul class="d-flex flex-column mb-4 ">
-                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                  <li class="d-flex flex-column flex-md-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
                     
                       <p class="pe-2 mb-0 fs-5 fw-500">Bendrinės anglų  kalbos kursai <span class="d-block fw-400 fs-18">348957</span></p>
                     
                     
                   </li>
-                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
-                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                  <li class="d-flex flex-column flex-md-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-md-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
                       <p class="mb-0">Kursų pradžia</p>
                     </div>
-                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                    <div class="col-12 col-md-8 d-flex align-items-center fs-18">
                       <p class="mb-0">Lapkričio 22 d.</p>
                     </div>
                   </li>
-                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
-                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                  <li class="d-flex flex-column flex-md-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-md-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
                       <p class="mb-0">Kursų trukmė</p>
                     </div>
-                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                    <div class="col-12 col-md-8 d-flex align-items-center fs-18">
                       <p class="mb-0">
                         2 kartus per savaitę po 2 ak.val. (90 min.)
                       </p>
                     </div>
                   </li>
-                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
-                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                  <li class="d-flex flex-column flex-md-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-md-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
                       <p class="mb-0">Pamokų laikas</p>
                     </div>
-                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                    <div class="col-12 col-md-8 d-flex align-items-center fs-18">
                       <p class="mb-0">Pirmadieniais ir trečiaideniais 17:00-18:30</p>
                     </div>
                   </li>
-                  <li class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
-                    <div class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
+                  <li class="d-flex flex-column flex-md-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-md-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
                       <p class="mb-0">Kursai vyksta</p>
                     </div>
-                    <div class="col-12 col-lg-8 d-flex align-items-center fs-18">
+                    <div class="col-12 col-md-8 d-flex align-items-center fs-18">
                       <p class="mb-0">Online - (http) <span>Gyvai - (http)</span></p>
                     </div>
                   </li>
-                  <li class="d-flex flex-column flex-lg-row py-3 border-width-1 border-purple-shade-4 px-3 px-sm-5">
-                    <div class="col-12 col-lg-4 d-flex align-items-start pe-2 mb-0 fs-18 ">
+                  <li class="d-flex flex-column flex-md-row py-3 border-width-1 border-purple-shade-4 px-3 px-sm-5">
+                    <div class="col-12 col-md-4 d-flex align-items-center pe-2 mb-0 fs-18 ">
                       <p class="mb-0">Mano mokytojas</p>
                     </div>
-                    <ul class="col-12 col-lg-8 d-flex flex-column align-items-start fs-18">
+                    <ul class="col-12 col-md-8 d-flex flex-column align-items-start fs-18">
                       <li>Vardas</li>
                       <li>Tel nr.: +370 688 99234</li>
                       <li>El. Paštas: info@pavyzdis.com</li>
