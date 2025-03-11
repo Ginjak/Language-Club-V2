@@ -1460,7 +1460,7 @@ header .search-ico:hover {
 }
 
 #musu-vertybes-icons {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(5, 1fr);
 }
 
