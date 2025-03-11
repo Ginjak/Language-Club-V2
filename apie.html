@@ -599,7 +599,7 @@
         <div class="">
           <div class="position-relative">
             <div
-              class="atilpieimai-nav position-absolute d-flex justify-content-between lg-container w-100"
+              class="d-none atilpieimai-nav position-absolute d-md-flex justify-content-between lg-container w-100"
             >
               <div class="swiper-button-gallery-prev opacity-8">
                 <img src="./icons/arrow_left_grey.svg" alt="Arrow left" />
@@ -683,19 +683,20 @@
     <section>
       <div class="main-container position-relative">
         <div
+          id="musu-vertybes"
           class="top-bar d-flex bar-green justify-content-center align-items-center border-15 position-absolute py-4 w-100 z-2"
         >
           <div class="position-relative w-100 text-center">
-            <h2 class="fs-48 fw-500 ibm-serif lh-sm">
+            <h2 class="fs-48 fw-500 ibm-serif lh-sm mb-0">
               Mūsų
               <span class="fst-italic fw-500 ibm-serif">vertybės</span>
             </h2>
           </div>
         </div>
       </div>
-      <!-- <div class="pt-100 d-flex justify-content-between container-1600">
+      <div id="musu-vertybes-icons" class="pt-100 container-1600 gap-3 px-12">
         <div
-          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100"
+          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100 vertybe"
         >
           <div class="d-flex flex-column align-items-center gap-3">
             <div class="min-h-60">
@@ -712,7 +713,7 @@
           >
         </div>
         <div
-          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100"
+          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100 vertybe"
         >
           <div class="d-flex flex-column align-items-center gap-3">
             <div class="min-h-60">
@@ -729,7 +730,7 @@
           >
         </div>
         <div
-          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100"
+          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100 vertybe"
         >
           <div class="d-flex flex-column align-items-center gap-3">
             <div class="min-h-60">
@@ -746,7 +747,7 @@
           >
         </div>
         <div
-          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100"
+          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100 vertybe"
         >
           <div class="d-flex flex-column align-items-center gap-3">
             <div class="min-h-60">
@@ -763,7 +764,7 @@
           >
         </div>
         <div
-          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100"
+          class="d-flex flex-column align-items-center gap-4 max-w-260 w-100 vertybe"
         >
           <div class="d-flex flex-column align-items-center gap-3">
             <div class="min-h-60">
@@ -779,11 +780,11 @@
             >Plačiau</a
           >
         </div>
-      </div> -->
+      </div>
     </section>
     <!-- Musu vertybes pabaiga -->
     <!-- Banner pradzia -->
-    <section class="mt-100">
+    <section id="single-banner" class="mt-100">
       <div class="min-h-495 h-100 position-relative">
         <img
           src="./img/hero_img_1.jpg"
@@ -987,7 +988,8 @@
     <!-- Mokymo metu pabaiga -->
 
     <!-- Klientu atsiliepimai pradzia -->
-    <section class="mt-100">
+
+    <section class="mt-100" id="klientu-atsiliepimai">
       <div class="lg-container px-12">
         <div class="atisliepimai main-green border-15 pt-100 pb-100">
           <h2 class="fs-54 text-center mb-5 ibm-serif">
@@ -998,10 +1000,14 @@
             <div
               class="atilpieimai-nav position-absolute d-flex justify-content-between lg-container w-100"
             >
-              <div class="swiper-button-custom-prev opacity-8">
+              <div
+                class="swiper-button-custom-prev opacity-8 d-none d-sm-block"
+              >
                 <img src="./icons/arrow_left_white.svg" alt="Arrow left" />
               </div>
-              <div class="swiper-button-custom-next opacity-8">
+              <div
+                class="swiper-button-custom-next opacity-8 d-none d-sm-block"
+              >
                 <img src="./icons/arrow_right_white.svg" alt="Arrow right" />
               </div>
             </div>
@@ -1012,7 +1018,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_one.jpg"
@@ -1020,7 +1028,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Tautvydas</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">anglų</span> kalbos
@@ -1048,7 +1056,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_two.jpg"
@@ -1056,7 +1066,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Inda</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">rusų</span> kalbos
@@ -1084,7 +1094,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_one.jpg"
@@ -1092,7 +1104,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Robertas</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">anglų</span> kalbos
@@ -1120,7 +1132,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_one.jpg"
@@ -1128,7 +1142,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Tautvydas</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">anglų</span> kalbos
@@ -1156,7 +1170,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_two.jpg"
@@ -1164,7 +1180,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Inda</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">rusų</span> kalbos
@@ -1192,7 +1208,9 @@
                     <div
                       class="bg-white border-15 px-4 py-3 d-flex flex-column"
                     >
-                      <div class="position-relative d-flex gap-3 mb-2">
+                      <div
+                        class="position-relative d-flex flex-column flex-sm-row gap-3 mb-2"
+                      >
                         <div>
                           <img
                             src="./img/avatar_one.jpg"
@@ -1200,7 +1218,7 @@
                             class="rounded-circle max-w-140 border border-width-6 border-white avatar-img"
                           />
                         </div>
-                        <div class="d-flex flex-column gap-2">
+                        <div class="d-flex flex-column gap-2 mb-3 mb-sm-0">
                           <p class="fw-700 fs-4 mb-0 lh-1">Robertas</p>
                           <p class="fw-500 fs-6 mb-0 lh-1">
                             Mokėsi <span class="fst-italic">anglų</span> kalbos
@@ -1234,6 +1252,7 @@
         </div>
       </div>
     </section>
+
     <!-- Klientu atsiliepimai pabaiga -->
 
     <!-- Turite klausimu pradzia -->
@@ -1372,6 +1391,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/gallery-swiper.js"></script>
+    <script src="./js/atsiliepimai-swiper.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

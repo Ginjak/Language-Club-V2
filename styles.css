@@ -1456,9 +1456,14 @@ header .search-ico:hover {
 }
 
 #musu-tikslai .orange-spilare {
-  display: none;
   opacity: 1;
 }
+
+#musu-vertybes-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 footer img {
   max-width: 230px;
 }
@@ -1483,6 +1488,10 @@ footer img {
   }
   #top-bar {
     width: calc(100% - 24px);
+  }
+  #musu-vertybes {
+    width: calc(100% - 24px) !important;
+    left: 12px;
   }
 }
 
@@ -1592,6 +1601,16 @@ footer img {
     bottom: 120px;
     right: 40px;
   }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative {
+    min-height: 200px;
+    height: 300px !important;
+  }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative img {
+    max-width: 350px;
+  }
+  #musu-vertybes-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1683,6 +1702,34 @@ footer img {
   }
   #anglu-klabos-lygis .lady-img {
     max-width: 400px;
+  }
+  .slider-galler-container .px-80 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .swiper-gallery .swiper-slide.gap-30 {
+    gap: 15px;
+  }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative {
+    min-height: 200px;
+    height: 200px !important;
+    gap: 10px !important;
+  }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative img {
+    max-width: 300px;
+  }
+
+  #single-banner .min-h-495 {
+    min-height: 300px;
+    height: 300px;
+  }
+  #single-banner img {
+    max-width: 900px;
+  }
+  #musu-tikslai .orange-spilare {
+    left: auto;
+    top: 10px;
+    right: 20px;
   }
   footer .mt-60 {
     margin-top: 30px;
@@ -1796,12 +1843,34 @@ footer img {
     max-width: 320px;
     min-height: 260px;
   }
+
+  #musu-vertybes {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
+  #musu-vertybes-icons {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px !important;
+    justify-items: center;
+  }
+
   footer .footer-contacts-main {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 430px) {
+  .swiper-gallery .swiper-slide.gap-30 {
+    gap: 10px;
+  }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative {
+    min-height: 150px;
+    height: 150px !important;
+  }
+  .swiper-gallery .swiper-slide .min-h-400.h-100.position-relative img {
+    max-width: 200px;
+  }
   footer .footer-contact-wraper {
     flex-direction: column !important;
   }
