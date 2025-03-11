@@ -1454,6 +1454,11 @@ header .search-ico:hover {
   position: absolute;
   top: 0;
 }
+
+#musu-tikslai .orange-spilare {
+  display: none;
+  opacity: 1;
+}
 footer img {
   max-width: 230px;
 }
