@@ -1464,6 +1464,11 @@ header .search-ico:hover {
   grid-template-columns: repeat(5, 1fr);
 }
 
+#mokymu-organizavimas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 footer img {
   max-width: 230px;
 }
@@ -1584,6 +1589,13 @@ footer img {
   }
 
   #paskyra .max-w-420 {
+    max-width: 100%;
+  }
+  #mokymu-organizavimas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mokymu-organizavimas .max-w-300,
+  #mokymu-organizavimas .max-w-260 {
     max-width: 100%;
   }
 }
@@ -1730,6 +1742,11 @@ footer img {
     left: auto;
     top: 10px;
     right: 20px;
+  }
+
+  #mokymu-organizavimas {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
   footer .mt-60 {
     margin-top: 30px;
