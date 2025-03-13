@@ -23,8 +23,10 @@
   --bg-purple-shade-4: #d8d4db;
   --bg-purple-shade-5: #ac90bf;
   --bg-green-shade-1: #00baaa;
+  --bg-green-shade-2: #00baac;
   --bg-grey-shade-1: #dbdde1;
   --bg-grey-shade-2: #858585;
+  --bg-grey-shade-3: #f6f5f8;
   --ham-grey: #6c6c6c;
 }
 
@@ -282,6 +284,9 @@ a.green-shade-1-hover-opacity-8:hover {
   background: var(--bg-purple-shade-4);
 }
 
+.grey-shade-3 {
+  background: var(--bg-grey-shade-3);
+}
 /* Borders */
 .border-10 {
   border-radius: 10px !important;
@@ -317,6 +322,10 @@ a.green-shade-1-hover-opacity-8:hover {
 .border-light-grey {
   border-color: var(--bg-light-grey);
 }
+
+.border-grey-shade-1 {
+  border-color: var(--bg-grey-shade-1);
+}
 .border-white {
   border-color: var(--white);
 }
@@ -337,6 +346,9 @@ a.green-shade-1-hover-opacity-8:hover {
 }
 .border-green-shade-1 {
   border-color: var(--bg-green-shade-1) !important;
+}
+.border-green-shade-2 {
+  border-color: var(--bg-green-shade-2) !important;
 }
 
 .border-width-1 {
@@ -482,6 +494,9 @@ a.green-shade-1-hover-opacity-8:hover {
 .max-w-800 {
   max-width: 800px;
 }
+.max-w-820 {
+  max-width: 820px;
+}
 .max-w-850 {
   max-width: 850px;
 }
@@ -502,6 +517,9 @@ a.green-shade-1-hover-opacity-8:hover {
 }
 .min-h-84 {
   min-height: 84px;
+}
+.min-h-200 {
+  min-height: 200px;
 }
 .min-h-270 {
   min-height: 270px;
@@ -531,6 +549,9 @@ a.green-shade-1-hover-opacity-8:hover {
 
 /* Max height */
 
+.max-h-250 {
+  max-height: 250px;
+}
 .max-h-300 {
   max-height: 300px;
 }
@@ -1472,6 +1493,31 @@ header .search-ico:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+#krepselis .green-checked {
+  max-width: 30px;
+}
+#krepselis .cart-product-info {
+  display: grid;
+  grid-template-columns: 70px 2fr 1fr 1fr 1fr;
+  gap: 5px;
+  align-items: center;
+}
+#krepselis .bendra-kaina {
+  display: grid;
+  grid-template-columns: 0px 1fr 0 0 1fr;
+  align-items: center;
+}
+
+#krepselis .grey-input {
+  max-width: 70px;
+  padding: 8px 12px;
+  text-align: center;
+}
+#krepselis input[type="number"]::-webkit-outer-spin-button,
+#krepselis input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 footer img {
   max-width: 230px;
@@ -1528,6 +1574,19 @@ footer img {
   }
 }
 
+@media (max-width: 1200px) {
+  #krepselis .cart-info-wraper .max-w-820 {
+    max-width: 100% !important;
+  }
+
+  #krepselis .bendra-kaina {
+    grid-template-columns: 70px 2fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  #krepselis .main-btn {
+    max-width: 270px;
+  }
+}
 @media (max-width: 1100px) {
   #kreiptis > div {
     border-radius: 0 !important ;
@@ -1645,7 +1704,8 @@ footer img {
   }
 
   #prisijungimas,
-  #registracija {
+  #registracija,
+  #krepselis {
     margin-bottom: 0;
   }
   #top-bar .fs-48 {
@@ -1798,6 +1858,9 @@ footer img {
     right: 2%;
     top: -80px;
   }
+  #krepselis .bendra-kaina {
+    grid-template-columns: 0px 1fr 0fr 0fr 1fr;
+  }
 
   #kursai .kursai-card img {
     border-radius: 15px 15px 0 0;
@@ -1865,6 +1928,10 @@ footer img {
   }
   #anglu-klabos-lygis .akl-wraper {
     height: 660px;
+  }
+
+  #krepselis .prekes-pav {
+    grid-column: span 4 !important;
   }
   #apie-kursus .image-wraper {
     min-height: 300px !important;
