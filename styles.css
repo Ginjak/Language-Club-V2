@@ -27,6 +27,7 @@
   --bg-grey-shade-1: #dbdde1;
   --bg-grey-shade-2: #858585;
   --bg-grey-shade-3: #f6f5f8;
+  --bg-grey-shade-4: #efeded;
   --ham-grey: #6c6c6c;
 }
 
@@ -1519,6 +1520,13 @@ header .search-ico:hover {
   margin: 0;
 }
 
+#krepselis .nuolaidos-kodas-wraper .grey-input {
+  max-width: 100%;
+  text-align: start;
+  background: var(--bg-grey-shade-4);
+  border-color: var(--bg-grey-shade-4);
+}
+
 footer img {
   max-width: 230px;
 }
@@ -1930,9 +1938,47 @@ footer img {
     height: 660px;
   }
 
-  #krepselis .prekes-pav {
-    grid-column: span 4 !important;
+  #krepselis .prekes-kaina {
+    grid-column: 4 / 6;
+    text-align: end;
+    order: 4;
   }
+  #krepselis .prekes-kiekis {
+    grid-column: 2 / 3;
+    order: 3;
+  }
+  #krepselis .product-delete {
+    order: 1;
+  }
+  #krepselis .prekes-pav {
+    order: 2;
+  }
+  #krepselis .prekes-pav,
+  #krepselis .prekes-suma {
+    grid-column: 2 / 6;
+  }
+  #krepselis .prekes-suma {
+    order: 5;
+  }
+
+  #krepselis .cart-product-info {
+    grid-template-columns: 30px 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    border-bottom: 1px solid var(--bg-grey-shade-1);
+  }
+  #krepselis ul {
+    border-bottom: none !important  ;
+  }
+
+  #krepselis .bendra-kaina {
+    grid-template-columns: 30px 1fr 0fr 0fr 1fr;
+    gap: 5px;
+  }
+
+  #krepselis .main-btn {
+    max-width: 100%;
+  }
+
   #apie-kursus .image-wraper {
     min-height: 300px !important;
   }

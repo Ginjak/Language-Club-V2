@@ -332,7 +332,7 @@
     <section id="krepselis" class="mt-100 mb-100">
       <div class="main-container px-12">
         <div
-          class="cart-message border-bottom-15 border-top border-width-6 border-green-shade-2 py-4 px-5 grey-shade-3 mb-5 d-flex align-items-center"
+          class="cart-message border-bottom-15 border-top border-width-6 border-green-shade-2 py-4 px-3 px-sm-5 grey-shade-3 mb-5 d-flex align-items-center"
         >
           <img
             src="./icons/green_checked.svg"
@@ -341,9 +341,9 @@
           />
           <span>“Bendrinės anglų kalbos kursai” - įdėtas į krepšelį</span>
         </div>
-        <div class="cart-info-wraper">
+        <div class="cart-info-wraper d-flex flex-column">
           <div
-            class="cart-info d-flex flex-column flex-xl-row gap-3 justify-content-between"
+            class="cart-info d-flex flex-column flex-xl-row gap-3 justify-content-between order-2 order-sm-1"
           >
             <div
               class="border border-grey-shade-1 border-width-2 border-10 px-3 py-4 max-w-820 w-100"
@@ -356,8 +356,10 @@
                   <p class="mb-0 fw-600 fs-5">Kiekis</p>
                   <p class="mb-0 fw-600 fs-5">Suma</p>
                 </li>
-                <li class="cart-product-info">
-                  <div class="d-flex justify-content-center align-items-center">
+                <li class="cart-product-info pb-3 pb-sm-0">
+                  <div
+                    class="d-flex justify-content-center align-items-center product-delete"
+                  >
                     <img
                       src="./icons/trash_icon.svg"
                       alt="Trash icon"
@@ -365,8 +367,7 @@
                     />
                   </div>
                   <p class="mb-0 fs-5 prekes-pav d-flex flex-column gap-2">
-                    <span class="mb-0 fw-500 d-sm-none">Prekės pavadinimas</span
-                    >Bendrinės anglų kalbos kursai
+                    Bendrinės anglų kalbos kursai
                   </p>
                   <p class="mb-0 fs-5 prekes-kaina">200.00 &euro;</p>
                   <div class="prekes-kiekis">
@@ -377,13 +378,88 @@
                     ></label>
                     <input
                       type="number"
+                      value="1"
                       min="1"
                       class="grey-input"
                       id="quantity"
                     />
                   </div>
 
-                  <p class="mb-0 fs-5 prekes-suma">200.00 &euro;</p>
+                  <p
+                    class="mb-0 fs-5 prekes-suma d-flex justify-content-between"
+                  >
+                    <span class="d-sm-none ms-3">Suma</span>200.00 &euro;
+                  </p>
+                </li>
+                <li class="cart-product-info pb-3 pb-sm-0">
+                  <div
+                    class="d-flex justify-content-center align-items-center product-delete"
+                  >
+                    <img
+                      src="./icons/trash_icon.svg"
+                      alt="Trash icon"
+                      class="cursor-pointer"
+                    />
+                  </div>
+                  <p class="mb-0 fs-5 prekes-pav d-flex flex-column gap-2">
+                    Bendrinės anglų kalbos kursai
+                  </p>
+                  <p class="mb-0 fs-5 prekes-kaina">200.00 &euro;</p>
+                  <div class="prekes-kiekis">
+                    <label
+                      for="quantity"
+                      class="visually-hidden"
+                      aria-label="quantity"
+                    ></label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="grey-input"
+                      id="quantity"
+                    />
+                  </div>
+
+                  <p
+                    class="mb-0 fs-5 prekes-suma d-flex justify-content-between"
+                  >
+                    <span class="d-sm-none ms-3">Suma</span>200.00 &euro;
+                  </p>
+                </li>
+                <li class="cart-product-info pb-3 pb-sm-0">
+                  <div
+                    class="d-flex justify-content-center align-items-center product-delete"
+                  >
+                    <img
+                      src="./icons/trash_icon.svg"
+                      alt="Trash icon"
+                      class="cursor-pointer"
+                    />
+                  </div>
+                  <p class="mb-0 fs-5 prekes-pav d-flex flex-column gap-2">
+                    Bendrinės anglų kalbos kursai
+                  </p>
+                  <p class="mb-0 fs-5 prekes-kaina">200.00 &euro;</p>
+                  <div class="prekes-kiekis">
+                    <label
+                      for="quantity"
+                      class="visually-hidden"
+                      aria-label="quantity"
+                    ></label>
+                    <input
+                      type="number"
+                      value="1"
+                      min="1"
+                      class="grey-input"
+                      id="quantity"
+                    />
+                  </div>
+
+                  <p
+                    class="mb-0 fs-5 prekes-suma d-flex justify-content-between"
+                  >
+                    <span class="d-sm-none ms-3">Suma</span>200.00 &euro;
+                  </p>
                 </li>
               </ul>
               <a
@@ -423,7 +499,30 @@
               >
             </div>
           </div>
-          <div class="cupon"></div>
+          <div
+            class="cupon border border-grey-shade-1 border-width-2 border-10 px-3 py-4 max-w-820 w-100 mt-3 order-1 order-sm-2 mb-3 mb-sm-0"
+          >
+            <div class="d-flex gap-3 flex-column flex-sm-row">
+              <div class="nuolaidos-kodas-wraper flex-grow-1">
+                <label
+                  for="cupon"
+                  class="visually-hidden"
+                  aria-label="cupon"
+                ></label>
+                <input
+                  type="text"
+                  placeholder="Nuoldaidos kodas"
+                  class="grey-input fs-5"
+                  id="cupon"
+                />
+              </div>
+              <a
+                href="#"
+                class="main-btn outline-black-btn max-w-240 w-100 fw-500 fs-5 lh-1 ms-auto ms-xl-0"
+                >Pritaikyti</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
