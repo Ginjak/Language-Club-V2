@@ -1644,7 +1644,8 @@ footer img {
     max-width: 700px;
   }
 
-  #prisijungimas {
+  #prisijungimas,
+  #registracija {
     margin-bottom: 0;
   }
   #top-bar .fs-48 {
@@ -1830,7 +1831,7 @@ footer img {
   #musu-klientai .orange-circle {
     max-width: 73px;
   }
-  .prisijungimas-btn {
+  .btn-full-size-sm {
     max-width: 100% !important;
   }
 
