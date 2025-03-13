@@ -1527,6 +1527,16 @@ header .search-ico:hover {
   border-color: var(--bg-grey-shade-4);
 }
 
+#pirkejo-duomenys .pirkejo-kontaktai,
+#pirkejo-duomenys .juridinio-asmens-duomenys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#pirkejo-duomenys .juridinio-asmens-duomenys {
+  margin-bottom: 20px;
+}
+
 footer img {
   max-width: 230px;
 }
@@ -1634,6 +1644,15 @@ footer img {
   #atsiliepimai .card-wraper.max-w-420 {
     max-width: 100%;
     padding-bottom: 20px;
+  }
+
+  #pirkejo-duomenys .pirkejo-kontaktai,
+  #pirkejo-duomenys .juridinio-asmens-duomenys {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #pirkejo-duomenys .juridinio-asmens-duomenys .pvm-moketojo-kodas-input {
+    grid-column: 1 / 3;
   }
 
   #atsiliepimai .card-wraper {
@@ -1870,6 +1889,16 @@ footer img {
     grid-template-columns: 0px 1fr 0fr 0fr 1fr;
   }
 
+  #pirkejo-duomenys .pirkejo-kontaktai,
+  #pirkejo-duomenys .juridinio-asmens-duomenys {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+
+  #pirkejo-duomenys .juridinio-asmens-duomenys .pvm-moketojo-kodas-input {
+    grid-column: unset;
+  }
+
   #kursai .kursai-card img {
     border-radius: 15px 15px 0 0;
   }
@@ -2004,6 +2033,9 @@ footer img {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 20px !important;
   }
+  #pirkejo-duomenu-forma img {
+    max-width: 160px;
+  }
   footer .footer-contacts-main {
     margin-top: 30px;
   }
@@ -2087,6 +2119,9 @@ footer img {
   }
   .fs-64 {
     font-size: 26px !important;
+  }
+  .mt-80 {
+    margin-top: 40px !important;
   }
   .mt-100 {
     margin-top: 60px !important;

@@ -328,21 +328,115 @@
     </header>
     <!-- Header pabaiga -->
 
-    <!-- Registracija pradzia -->
-    <section id="registracija" class="mt-100 mb-100">
-      <div class="container-920 px-12">
-        <h2
-          class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+    <!-- Pirkejo duomenys pradzia -->
+    <section id="pirkejo-duomenys" class="mt-80">
+      <div class="main-container px-12">
+        <h5
+          class="pb-3 fw-400 fs-2 border-bottom border-w-1 border-grey-shade-1"
         >
-          Naujo vartotojo registracija
-        </h2>
-        <div class="border-15 py-4 px-3 p-sm-5 purple-shade-3">
-          <form action="" id="susisiekti-form">
-            <div class="d-flex flex-column gap-3 mb-4">
+          Pirkėjo duomenys:
+        </h5>
+        <form action="" id="pirkejo-duomenu-forma" class="pt-3">
+          <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-5 mb-2">
+            <div class="d-flex align-items-center gap-4">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="radio"
+                name="duomenu-grupe"
+                id="fizinis-asmuo"
+                checked
+              />
+              <label
+                for="fizinis-asmuo"
+                aria-label="fizinis-asmuo"
+                class="cursor-pointer fs-5"
+                >Fizinis asmuo</label
+              >
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="radio"
+                name="duomenu-grupe"
+                id="juridinis-asmuo"
+              />
+              <label
+                for="juridinis-asmuo"
+                aria-label="juridinis-asmuo"
+                class="cursor-pointer fs-5"
+                >Juridinis asmuo</label
+              >
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-4 mb-3">
+            <input
+              class="checkbox-round checkbox-round-purple"
+              type="checkbox"
+              name="registracijos-duomenys"
+              id="registracijos-duomenys"
+            />
+            <label
+              for="registracijos-duomenys"
+              aria-label="registracijos-duomenys"
+              class="cursor-pointer fs-5"
+              >Naudoti registracijos duomenis</label
+            >
+          </div>
+          <div
+            id="juridinis-asmuo-info"
+            class="juridinio-asmens-duomenys d-none"
+          >
+            <div>
+              <label
+                for="imones-pavadinimas"
+                class="visually-hidden"
+                aria-label="imones-pavadinimas"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Įmonės pavadinimas"
+                id="imones-pavadinimas"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="imones-kodas"
+                class="visually-hidden"
+                aria-label="imones-kodas"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Įmonės kodas"
+                id="imones-kodas"
+                required
+              />
+            </div>
+            <div class="pvm-moketojo-kodas-input">
+              <label
+                for="pvm-kodas"
+                class="visually-hidden"
+                aria-label="pvm-kodas"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="PVM mokėtojo kodas"
+                id="pvm-kodas"
+                required
+              />
+            </div>
+          </div>
+          <div
+            class="pirkejo-kontaktai border-bottom border-w-1 border-grey-shade-1 pb-4 mb-4"
+          >
+            <div>
               <label
                 for="vardas"
                 class="visually-hidden"
-                aria-label="Vardas"
+                aria-label="vardas"
               ></label>
               <input
                 type="text"
@@ -351,6 +445,8 @@
                 id="vardas"
                 required
               />
+            </div>
+            <div>
               <label
                 for="pavarde"
                 class="visually-hidden"
@@ -363,18 +459,22 @@
                 id="pavarde"
                 required
               />
+            </div>
+            <div>
               <label
-                for="pastas"
+                for="el-pastas"
                 class="visually-hidden"
-                aria-label="pastas"
+                aria-label="el-pastas"
               ></label>
               <input
-                type="email"
+                type="text"
                 class="grey-input"
                 placeholder="El. paštas"
-                id="pastas"
+                id="el-pastas"
                 required
               />
+            </div>
+            <div>
               <label
                 for="telefonas"
                 class="visually-hidden"
@@ -383,10 +483,26 @@
               <input
                 type="tel"
                 class="grey-input"
-                placeholder="Tel. nr."
+                placeholder="Telefonas"
                 id="telefonas"
                 required
               />
+            </div>
+            <div>
+              <label
+                for="salis"
+                class="visually-hidden"
+                aria-label="salis"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Šalis"
+                id="salis"
+                required
+              />
+            </div>
+            <div>
               <label
                 for="miestas"
                 class="visually-hidden"
@@ -399,102 +515,138 @@
                 id="miestas"
                 required
               />
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-round checkbox-round-purple"
-                  type="checkbox"
-                  name="sutikimas"
-                  id="sutikimas"
-                />
-                <label
-                  for="sutikimas"
-                  aria-label="sutikimas"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Kalbų kursus inicijuoja Jūsų įmonė</label
-                >
-              </div>
-              <div id="darbuoviete-wraper" class="d-none">
-                <label
-                  for="darbuoviete"
-                  class="visually-hidden"
-                  aria-label="darbuoviete"
-                ></label>
-                <input
-                  type="tel"
-                  class="grey-input"
-                  placeholder="Darbovietės pavadinimas (jei mokymus organizuoja darbovietė)"
-                  id="darbuoviete"
-                  required
-                />
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-square checkbox-square-purple"
-                  type="checkbox"
-                  name="privatumo-politika"
-                  id="privatumo-politika"
-                />
-                <label
-                  for="privatumo-politika"
-                  aria-label="privatumo-politika"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Sutinku su
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="purple-link-hover-opacity-8"
-                    >privatumo politika</a
-                  ></label
-                >
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-square checkbox-square-purple"
-                  type="checkbox"
-                  name="susisiekti"
-                  id="susisiekti"
-                />
-                <label
-                  for="susisiekti"
-                  aria-label="susisiekti"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Noriu, kad su manimi susisiektų aptarti testo rezultatą,
-                  nustatytą kalbos lygį, gauti rekomendacijas dėl kalbos
-                  tobulinimo.</label
-                >
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                <input
-                  class="checkbox-square checkbox-square-purple"
-                  type="checkbox"
-                  name="rinkodara"
-                  id="rinkodara"
-                />
-                <label
-                  for="rinkodara"
-                  aria-label="rinkodara"
-                  class="cursor-pointer grey-shade-2-txt"
-                  >Sutinku, kad mano duomenys būti naudojami LC rinkodaros
-                  tikslais, gauti man pritaikytus pasiūlymus, kvietimus
-                  dalyvauti apklausose, žaidimuose bei loterijose</label
-                >
-              </div>
             </div>
-            <div class="d-flex justify-content-end">
-              <a
-                href="#"
-                class="btn-full-size-sm main-btn purple-btn white-btn-txt fs-5 max-w-170 w-100"
-                >Išsaugoti</a
+            <div>
+              <label
+                for="adresas"
+                class="visually-hidden"
+                aria-label="adresas"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Adresas"
+                id="adresas"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="pasto-kodas"
+                class="visually-hidden"
+                aria-label="pasto-kodas"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Pašto kodas"
+                id="pasto-kodas"
+                required
+              />
+            </div>
+          </div>
+          <p class="mb-3 fs-5 grey-shade-2-txt">Pirkėjo pastabos</p>
+          <div class="border-bottom border-w-1 border-grey-shade-1 pb-4 mb-4">
+            <label
+              for="pastabos"
+              class="visually-hidden"
+              aria-label="pastabos"
+            ></label>
+            <textarea class="grey-input" id="pastabos" rows="4"></textarea>
+          </div>
+          <h5 class="pb-3 fw-400 fs-2">Pasirinkite mokėjimo būdą</h5>
+          <div
+            class="d-flex flex-column gap-4 mb-2 border-bottom border-w-1 border-grey-shade-1 pb-4 mb-4"
+          >
+            <div class="d-flex align-items-center gap-4">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="radio"
+                name="mokejimo-budas"
+                id="paysera"
+                checked
+              />
+              <label
+                for="paysera"
+                aria-label="paysera"
+                class="cursor-pointer fs-5"
+              >
+                <img src="./logo/Paysera_logo.svg" alt="Paysera logo" />
+              </label>
+            </div>
+            <div class="d-flex align-items-center gap-4">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="radio"
+                name="mokejimo-budas"
+                id="bankinis-pavedimas"
+              />
+              <label
+                for="bankinis-pavedimas"
+                aria-label="bankinis-pavedimas"
+                class="cursor-pointer fs-5"
+                >Atsiskaityti už prekes bankiniu pavedimu</label
               >
             </div>
-          </form>
-        </div>
+          </div>
+          <h5 class="pb-3 fw-400 fs-2">Pirkimo sąlygos</h5>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="checkbox"
+                name="pirkimo-pardavimo-taisykles"
+                id="pirkimo-pardavimo-taisykles"
+              />
+              <label
+                for="pirkimo-pardavimo-taisykles"
+                aria-label="pirkimo-pardavimo-taisykles"
+                class="cursor-pointer"
+                >Sutinku su
+                <a href="#" target="_blank" class="purple-link-hover-opacity-8"
+                  >paslaugų pirkimo-pardavimo taisyklėmis</a
+                ></label
+              >
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="checkbox"
+                name="grazinimo-salygos"
+                id="grazinimo-salygos"
+              />
+              <label
+                for="grazinimo-salygos"
+                aria-label="grazinimo-salygos"
+                class="cursor-pointer"
+                >Sutinku su
+                <a href="#" target="_blank" class="purple-link-hover-opacity-8"
+                  >grąžinimo sąlygomis</a
+                ></label
+              >
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <input
+                class="checkbox-round checkbox-round-purple"
+                type="checkbox"
+                name="asmens-duomenu-tvarkymas"
+                id="asmens-duomenu-tvarkymas"
+              />
+              <label
+                for="asmens-duomenu-tvarkymas"
+                aria-label="asmens-duomenu-tvarkymas"
+                class="cursor-pointer"
+                >Sutikimas dėl asmens duomenų tvarkymo</label
+              >
+            </div>
+          </div>
+        </form>
       </div>
     </section>
-    <!-- Registracija pabaiga -->
+    <!-- Pirkejo duomenys pabaiga -->
 
     <!-- Turite klausimu pradzia -->
-    <section class="main-container position-relative z-2 aaaa" id="info-bar-id">
+    <section class="main-container position-relative z-2" id="info-bar-id">
       <div
         class="info-bar bar-green d-flex flex-column gap-4 gap-sm-0 flex-sm-row justify-content-between align-items-center"
       >
@@ -649,7 +801,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/registracija.js"></script>
+    <script src="./js/juridinis-asmuo.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
