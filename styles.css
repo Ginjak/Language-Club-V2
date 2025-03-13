@@ -615,6 +615,9 @@ a.green-shade-1-hover-opacity-8:hover {
   border-radius: 10px;
   padding: 12px 5px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .small-btn {
@@ -1641,6 +1644,9 @@ footer img {
     max-width: 700px;
   }
 
+  #prisijungimas {
+    margin-bottom: 0;
+  }
   #top-bar .fs-48 {
     font-size: 32px !important;
     text-align: start;
@@ -1823,6 +1829,9 @@ footer img {
   }
   #musu-klientai .orange-circle {
     max-width: 73px;
+  }
+  .prisijungimas-btn {
+    max-width: 100% !important;
   }
 
   header .header-logo {
