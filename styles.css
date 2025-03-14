@@ -1552,6 +1552,19 @@ header .search-ico:hover {
   margin-bottom: 60px;
 }
 
+#kitu-kalbu-forma .man-image {
+  position: absolute;
+  max-width: 600px;
+  bottom: -57px;
+  right: 0;
+}
+
+#kitu-kalbu-forma .orange-arrow {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: -40px;
+}
+
 footer img {
   max-width: 230px;
 }
@@ -1790,6 +1803,13 @@ footer img {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
+
+  #kitu-kalbu-forma .man-image {
+    position: relative !important;
+  }
+  #kitu-kalbu-forma .orange-arrow {
+    left: 10%;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -1997,6 +2017,12 @@ footer img {
   #quiz .quiz-grey-input {
     padding: 8px 14px;
     max-width: 150px;
+  }
+
+  #kitu-kalbu-forma .man-image {
+    position: relative !important;
+    max-width: 400px;
+    width: 100%;
   }
 
   footer .mt-60 {
@@ -2263,6 +2289,16 @@ footer img {
   #quiz button.max-w-170 {
     max-width: 100% !important;
   }
+
+  #kitu-kalbu-forma .orange-arrow {
+    max-width: 90px;
+    left: 10%;
+  }
+
+  .kitu-klabu-heading.fs-54 {
+    font-size: 32px !important;
+  }
+
   footer .footer-contacts-main {
     margin-top: 30px;
   }
