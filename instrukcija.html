@@ -330,13 +330,13 @@
     <!-- Logo section pradzia -->
     <section class="pt-60">
       <div class="main-container px-12 d-flex justify-content-center">
-        <img src="./logo/LCNEW_2.svg" alt="LC Logo" />
+        <img src="./logo/LCNEW_2.svg" alt="LC Logo" class="quiz-logo" />
       </div>
     </section>
     <!-- Logo section pabaiga -->
 
     <!-- Trumpa informacija pradzia -->
-    <section class="mt-100">
+    <section class="mt-100" id="quiz-trumpa-info">
       <div class="container-1300 px-12">
         <p class="fs-5 fw-500 ibm-serif text-center mb-5">
           Džiugu, kad anglų kalbos žinių lygio patikrinimui ar anglų kalbos
@@ -352,24 +352,32 @@
           <ul
             class="purple-shade-3 align-items-center fs-5 border-bottom-15 pb-4"
           >
-            <li class="d-flex p-4">
-              <p class="mb-0 max-w-240 w-100 ibm-serif">Tikrinamas lygis</p>
+            <li class="d-flex flex-column gap-2 flex-md-row p-4">
+              <p class="mb-0 min-width-240 ibm-serif fw-500">
+                Tikrinamas lygis
+              </p>
               <p class="mb-0 ibm-serif">A1-C1 pas BEKM</p>
             </li>
-            <li class="d-flex p-4 align-items-center">
-              <p class="mb-0 max-w-240 w-100 ibm-serif">Patikrinimo trukmė</p>
+            <li class="d-flex flex-column gap-2 flex-md-row p-4">
+              <p class="mb-0 min-width-240 ibm-serif fw-500">
+                Patikrinimo trukmė
+              </p>
               <p class="mb-0 ibm-serif">Iki 50 min</p>
             </li>
-            <li class="d-flex p-4 align-items-center">
-              <p class="mb-0 max-w-240 w-100 ibm-serif">Testo raštu dalis</p>
+            <li class="d-flex flex-column gap-2 flex-md-row p-4">
+              <p class="mb-0 min-width-240 ibm-serif fw-500">
+                Testo raštu dalis
+              </p>
               <p class="mb-0 ibm-serif">
                 Iki 40 min. 50-55 sakinių, išdėstytų sudėtingėjimo tvarka,
                 testas. Tikrinamos Jūsų anglų kalbos gramatikos ir žodyno
                 žinios.
               </p>
             </li>
-            <li class="d-flex p-4 align-items-center">
-              <p class="mb-0 max-w-240 w-100 ibm-serif">Testo žodžiu dalis</p>
+            <li class="d-flex flex-column gap-2 flex-md-row p-4">
+              <p class="mb-0 min-width-240 ibm-serif fw-500">
+                Testo žodžiu dalis
+              </p>
               <p class="mb-0 ibm-serif">
                 Iki 10 min. pokalbis, kurį jau esame suderinę arba dar
                 suderinsime po testo raštu atlikimo. Norėdami, jog įvertintume
@@ -384,65 +392,68 @@
     <!-- Trumpa informacija pabaiga -->
 
     <!-- Instrukcija testo rastu pradzia -->
-    <section class="mt-100"></section>
-    <div class="main-container px-12">
-      <h2 class="fw-500 fs-1 text-center mb-5 ibm-serif">
-        Instrukcija <span class="fst-italic">testo raštu</span> atlikimui
-      </h2>
-      <div class="d-flex justify-content-between gap-3">
-        <div
-          class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
-        >
-          <div class="min-h-65">
-            <img src="./icons/book_purple.svg" alt="Purple book" />
+    <section class="mt-100" id="quiz-section">
+      <div class="main-container px-12">
+        <h2 class="fw-500 fs-1 text-center mb-5 ibm-serif">
+          Instrukcija <span class="fst-italic">testo raštu</span> atlikimui
+        </h2>
+        <div class="grid-3 gap-3">
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
+          >
+            <div class="min-h-65">
+              <img src="./icons/book_purple.svg" alt="Purple book" />
+            </div>
+            <p class="mb-0 fs-4 max-w-350 text-center">
+              Nesinaudokite pagalbinėmis priemonėmis ir nespėliokite. Jei
+              atsakymo nežinote, palikite tuščią laukelį. Tokiu būdu gausime
+              tiksliausią rezultatą
+            </p>
           </div>
-          <p class="mb-0 fs-4 max-w-350 text-center">
-            Nesinaudokite pagalbinėmis priemonėmis ir nespėliokite. Jei atsakymo
-            nežinote, palikite tuščią laukelį. Tokiu būdu gausime tiksliausią
-            rezultatą
-          </p>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
+          >
+            <div class="min-h-65">
+              <img src="./icons/clock_purple.svg" alt="Purple book" />
+            </div>
+            <p class="mb-0 fs-4 max-w-350 text-center">
+              Po 40 min. testas automatiškai išsijungs bei bus vertinama tiek
+              klausimų, į kiek būsite spėję atsakyti.
+            </p>
+          </div>
+          <div
+            class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
+          >
+            <div class="min-h-65">
+              <img src="./icons/envelope_purple.svg" alt="Purple book" />
+            </div>
+            <p class="mb-0 fs-4 max-w-350 text-center fw-500 fst-italic">
+              Atlikę testą, el.paštu gausite informaciją apie tai, į kiek
+              klausimų atsakėte teisingai.
+            </p>
+          </div>
         </div>
+        <p class="mt-80 fw-500 fs-4 text-center ibm-serif">Linkime sekmės!</p>
         <div
-          class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
+          class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 gap-sm-4"
         >
-          <div class="min-h-65">
-            <img src="./icons/clock_purple.svg" alt="Purple book" />
-          </div>
-          <p class="mb-0 fs-4 max-w-350 text-center">
-            Po 40 min. testas automatiškai išsijungs bei bus vertinama tiek
-            klausimų, į kiek būsite spėję atsakyti.
-          </p>
-        </div>
-        <div
-          class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column p-4 max-w-420 w-100 align-items-center gap-3"
-        >
-          <div class="min-h-65">
-            <img src="./icons/envelope_purple.svg" alt="Purple book" />
-          </div>
-          <p class="mb-0 fs-4 max-w-350 text-center fw-500 fst-italic">
-            Atlikę testą, el.paštu gausite informaciją apie tai, į kiek klausimų
-            atsakėte teisingai.
-          </p>
+          <button
+            href="#"
+            id="pradeti"
+            class="main-btn w-100 max-w-170 purple-btn white-btn-txt border-0"
+          >
+            Pradėti
+          </button>
+          <button
+            href="#"
+            id="atlikti-veliau"
+            class="main-btn w-100 max-w-170 purple-btn white-btn-txt border-0"
+          >
+            Testą atlikti vėliau
+          </button>
         </div>
       </div>
-      <p class="mt-80 fw-500 fs-4 text-center ibm-serif">Linkime sekmės!</p>
-      <div class="d-flex justify-content-center gap-4">
-        <button
-          href="#"
-          id="pradeti"
-          class="main-btn w-100 max-w-170 purple-btn white-btn-txt border-0"
-        >
-          Pradėti
-        </button>
-        <button
-          href="#"
-          id="atlikti-veliau"
-          class="main-btn w-100 max-w-170 purple-btn white-btn-txt border-0"
-        >
-          Testą atlikti vėliau
-        </button>
-      </div>
-    </div>
+    </section>
     <!-- Instrukcija testo rastu pabaiga -->
 
     <!-- Quiz pradzia -->
@@ -617,6 +628,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
     <script src="./js/quiz.js"></script>
   </body>
 </html>

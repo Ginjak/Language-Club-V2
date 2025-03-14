@@ -505,6 +505,12 @@ a.green-shade-1-hover-opacity-8:hover {
   max-width: 943px;
 }
 
+/* Min width */
+
+.min-width-240 {
+  min-width: 240px;
+}
+
 /* Min height */
 
 .min-h-60 {
@@ -747,7 +753,8 @@ a.green-shade-1-hover-opacity-8:hover {
   padding: 12px 22px;
 }
 
-.grey-input:focus-visible {
+.grey-input:focus-visible,
+.quiz-grey-input:focus-visible {
   outline: none;
   border-color: var(--txt-purple);
 }
@@ -1541,6 +1548,10 @@ header .search-ico:hover {
   margin-bottom: 20px;
 }
 
+#quiz .timer-wraper {
+  margin-bottom: 60px;
+}
+
 footer img {
   max-width: 230px;
 }
@@ -1775,6 +1786,10 @@ footer img {
     border-left: none !important;
     border-top: 4px solid var(--bg-purple-btn);
   }
+  #quiz-section .grid-3 {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -1970,6 +1985,20 @@ footer img {
     top: -40px;
     right: -10px;
   }
+  .quiz-logo {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #quiz .fs-5 {
+    font-size: 16px !important;
+  }
+
+  #quiz .quiz-grey-input {
+    padding: 8px 14px;
+    max-width: 150px;
+  }
+
   footer .mt-60 {
     margin-top: 30px;
   }
@@ -2223,6 +2252,17 @@ footer img {
   #orange-comment-box-with-btn .orange-box .fs-48 {
     font-size: 20px !important;
   }
+
+  #quiz-trumpa-info .fs-5 {
+    font-size: 20px !important;
+  }
+  #quiz .option {
+    width: 100%;
+  }
+
+  #quiz button.max-w-170 {
+    max-width: 100% !important;
+  }
   footer .footer-contacts-main {
     margin-top: 30px;
   }
@@ -2244,6 +2284,9 @@ footer img {
   }
   #apie-mus-comment-box .purple-arrow {
     display: none;
+  }
+  #quiz-section button.max-w-170 {
+    max-width: 100%;
   }
   footer .footer-contact-wraper {
     flex-direction: column !important;

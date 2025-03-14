@@ -71,7 +71,8 @@ function generateQuiz() {
       "mb-0",
       "d-flex",
       "flex-column",
-      "gap-3",
+      "gap-md-3",
+      "gap-4",
       "pb-4"
     );
 
@@ -115,6 +116,7 @@ function generateQuiz() {
       "mt-0",
       "d-flex",
       "flex-row",
+      "flex-wrap",
       "gap-3",
       "fs-5"
     );
