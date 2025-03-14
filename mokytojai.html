@@ -328,10 +328,10 @@
     </header>
     <!-- Header pabaiga -->
     <!-- Breadcrums pradzia -->
-    <div class="category-nav d-none d-md-block pb-3">
+    <div class="category-nav pb-3 d-none d-lg-block">
       <div class="main-container px-12">
         <ul
-          class="category-navigation d-flex justify-content-start gap-3 align-items-center"
+          class="category-navigation d-flex justify-content-start gap-2 gap-md-3 align-items-center"
         >
           <li>
             <a href="/" class="d-flex gap-3 fs-14 black-txt-shade-1">
@@ -352,23 +352,13 @@
               />
             </a>
           </li>
-          <li>
-            <a href="#" class="d-flex gap-3 fs-14 black-txt-shade-1"
-              >Anglų kalbos kursai suaugusiems
-              <img
-                class="cat-arrow"
-                src="./icons/arrow_breadcrumbs.svg"
-                alt="Arrow icon"
-              />
-            </a>
-          </li>
         </ul>
       </div>
     </div>
     <!-- Breadcrums pabaiga -->
     <!-- Single image hero pradzia -->
     <section id="single-img-hero">
-      <div class="min-h-680 h-100 position-relative">
+      <div class="min-h-495 h-100 position-relative">
         <img
           src="./img/hero_img_5.jpg"
           alt="Hero image"
@@ -411,8 +401,15 @@
         <div
           class="border-15 purple-shade-3 h-912 position-relative orange-box-wraper"
         >
+          <img
+            src="./img/ligth_purple_comment_box.png"
+            alt="Purple comment box"
+            class="purple-box position-absolute"
+          />
           <img src="./img/lady.png" alt="Lady" class="orange-box-img" />
-          <div class="border-15 orange-shade-1 max-w-800 w-100 p-5 orange-box">
+          <div
+            class="border-15 orange-shade-1 max-w-800 w-100 p-4 p-sm-5 orange-box"
+          >
             <h3
               class="mb-4 fs-48 white-txt-color ibm-serif fw-400 max-w-550 position-relative z-4"
             >
@@ -451,17 +448,17 @@
 
     <!-- Musu klientai pradzia -->
     <section class="mt-100" id="musu-mokytojai-two-columns">
-      <div class="main-container">
-        <div class="d-flex border-15">
-          <div class="col-6">
+      <div class="main-container px-12">
+        <div class="klientai-img d-flex border-15 flex-column flex-lg-row">
+          <div class="col-lg-6">
             <img
               src="./img/musu_klientai_bg.webp"
               alt="Two women image"
-              class="border-left-15 max-h-650 img-cover"
+              class="border-left-15 img-cover"
             />
           </div>
           <div
-            class="col-6 border-rigth-15 purple border-start border-width-4 border-deep-purple p-5"
+            class="klientai-info col-lg-6 border-rigth-15 purple border-start border-width-4 border-deep-purple px-3 px-sm-4 py-5 p-md-5"
           >
             <div class="musu-klientai-info d-block h-100 position-relative">
               <img
@@ -470,7 +467,7 @@
                 class="position-absolute small-green-box"
               />
               <div
-                class="orange border-15-no-left d-flex flex-column justify-content-center h-100 p-5 gap-5"
+                class="orange border-15-no-left d-flex flex-column justify-content-center h-100 px-3 py-5 p-sm-5 gap-3 gap-sm-5"
               >
                 <p
                   class="white-txt-color fs-28 lh-1 text-center lh-sm ibm-serif mb-0"
@@ -786,6 +783,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/mokytojai-swiper.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
