@@ -1674,6 +1674,12 @@ footer img {
   #siulomi-mokymai .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
+  #mokytojams .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 768px;
+    justify-items: center;
+    margin-left: auto;
+  }
 
   #apie-mus-comment-box .comment-box-img {
     max-width: 450px;
@@ -1691,7 +1697,9 @@ footer img {
     left: auto;
     right: 40px;
   }
-
+  #info-burbulas .orange-circle {
+    width: 62px;
+  }
   #atsiliepimai .card-wraper {
     max-width: 600px !important;
     margin: auto;
@@ -1927,6 +1935,10 @@ footer img {
   .watermark-logo {
     top: -15px;
   }
+
+  #info-burbulas .orange-circle {
+    width: 53px;
+  }
   #kreiptis .purple-arrow {
     max-width: 100px;
     bottom: 20px;
@@ -2125,6 +2137,11 @@ footer img {
   }
   #pirkejo-duomenu-forma img {
     max-width: 160px;
+  }
+
+  #mokytojams .grid-4 {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 768px;
   }
   footer .footer-contacts-main {
     margin-top: 30px;
