@@ -24,6 +24,7 @@
   --bg-purple-shade-5: #ac90bf;
   --bg-green-shade-1: #00baaa;
   --bg-green-shade-2: #00baac;
+  --bg-green-shade-3: #4ccfc3;
   --bg-grey-shade-1: #dbdde1;
   --bg-grey-shade-2: #858585;
   --bg-grey-shade-3: #f6f5f8;
@@ -118,6 +119,9 @@ a.white {
   font-size: 36px;
 }
 
+.fs-46 {
+  font-size: 46px;
+}
 .fs-48 {
   font-size: 48px;
 }
@@ -328,6 +332,9 @@ a.duk-black-txt-hover-pruple:hover {
   border-radius: 0 15px 0 0;
 }
 
+.border-main-black {
+  border-color: var(--txt-main-black) !important;
+}
 .border-light-grey {
   border-color: var(--bg-light-grey);
 }
@@ -336,7 +343,7 @@ a.duk-black-txt-hover-pruple:hover {
   border-color: var(--bg-grey-shade-1);
 }
 .border-white {
-  border-color: var(--white);
+  border-color: var(--white) !important;
 }
 
 .border-purple {
@@ -358,6 +365,9 @@ a.duk-black-txt-hover-pruple:hover {
 }
 .border-green-shade-2 {
   border-color: var(--bg-green-shade-2) !important;
+}
+.border-green-shade-3 {
+  border-color: var(--bg-green-shade-3) !important;
 }
 
 .border-width-1 {
@@ -1655,6 +1665,51 @@ footer img {
   max-width: 230px;
 }
 
+#apie-mokytoja .mokytojo-info {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  gap: 20px;
+}
+
+#apie-mokytoja .mokytojo-info-wraper {
+  padding-bottom: 100px !important;
+}
+
+#apie-mokytoja .mokytojo-bio {
+  margin-top: -60px;
+}
+
+#klausymai-mokytojai ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 9px;
+  border-radius: 40px;
+  background: var(--bg-green-shade-1);
+}
+
+#mokiniu-atsiliepimai .avatar {
+  position: absolute;
+  left: 24px;
+  top: -70px;
+  z-index: 5;
+}
+#mokiniu-atsiliepimai .swiper-slide {
+  padding-top: 100px;
+}
+
+#mokiniu-atsiliepimai .qoute {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#mokiniu-atsiliepimai .mokytojas-nav {
+  top: calc(50% + 35px);
+}
+
 /* Media queries */
 @media (max-width: 1650px) {
   .orange-spilare {
@@ -1896,6 +1951,12 @@ footer img {
   #kitu-kalbu-forma .orange-arrow {
     left: 10%;
   }
+
+  #apie-mokytoja .max-w-280 {
+    max-width: 180px;
+    margin-left: auto;
+    margin-bottom: -60px;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -2113,6 +2174,15 @@ footer img {
 
   #neradote-atsakymo .two-orange-lines {
     max-width: 230px;
+  }
+
+  #apie-mokytoja .mokytojo-info {
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+
+  #apie-mokytoja .mokytojo-bio .fs-5 {
+    font-size: 16px !important;
   }
 
   footer .mt-60 {
@@ -2400,6 +2470,19 @@ footer img {
 
   #neradote-atsakymo .two-orange-lines {
     max-width: 190px;
+  }
+  #apie-mokytoja .mokytojo-info {
+    grid-template-columns: 100%;
+  }
+  #apie-mokytoja .mokytojo-info .max-w-300 {
+    max-width: 100% !important;
+  }
+  #mokiniu-atsiliepimai .comment-author {
+    margin-top: 70px;
+  }
+  #mokiniu-atsiliepimai .px-15,
+  #mokiniu-atsiliepimai .swiper.px-12 {
+    padding: 0;
   }
   footer .footer-contacts-main {
     margin-top: 30px;
