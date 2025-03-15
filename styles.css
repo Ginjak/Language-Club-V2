@@ -1732,6 +1732,31 @@ footer img {
   padding: 15px;
 }
 
+#anlgu-kalbos-testai .list-heading {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr;
+  border-bottom: 4px solid var(--txt-purple);
+}
+
+#anlgu-kalbos-testai .list-item {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr 1fr 1fr;
+}
+
+#anlgu-kalbos-testai .list-item p {
+  border-bottom: 1px solid var(--bg-purple-shade-4);
+}
+#anlgu-kalbos-testai .list-item p:first-child {
+  border: none;
+}
+
+#anlgu-kalbos-testai .list-heading p {
+  border-right: 1px solid var(--txt-purple);
+}
+#anlgu-kalbos-testai .list-heading p:last-child {
+  border: none;
+}
+
 /* Media queries */
 @media (max-width: 1650px) {
   .orange-spilare {
