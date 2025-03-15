@@ -1710,6 +1710,28 @@ footer img {
   top: calc(50% + 35px);
 }
 
+#kontaktai-map .google-map .place-card.place-card-large {
+  display: none !important;
+}
+
+#kontaktai-map .kontaktai-info {
+  margin-top: -145px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+#kontaktai-map .icon-wraper {
+  background: var(--white);
+  max-width: 100px;
+  min-height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
 /* Media queries */
 @media (max-width: 1650px) {
   .orange-spilare {
@@ -1790,6 +1812,11 @@ footer img {
   }
   #orange-comment-box-with-btn .orange-box-img {
     max-width: 650px;
+  }
+
+  #kontaktai-map .kontaktai-info {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
   }
 }
 @media (max-width: 1100px) {
@@ -2185,6 +2212,11 @@ footer img {
     font-size: 16px !important;
   }
 
+  #kontaktai-map .kontaktai-info {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
   footer .mt-60 {
     margin-top: 30px;
   }
@@ -2484,6 +2516,11 @@ footer img {
   #mokiniu-atsiliepimai .swiper.px-12 {
     padding: 0;
   }
+
+  #kontaktai-map .kontaktai-info {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
   footer .footer-contacts-main {
     margin-top: 30px;
   }
@@ -2508,6 +2545,10 @@ footer img {
   }
   #quiz-section button.max-w-170 {
     max-width: 100%;
+  }
+
+  #kontaktai-map .kontaktai-info {
+    grid-template-columns: repeat(1, 1fr);
   }
   footer .footer-contact-wraper {
     flex-direction: column !important;
