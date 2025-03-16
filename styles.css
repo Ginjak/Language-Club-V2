@@ -328,6 +328,9 @@ a.duk-black-txt-hover-pruple:hover {
   border-radius: 15px 15px 0 15px;
 }
 
+.border-15-top-left {
+  border-radius: 15px 0 0 0;
+}
 .border-15-top-right {
   border-radius: 0 15px 0 0;
 }
@@ -348,6 +351,9 @@ a.duk-black-txt-hover-pruple:hover {
 
 .border-purple {
   border-color: var(--bg-purple-btn) !important;
+}
+.border-deep-purple {
+  border-color: var(--txt-purple) !important;
 }
 
 .border-orange-shade-1 {
@@ -533,6 +539,18 @@ a.duk-black-txt-hover-pruple:hover {
   min-width: 240px;
 }
 
+/* Height */
+
+.height-80 {
+  height: 80px;
+}
+.height-130 {
+  height: 130px;
+}
+.height-210 {
+  height: 210px;
+}
+
 /* Min height */
 
 .min-h-60 {
@@ -549,6 +567,9 @@ a.duk-black-txt-hover-pruple:hover {
 }
 .min-h-84 {
   min-height: 84px;
+}
+.min-h-100 {
+  min-height: 100px;
 }
 .min-h-200 {
   min-height: 200px;
@@ -1738,7 +1759,7 @@ footer img {
   border-bottom: 4px solid var(--txt-purple);
 }
 
-#anlgu-kalbos-testai .list-item {
+#anlgu-kalbos-testai .listing-wraper {
   display: grid;
   grid-template-columns: 120px 1fr 1fr 1fr 1fr;
 }
@@ -1746,9 +1767,13 @@ footer img {
 #anlgu-kalbos-testai .list-item p {
   border-bottom: 1px solid var(--bg-purple-shade-4);
 }
-#anlgu-kalbos-testai .list-item p:first-child {
-  border: none;
+
+#anlgu-kalbos-testai .list-item.list-sidebar p {
+  border-bottom: none;
 }
+/* #anlgu-kalbos-testai .list-item p:last-child {
+  border: none;
+} */
 
 #anlgu-kalbos-testai .list-heading p {
   border-right: 1px solid var(--txt-purple);
@@ -2009,6 +2034,16 @@ footer img {
     margin-left: auto;
     margin-bottom: -60px;
   }
+  #anlgu-kalbos-testai .listing-wraper {
+    grid-template-columns: 1fr 1fr;
+  }
+  #anlgu-kalbos-testai .height-80 {
+    height: 95px;
+  }
+
+  #anlgu-kalbos-testai .height-210 {
+    height: 150px;
+  }
 }
 @media (max-width: 900px) {
   #kreiptis .green-comment-box {
@@ -2240,6 +2275,25 @@ footer img {
   #kontaktai-map .kontaktai-info {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
+  }
+
+  #anlgu-kalbos-testai .listing-wraper {
+    grid-template-columns: 1fr;
+  }
+
+  #anlgu-kalbos-testai .border-15-top-left {
+    border-radius: 15px 15px 0 0 !important;
+  }
+  #anlgu-kalbos-testai .border-15-top-right {
+    border-radius: 0 !important;
+  }
+  #anlgu-kalbos-testai .height-80,
+  #anlgu-kalbos-testai .height-130,
+  #anlgu-kalbos-testai .height-210 {
+    height: auto;
+  }
+  #anlgu-kalbos-testai .min-h-100 {
+    min-height: auto;
   }
 
   footer .mt-60 {
@@ -2545,6 +2599,11 @@ footer img {
   #kontaktai-map .kontaktai-info {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 40px;
+  }
+
+  #anlgu-kalbos-testai .max-w-200 {
+    max-width: 100% !important;
+    width: 100%;
   }
   footer .footer-contacts-main {
     margin-top: 30px;
