@@ -1888,9 +1888,11 @@ footer img {
   #top-bar .fs-48 {
     font-size: 36px !important;
   }
-  #single-img-hero .min-h-495 {
+  #single-img-hero .min-h-495,
+  #single-img-hero .min-h-680 {
     min-height: 400px !important;
   }
+
   #kas-kaip .max-w-200 {
     max-width: 100%;
   }
