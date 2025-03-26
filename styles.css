@@ -1154,18 +1154,21 @@ header .search-ico:hover {
   left: -34px;
 }
 /* Svarbi informacija section */
-#svarbi-info {
+#svarbi-info,
+#svarbi-info-ispanu {
   padding-bottom: 40px;
 }
 
-#svarbi-info .half-gradient {
+#svarbi-info .half-gradient,
+#svarbi-info-ispanu .half-gradient {
   position: absolute;
   bottom: 0;
   height: 45%;
   width: 100%;
   background: var(--bg-main-green);
 }
-#svarbi-info .timeline {
+#svarbi-info .timeline,
+#svarbi-info-ispanu .timeline {
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1176,37 +1179,45 @@ header .search-ico:hover {
   cursor: grab;
 }
 
-#svarbi-info .timeline-item {
+#svarbi-info .timeline-item,
+#svarbi-info-ispanu .timeline-item {
   flex: 0 0 auto;
   position: relative;
 }
-#svarbi-info .timeline-item > div {
+#svarbi-info .timeline-item > div,
+#svarbi-info-ispanu .timeline-item > div {
   width: 430px;
   min-height: 300px;
 }
-#svarbi-info .timeline-item p {
+#svarbi-info .timeline-item p,
+#svarbi-info-ispanu .timeline-item p {
   white-space: normal !important;
   display: block !important;
 }
 
-#svarbi-info .timeline-content {
+#svarbi-info .timeline-content,
+#svarbi-info-ispanu .timeline-content {
   padding: 30px;
 }
 
-#svarbi-info .timeline-item:last-child {
+#svarbi-info .timeline-item:last-child,
+#svarbi-info-ispanu .timeline-item:last-child {
   margin-right: 0;
 }
 
-#svarbi-info .timeline::-webkit-scrollbar {
+#svarbi-info .timeline::-webkit-scrollbar,
+#svarbi-info-ispanu .timeline::-webkit-scrollbar {
   height: 8px;
 }
 
-#svarbi-info .timeline::-webkit-scrollbar-track {
+#svarbi-info .timeline::-webkit-scrollbar-track,
+#svarbi-info-ispanu .timeline::-webkit-scrollbar-track {
   background: var(--white);
   border-radius: 5px;
 }
 
-#svarbi-info .timeline::-webkit-scrollbar-thumb {
+#svarbi-info .timeline::-webkit-scrollbar-thumb,
+#svarbi-info-ispanu .timeline::-webkit-scrollbar-thumb {
   background: var(--bg-green-shade-1);
   border-radius: 5px;
 }
@@ -2605,7 +2616,8 @@ footer img {
     min-height: 300px !important;
   }
 
-  #svarbi-info .timeline-item > div {
+  #svarbi-info .timeline-item > div,
+  #svarbi-info-ispanu .timeline-item > div {
     width: 100%;
     max-width: 320px;
     min-height: 260px;
