@@ -448,7 +448,7 @@
         </div>
       </div>
       <!-- Individualus moymai info pradzia -->
-      <div id="mokymai-individualus" class="">
+      <div id="mokymai-individualus" class="d-none">
         <div class="main-container px-12">
           <h2
             class="fw-500 fs-54 text-center mb-5 black-txt-color ibm-serif mt-100 border-15 border border-purple border-width-3 py-4 px-2"
@@ -825,114 +825,121 @@
               <div
                 class="border-left-15 purple-shade-3 py-5 px-3 p-lg-5 min-width-400"
               >
-                <form action="" class="d-flex flex-column gap-4">
-                  <div
-                    class="d-flex flex-column flex-lg-row gap-2 gap-sm-5 mb-2"
-                  >
-                    <div class="d-flex align-items-center gap-4">
-                      <input
-                        class="checkbox-round checkbox-round-purple"
-                        type="radio"
-                        name="pamoku-budas"
-                        id="online-pamokos"
-                        checked=""
-                      />
-                      <label
-                        for="online-pamokos"
-                        aria-label="online-pamokos"
-                        class="cursor-pointer fs-5"
-                        >Online pamokos</label
-                      >
-                    </div>
-                    <div class="d-flex align-items-center gap-4">
-                      <input
-                        class="checkbox-round checkbox-round-purple"
-                        type="radio"
-                        name="pamoku-budas"
-                        id="pamokos-kontaktiniu-budu"
-                      />
-                      <label
-                        for="pamokos-kontaktiniu-budu"
-                        aria-label="pamokos-kontaktiniu-budu"
-                        class="cursor-pointer fs-5"
-                        >Pamokos kontaktiniu būdu
-                      </label>
-                    </div>
-                  </div>
-                  <div class="select-wraper position-relative">
-                    <label
-                      for="preliminarus lygis"
-                      class="visually-hidden"
-                      aria-label="preliminarus lygis"
-                    ></label>
-                    <select
-                      id="preliminarus lygis"
-                      class="custom-select grey-input"
-                      required
+                <form
+                  action=""
+                  class="d-flex flex-column gap-4 h-100 justify-content-between"
+                >
+                  <div class="d-flex flex-column gap-4">
+                    <div
+                      class="d-flex flex-column flex-lg-row gap-2 gap-sm-5 mb-2"
                     >
-                      <option value="" disabled selected>
-                        Preliminarus lygis
-                      </option>
-                      <option value="pirmas">Pirmas</option>
-                      <option value="antras">Antras</option>
-                      <option value="trecias">Trecias</option>
-                    </select>
-                  </div>
-                  <div class="select-wraper position-relative">
-                    <label
-                      for="pageidaujamas-laikas"
-                      class="visually-hidden"
-                      aria-label="pageidaujamas-laikas"
-                    ></label>
-                    <select
-                      id="pageidaujamas-laikas"
-                      class="custom-select grey-input"
-                      required
-                    >
-                      <option value="" disabled selected>
-                        Pageidaujamas laikas
-                      </option>
-                      <option value="pirmas">Pirmas</option>
-                      <option value="antras">Antras</option>
-                      <option value="trecias">Trecias</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label
-                      for="pamoku-kiekis"
-                      class="visually-hidden"
-                      aria-label="pamoku-kiekis"
-                    ></label>
-                    <input
-                      type="number"
-                      class="grey-input"
-                      placeholder="Pamoku kiekis"
-                      id="pamoku-kiekis"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      for="komentaras"
-                      class="visually-hidden"
-                      aria-label="komentaras"
-                    ></label>
-                    <textarea
-                      class="grey-input"
-                      id="komentaras"
-                      rows="4"
-                      placeholder="Komentaras"
-                    ></textarea>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="mb-0 fs-5 d-flex flex-column">
-                      Pamokos kaina:<span class="green-txt-bar"
-                        >nuo 29 €/60 min</span
+                      <div class="d-flex align-items-center gap-4">
+                        <input
+                          class="checkbox-round checkbox-round-purple"
+                          type="radio"
+                          name="pamoku-budas"
+                          id="online-pamokos"
+                          checked=""
+                        />
+                        <label
+                          for="online-pamokos"
+                          aria-label="online-pamokos"
+                          class="cursor-pointer fs-5"
+                          >Online pamokos</label
+                        >
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <input
+                          class="checkbox-round checkbox-round-purple"
+                          type="radio"
+                          name="pamoku-budas"
+                          id="pamokos-kontaktiniu-budu"
+                        />
+                        <label
+                          for="pamokos-kontaktiniu-budu"
+                          aria-label="pamokos-kontaktiniu-budu"
+                          class="cursor-pointer fs-5"
+                          >Pamokos kontaktiniu būdu
+                        </label>
+                      </div>
+                    </div>
+                    <div class="select-wraper position-relative">
+                      <label
+                        for="preliminarus lygis"
+                        class="visually-hidden"
+                        aria-label="preliminarus lygis"
+                      ></label>
+                      <select
+                        id="preliminarus lygis"
+                        class="custom-select grey-input"
+                        required
                       >
-                    </p>
-                    <p class="viso-kaina mb-0 fs-5 d-flex flex-column">
-                      Viso kaina:<span class="green-txt-bar" an>150,00 €</span>
-                    </p>
+                        <option value="" disabled selected>
+                          Preliminarus lygis
+                        </option>
+                        <option value="pirmas">Pirmas</option>
+                        <option value="antras">Antras</option>
+                        <option value="trecias">Trecias</option>
+                      </select>
+                    </div>
+                    <div class="select-wraper position-relative">
+                      <label
+                        for="pageidaujamas-laikas"
+                        class="visually-hidden"
+                        aria-label="pageidaujamas-laikas"
+                      ></label>
+                      <select
+                        id="pageidaujamas-laikas"
+                        class="custom-select grey-input"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Pageidaujamas laikas
+                        </option>
+                        <option value="pirmas">Pirmas</option>
+                        <option value="antras">Antras</option>
+                        <option value="trecias">Trecias</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label
+                        for="pamoku-kiekis"
+                        class="visually-hidden"
+                        aria-label="pamoku-kiekis"
+                      ></label>
+                      <input
+                        type="number"
+                        class="grey-input"
+                        placeholder="Pamoku kiekis"
+                        id="pamoku-kiekis"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="komentaras"
+                        class="visually-hidden"
+                        aria-label="komentaras"
+                      ></label>
+                      <textarea
+                        class="grey-input"
+                        id="komentaras"
+                        rows="4"
+                        placeholder="Komentaras"
+                      ></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-0 fs-5 d-flex flex-column">
+                        Pamokos kaina:<span class="green-txt-bar"
+                          >nuo 29 €/60 min</span
+                        >
+                      </p>
+                      <p class="viso-kaina mb-0 fs-5 d-flex flex-column">
+                        Viso kaina:<span class="green-txt-bar" an
+                          >150,00 €</span
+                        >
+                      </p>
+                    </div>
                   </div>
                   <div class="d-flex flex-column gap-3 pirkti-krepselis">
                     <a href="#" class="main-btn w-100 purple-btn white-btn-txt"
@@ -964,10 +971,496 @@
         </section>
         <!-- Pamokos Online/Kontaktiniu budu pabaiga -->
       </div>
-      <!-- Individualus mokymai info pabaiga -->
+      <!-- Mokymai grupeje info pabaiga -->
       <div id="mokymai-grupeje" class="d-none">
-        <p>Grupeje mokymai</p>
+        <div class="main-container px-12">
+          <h2
+            class="fw-500 fs-54 text-center mb-5 black-txt-color ibm-serif mt-100 border-15 border border-purple border-width-3 py-4 px-2"
+          >
+            Ispanų kalbos kursai
+            <span class="fst-italic">grupėje</span>
+          </h2>
+        </div>
+
+        <!-- Svarbi informacija pradzia -->
+        <section id="svarbi-info" class="position-relative mt-80">
+          <h2
+            class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+          >
+            <span class="fst-italic">Svarbi</span> informacija
+          </h2>
+
+          <div class="half-gradient"></div>
+          <div class="main-container position-relative px-12">
+            <div class="timeline mt-4" style="cursor: grab">
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/list_tick.svg" alt="List" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">
+                    Norėdami mokytis grupėje, pirmiausia susisiekite su mumis,
+                    kad galėtume nustatyti Jūsų ispanų kalbos žinių lygį. 
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/money_hand.svg" alt="Notes" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">
+                    Nustačius lygį, pasiūlysime įsigyti kursus, atitinkančius
+                    Jūsų lygį ir galimybes.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/book_up.svg" alt="Book" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">Grupės renkamos nuolatos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Svarbi informacija pabaiga -->
+
+        <!-- Apie kursus pradzia -->
+        <section id="apie-kursus" class="mt-100">
+          <div class="main-container px-12">
+            <div class="border-15 d-flex flex-column flex-md-row mt-80">
+              <div
+                class="col-12 col-md-6 col-lg-4 position-relative min-h-590 image-wraper"
+              >
+                <img
+                  src="./img/tab_1.webp"
+                  alt="Two people"
+                  class="img-cover position-absolute top-0 border-left-15"
+                />
+              </div>
+              <div
+                class="col-12 col-md-6 col-lg-8 border-rigth-15 purple-shade-3 d-flex flex-column justify-content-between content-wraper"
+              >
+                <div>
+                  <h5
+                    class="fw-500 fs-4 white-txt-color text-center py-4 purple border-15-top-right mb-0"
+                  >
+                    Trumpa informacija
+                  </h5>
+                  <ul class="d-flex flex-column">
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Kurso trukmė</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">50 ak.val.</p>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Pamokų intensyvumas</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">2 kartus per savaitę po 90 min.</p>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Pamokų laikas</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">
+                          Derinamas su kiekviena grupe, Nuo 7:30 val. iki 20:30
+                          val.
+                        </p>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Galimybė atšaukti/perkelti pamoką</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">
+                          Yra, svarbu apie tai informuoti ne vėliau nei 2 val.
+                          iki sutartos pamokos pradžios
+                        </p>
+                      </div>
+                    </li>
+
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Lygis</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">A1-C1</p>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 border-bottom border-width-1 border-purple-shade-4 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Grupės dydis</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex align-items-center fs-18"
+                      >
+                        <p class="mb-0">Iki 5 asmenų</p>
+                      </div>
+                    </li>
+                    <li
+                      class="d-flex flex-column flex-lg-row py-3 px-3 px-sm-5"
+                    >
+                      <div
+                        class="col-12 col-lg-4 d-flex align-items-center pe-2 mb-0 fs-18 fw-500"
+                      >
+                        <p class="mb-0">Kaina</p>
+                      </div>
+                      <div
+                        class="col-12 col-lg-8 d-flex flex-column align-items-start fs-18"
+                      >
+                        <p class="mb-0">60 min. - nuo 27 Eur</p>
+                        <p class="mb-0">90 min. - nuo 40 Eur</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Apie kursus pabaiga -->
+        <!-- Mokymo metu pradzia -->
+        <section id="mokymo-metu" class="mt-100">
+          <div class="main-container px-12">
+            <h2
+              class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+            >
+              Pamokų <span class="fst-italic">metu</span>
+            </h2>
+            <div class="grid-3 row-gap-50 column-gap-20">
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/ghost.svg" alt="Ghost" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Apie 80 proc. pamokų laiko skiriama kalbėjimo įgūdžio
+                  lavinimui, taip įveikiant baimę kalbėti užsienio kalba
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/queen.svg" alt="Queen" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Didinamas pasitikėjimas savimi vartojant užsienio kalbą;
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/book.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Turtinamas kasdieniame gyvenime vartojamas žodynas;
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/two_men.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Improvizuojamos gyvenimiškos situacijos;
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/earth.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Mokomasi diskutuojant aktualiomis temomis, aptariant aktualius
+                  pasaulio įvykius, klausantis įrašų, žiūrint vaizdo įrašus,
+                  žaidžiant įvairius žaidimus.
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/user_talking.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Skiriamas dėmesys tarčiai, intonacijai, taisomos konteksto
+                  klaidos;
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/ab.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Studentai supažindinami su pagrindinėmis gramatikos
+                  taisyklėmis;
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/double_user.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Stengiamasi pamokų turinį derinti individualiai atsižvelgiant
+                  į visos grupės poreikius.
+                </p>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="max-w-72 w-100">
+                  <img src="./icons/talking.svg" alt="Book" />
+                </div>
+                <p class="max-w-260 mb-0">
+                  Lavinami ir tobulinami kalbėjimo, klausymo, rašymo bei
+                  skaitymo įgūdžiai;
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mokymo metu pabaiga -->
+
+        <!-- Mokymu eiga pradzia -->
+        <section id="mokymo-eiga" class="mt-100">
+          <div class="main-container px-12">
+            <h2
+              class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+            >
+              Mokymų <span class="fst-italic">eiga</span>
+            </h2>
+            <div>
+              <div class="d-flex flex-column gap-5">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-4"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        1 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Atliekate lygio nustatymo testą. Atlikus testą, pasiūlysime
+                    kursus, atitinkančius Jūsų lygį, galimybes ir lūkesčius.
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-4"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        2 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Pirmų pamokų metu mokytojas ir Jūs įsivertinate, ar esate
+                    tinkamoje grupėje, klausiame atsiliepimų. Jei grupė tinkama,
+                    mokotės ir tobulinate savo ispanų kalbos žinias bei
+                    kalbėjimo įgūdžius.
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-4"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        3 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Kursų pabaigoje atliekate žinių įvertinimo testą. Sėkmingai
+                    jį išlaikius ir baigus mokymus, išduodame įgyto užsienio
+                    kalbos lygio el. formos dvikalbį sertifikatą ir pateikiame
+                    ataskaitas, t. y. dėstytojų atsiliepimus apie mokymų dalyvių
+                    progresą, Jums to pageidaujant.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mokymu eiga pabaiga -->
+
+        <!-- Pamokos Online/Kontaktiniu budu pradzia -->
+        <section id="online-kontaktiniu" class="mt-100">
+          <div class="main-container px-12">
+            <div class="d-flex flex-column flex-md-row">
+              <div
+                class="border-left-15 purple-shade-3 py-5 px-3 p-lg-5 min-width-400"
+              >
+                <form
+                  action=""
+                  class="d-flex flex-column gap-4 h-100 justify-content-between"
+                >
+                  <div class="d-flex flex-column gap-4">
+                    <div
+                      class="d-flex flex-column flex-lg-row gap-2 gap-sm-5 mb-2"
+                    >
+                      <div class="d-flex align-items-center gap-4">
+                        <input
+                          class="checkbox-round checkbox-round-purple"
+                          type="radio"
+                          name="pamoku-budas-grupeje"
+                          id="online-pamokos-grupeje"
+                          checked
+                        />
+                        <label
+                          for="online-pamokos-grupeje"
+                          aria-label="online-pamokos-grupeje"
+                          class="cursor-pointer fs-5"
+                          >Online kursai</label
+                        >
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <input
+                          class="checkbox-round checkbox-round-purple"
+                          type="radio"
+                          name="pamoku-budas-grupeje"
+                          id="pamokos-kontaktiniu-budu-grupeje"
+                        />
+                        <label
+                          for="pamokos-kontaktiniu-budu-grupeje"
+                          aria-label="pamokos-kontaktiniu-budu-grupeje"
+                          class="cursor-pointer fs-5"
+                          >Kursai kontaktiniu būdu
+                        </label>
+                      </div>
+                    </div>
+                    <div class="select-wraper position-relative">
+                      <label
+                        for="preliminarus lygis"
+                        class="visually-hidden"
+                        aria-label="preliminarus lygis"
+                      ></label>
+                      <select
+                        id="preliminarus lygis"
+                        class="custom-select grey-input"
+                        required
+                      >
+                        <option value="" disabled selected>
+                          Preliminarus lygis
+                        </option>
+                        <option value="pirmas">Pirmas</option>
+                        <option value="antras">Antras</option>
+                        <option value="trecias">Trecias</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label
+                        for="komentaras"
+                        class="visually-hidden"
+                        aria-label="komentaras"
+                      ></label>
+                      <textarea
+                        class="grey-input"
+                        id="komentaras"
+                        rows="4"
+                        placeholder="Komentaras"
+                      ></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="mb-0 fs-5">
+                        Kaina:<span class="green-txt-bar ms-3">380 Eur</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex flex-column pirkti-krepselis-susisiekti gap-2"
+                  >
+                    <p class="mb-0">
+                      *Kaina priklauso nuo žmonių skaičiaus grupėje. Nurodyta
+                      kaina taikoma, jei grupėje mokosi 4-6 dalyviai.
+                    </p>
+                    <a href="#" class="main-btn w-100 purple-btn white-btn-txt"
+                      >Gauti kursų pasiūlymą</a
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="position-relative image-wraper">
+                <img
+                  src="./img/lady_sitting.jpg"
+                  alt="Lady sitting"
+                  class="img-cover border-rigth-15"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pamokos Online/Kontaktiniu budu pabaiga -->
       </div>
+      <!-- Mokymai grupeje info pabaiga -->
     </section>
     <!-- Mokymo oranizavimo modelis pabaiga -->
 
@@ -1127,7 +1620,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="./js/ispanu-kursai.js"></script> -->
+    <script src="./js/ispanu-kursai.js"></script>
     <script src="./js/svarbi-info.js"></script>
     <script src="./js/online-pamokos-forma.js"></script>
     <script src="./js/script.js"></script>
