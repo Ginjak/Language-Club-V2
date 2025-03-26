@@ -732,6 +732,14 @@ a.duk-black-txt-hover-pruple:hover {
   background: var(--bg-green-shade-1);
   color: var(--white) !important;
 }
+.outline-green-btn-black-txt {
+  border: 2px solid var(--bg-green-shade-1);
+  color: var(--txt-main-black);
+}
+.outline-green-btn-black-txt:hover {
+  background: var(--bg-green-shade-1);
+  color: var(--white) !important;
+}
 
 .outline-black-btn {
   border: 1px solid var(--txt-main-black);
@@ -748,6 +756,15 @@ a.duk-black-txt-hover-pruple:hover {
   color: var(--txt-purple);
 }
 .outline-purple-btn:hover {
+  border: 1px solid var(--txt-purple);
+  background: var(--txt-purple);
+  color: var(--white) !important;
+}
+.outline-purple-btn-black-txt {
+  border: 1px solid var(--txt-purple);
+  color: var(--txt-main-black);
+}
+.outline-purple-btn-black-txt:hover {
   border: 1px solid var(--txt-purple);
   background: var(--txt-purple);
   color: var(--white) !important;
@@ -1782,6 +1799,19 @@ footer img {
   border: none;
 }
 
+.modelis li::before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--white);
+  margin-right: 10px;
+}
+
 /* Media queries */
 @media (max-width: 1650px) {
   .orange-spilare {
@@ -2609,6 +2639,15 @@ footer img {
   }
   footer .footer-contacts-main {
     margin-top: 30px;
+  }
+  .modelis li::before {
+    min-width: 12px;
+    width: 12px;
+    height: 12px;
+  }
+
+  #mokymo-modelis a.max-w-200 {
+    max-width: 100%;
   }
 }
 
