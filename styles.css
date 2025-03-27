@@ -12,6 +12,7 @@
   --bg-grey: #b3b3b3;
   --bg-orange: #fe715f;
   --bg-orange-shade-1: #ff705f;
+  --bg-orange-shade-2: #fe8f82;
   --bg-purple-btn: #8860a4;
   --bg-purpe-ligth: #c3b0d1;
   --bg-main-green: #4dcfc3;
@@ -25,6 +26,8 @@
   --bg-green-shade-1: #00baaa;
   --bg-green-shade-2: #00baac;
   --bg-green-shade-3: #4ccfc3;
+  --bg-green-shade-4: #99e3dc;
+  --bg-green-shade-5: #65d6cb;
   --bg-grey-shade-1: #dbdde1;
   --bg-grey-shade-2: #858585;
   --bg-grey-shade-3: #f6f5f8;
@@ -193,6 +196,15 @@ a.black-txt-shade-1:hover {
 .green-txt-shade-1 {
   color: var(--bg-green-shade-1);
 }
+.green-txt-shade-4 {
+  color: var(--bg-green-shade-4);
+}
+.green-txt-shade-5 {
+  color: var(--bg-green-shade-5);
+}
+.green-txt-info-bar {
+  color: var(--bg-info-bar-green);
+}
 .grey-txt-color {
   color: var(--txt-grey);
 }
@@ -204,9 +216,18 @@ a.black-txt-shade-1:hover {
 .grey-shade-2-txt {
   color: var(--bg-grey-shade-2);
 }
+.orange-shade-1-txt {
+  color: var(--bg-orange-shade-1);
+}
+.orange-shade-2-txt {
+  color: var(--bg-orange-shade-2);
+}
 
 .light-purple-txt-color {
   color: var(--txt-light-purple);
+}
+.purple-txt-btn {
+  color: var(--bg-purple-btn);
 }
 
 a.white-txt {
@@ -454,6 +475,12 @@ a.duk-black-txt-hover-pruple:hover {
 }
 .mt-100 {
   margin-top: 100px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.mt-120-minus {
+  margin-top: -120px;
 }
 .mb-100 {
   margin-bottom: 100px;
@@ -2861,4 +2888,49 @@ footer img {
   100% {
     opacity: 1;
   }
+}
+
+.grid-test {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+  gap: 20px; /* Optional spacing */
+}
+
+.grid-test > div:nth-child(odd) {
+  grid-column: 1; /* First column */
+}
+
+.grid-test > div:nth-child(even) {
+  grid-column: 3; /* Third column */
+}
+
+.skale {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.skale .item {
+  width: 40px;
+  height: 195px;
+  border-left: 9px solid rgba(0, 0, 0, 0.1);
+  border-right: 9px solid rgba(0, 0, 0, 0.1);
+}
+
+.skale .a1 {
+  position: relative;
+  background: #99e3dc;
+}
+
+.skale .a1::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -240px;
+  display: block;
+  width: 220px;
+  height: 86px;
+  background-image: url("./icons/a1_line.svg");
+  background-size: cover;
+  background-position: center;
 }
