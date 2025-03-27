@@ -532,6 +532,9 @@ a.duk-black-txt-hover-pruple:hover {
 .max-w-732 {
   max-width: 732px;
 }
+.max-w-900 {
+  max-width: 900px;
+}
 
 .max-w-800 {
   max-width: 800px;
@@ -604,6 +607,9 @@ a.duk-black-txt-hover-pruple:hover {
 }
 .min-h-300 {
   min-height: 300px;
+}
+.min-h-320 {
+  min-height: 320px;
 }
 .min-h-354 {
   min-height: 354px;
@@ -1671,7 +1677,8 @@ header .search-ico:hover {
   left: -40px;
 }
 
-#duk-slider .duk-nav {
+#duk-slider .duk-nav,
+#dovanu-kuponas-slider .duk-nav {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1869,6 +1876,13 @@ footer img {
 
 .select-wraper select {
   color: var(--bg-grey-shade-2);
+}
+
+#dovanu-kupono-pasirinkimas .two-green-lines {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  z-index: -1;
 }
 
 /* Media queries */
@@ -2134,6 +2148,10 @@ footer img {
 
   #anlgu-kalbos-testai .height-210 {
     height: 150px;
+  }
+  #dovanu-kupono-pasirinkimas .two-green-lines {
+    max-width: 160px;
+    bottom: -10px;
   }
 }
 @media (max-width: 900px) {
@@ -2717,6 +2735,9 @@ footer img {
 
   #mokymo-modelis a.max-w-200 {
     max-width: 100%;
+  }
+  #dovanu-kupono-pasirinkimas .two-green-lines {
+    max-width: 140px;
   }
 }
 
