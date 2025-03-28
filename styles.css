@@ -1720,7 +1720,8 @@ header .search-ico:hover {
 }
 
 #duk-slider .duk-nav,
-#dovanu-kuponas-slider .duk-nav {
+#dovanu-kuponas-slider .duk-nav,
+#valstybes-trnautojams-slider .duk-nav {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -2380,6 +2381,12 @@ footer img {
   }
   .skale .b11::before {
     top: -35%;
+  }
+}
+@media (min-width: 1100px) {
+  #valstybes-trnautojams-slider .swiper-button-duk-prev,
+  #valstybes-trnautojams-slider .swiper-button-duk-next {
+    display: none !important;
   }
 }
 @media (max-width: 1100px) {
