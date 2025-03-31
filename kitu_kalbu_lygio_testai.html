@@ -358,15 +358,16 @@
     </section>
     <!-- Top bar pabaiga -->
     <h2
-      class="kitu-klabu-heading fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif mt-100 max-w-943"
+      class="kitu-klabu-heading fw-500 fs-1 text-start container-1150 px-12 mb-5 black-txt-color ibm-serif mt-100"
     >
-      Domina kitos nei anglų užsienio kalbos lygio nustatymas? KREIPKITĖS
+      Domina kitos užsienio kalbos (ne anglų) lygio nustatymas? Susisiekite su
+      mumis!
     </h2>
 
     <!-- Kitu kalbu lygio nustatymo forma pradzia -->
-    <section class="mt-100" id="kitu-kalbu-forma">
+    <section class="mt-100" id="kitu-kalbu-testo-forma">
       <div class="main-container px-12 d-flex flex-column flex-lg-row">
-        <div class="col-lg-6 pb-0 pe-lg-5">
+        <div class="col-lg-7 col-xl-6 pb-0 pe-lg-5">
           <form action="" class="d-flex flex-column gap-3">
             <div>
               <label
@@ -379,6 +380,19 @@
                 class="grey-input"
                 placeholder="Vardas"
                 id="vardas"
+              />
+            </div>
+            <div>
+              <label
+                for="pavarde"
+                class="visually-hidden"
+                aria-label="pavarde"
+              ></label>
+              <input
+                type="text"
+                class="grey-input"
+                placeholder="Pavardė"
+                id="pavarde"
               />
             </div>
             <div>
@@ -429,7 +443,7 @@
               <input
                 type="text"
                 class="grey-input"
-                placeholder="Pageidaujamas testavimo laikas (nurodykite kelias alternatyvas)"
+                placeholder="Testavimo laikas (nurodykite kelis laikus)"
                 id="testo-laikas"
               />
             </div>
@@ -439,12 +453,29 @@
                 class="visually-hidden"
                 aria-label="komentarai"
               ></label>
-              <input
-                type="text"
-                class="grey-input"
-                placeholder="Komentarai"
+              <textarea
+                class="grey-input bg-transparent"
                 id="komentarai"
+                rows="4"
+                placeholder="Komentarai"
+              ></textarea>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <input
+                class="checkbox-round checkbox-round-orange"
+                type="checkbox"
+                name="sutikimas"
+                id="sutikimas"
               />
+              <label
+                for="sutikimas"
+                aria-label="sutikimas"
+                class="cursor-pointer grey-shade-2-txt"
+                >Sutinku su
+                <a href="#" target="_blank" class="purple-link-hover-opacity-8"
+                  >asmens duomenų tvarkymo politika.</a
+                ></label
+              >
             </div>
             <a href="#" class="main-btn purple-btn d-block white-btn-txt fs-5"
               >Susisiekti</a
@@ -452,7 +483,7 @@
           </form>
         </div>
         <div
-          class="kitu-kalbu-man-img col-lg-6 position-relative d-flex justify-content-center"
+          class="kitu-kalbu-man-img col-lg-6 position-relative d-flex justify-content-center align-items-end"
         >
           <img
             src="./icons/orange_left_arrow.svg"

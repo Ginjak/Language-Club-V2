@@ -65,6 +65,10 @@ select {
   max-width: 1660px;
   margin: auto;
 }
+.container-1150 {
+  max-width: 1150px;
+  margin: auto;
+}
 
 .container-1600 {
   max-width: 1600px;
@@ -1716,8 +1720,12 @@ header .search-ico:hover {
   bottom: -57px;
   right: 0;
 }
+#kitu-kalbu-testo-forma .man-image {
+  max-width: 800px;
+}
 
-#kitu-kalbu-forma .orange-arrow {
+#kitu-kalbu-forma .orange-arrow,
+#kitu-kalbu-testo-forma .orange-arrow {
   position: absolute;
   top: calc(50% - 100px);
   left: -40px;
@@ -2269,6 +2277,12 @@ footer img {
   .skale .item {
     height: 215px;
   }
+  #kitu-kalbu-testo-forma .man-image {
+    min-height: 700px;
+    margin-left: -20%;
+    object-fit: contain;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -2291,6 +2305,9 @@ footer img {
   }
   .skale .item {
     height: 245px;
+  }
+  #kitu-kalbu-testo-forma .main-container {
+    overflow: hidden;
   }
 }
 
@@ -2386,6 +2403,16 @@ footer img {
   .skale .b11::before {
     top: -35%;
   }
+  #kitu-kalbu-testo-forma .man-image {
+    min-height: auto;
+    max-height: 550px !important;
+    margin-left: -40%;
+  }
+  #kitu-kalbu-testo-forma .orange-arrow {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: -40px;
+  }
 }
 @media (min-width: 1100px) {
   #valstybes-trnautojams-slider .swiper-button-duk-prev,
@@ -2411,7 +2438,7 @@ footer img {
     max-width: 100%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #hero .swiper-slide {
     height: 500px;
   }
@@ -2565,10 +2592,12 @@ footer img {
     justify-items: center;
   }
 
-  #kitu-kalbu-forma .man-image {
+  #kitu-kalbu-forma .man-image,
+  #kitu-kalbu-testo-forma .man-image {
     position: relative !important;
   }
-  #kitu-kalbu-forma .orange-arrow {
+  #kitu-kalbu-forma .orange-arrow,
+  #kitu-kalbu-testo-forma .orange-arrow {
     left: 10%;
   }
 
@@ -2628,6 +2657,9 @@ footer img {
   }
   #kontaktiniai-duomenys-ang-klb .border-rigth-15 {
     border-radius: 0 0 15px 15px;
+  }
+  #kitu-kalbu-testo-forma .man-image {
+    margin-left: 0%;
   }
 }
 @media (max-width: 900px) {
@@ -2840,10 +2872,14 @@ footer img {
     max-width: 150px;
   }
 
-  #kitu-kalbu-forma .man-image {
+  #kitu-kalbu-forma .man-image,
+  #kitu-kalbu-testo-forma .man-image {
     position: relative !important;
     max-width: 400px;
     width: 100%;
+  }
+  #kitu-kalbu-testo-forma .main-container {
+    overflow: auto;
   }
 
   #neradote-atsakymo .two-orange-lines {
@@ -3179,6 +3215,12 @@ footer img {
   }
 
   #kitu-kalbu-forma .orange-arrow {
+    max-width: 90px;
+    left: 10%;
+  }
+
+  #kitu-kalbu-testo-forma .orange-arrow {
+    top: 5%;
     max-width: 90px;
     left: 10%;
   }
