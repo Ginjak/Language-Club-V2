@@ -3469,3 +3469,14 @@ footer img {
     opacity: 1;
   }
 }
+.test:hover {
+  cursor: pointer;
+}
+.grid-skale:hover + .skale .a1 {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.black-rgba {
+  background: rgba(0, 0, 0, 0.8);
+}
