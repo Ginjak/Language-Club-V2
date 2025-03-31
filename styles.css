@@ -523,6 +523,7 @@ a.duk-black-txt-hover-pruple:hover {
 .max-w-200 {
   max-width: 200px;
 }
+
 .max-w-230 {
   max-width: 230px;
 }
@@ -632,6 +633,9 @@ a.duk-black-txt-hover-pruple:hover {
 }
 .min-h-200 {
   min-height: 200px;
+}
+.min-h-220 {
+  min-height: 220px;
 }
 .min-h-245 {
   min-height: 245px;
@@ -1236,6 +1240,16 @@ header .search-ico:hover {
   width: 430px;
   min-height: 300px;
 }
+
+#centralizuoti-mokymai .timeline-item > div {
+  width: 300px;
+  min-height: 235px;
+}
+
+#centralizuoti-mokymai .timeline-item img {
+  max-width: 60px;
+}
+
 #svarbi-info .timeline-item p,
 #svarbi-info-ispanu .timeline-item p {
   white-space: normal !important;
@@ -2265,6 +2279,16 @@ footer img {
   top: 20px;
   right: -170px;
 }
+#kreiptis .centralizuotas.orange-circle {
+  position: absolute;
+  top: -3px;
+  left: -5px;
+  max-width: 51px;
+}
+
+#detali-mokymu-ogranizavimo-eiga .min-h-220 {
+  min-height: 120px;
+}
 
 /* Media queries */
 @media (max-width: 1650px) {
@@ -2308,6 +2332,9 @@ footer img {
   }
   #kitu-kalbu-testo-forma .main-container {
     overflow: hidden;
+  }
+  #detali-mokymu-ogranizavimo-eiga .min-h-220 {
+    min-height: 180px;
   }
 }
 
@@ -2413,6 +2440,9 @@ footer img {
     top: calc(50% - 200px);
     left: -40px;
   }
+  #detali-mokymu-ogranizavimo-eiga .min-h-220 {
+    min-height: 180px;
+  }
 }
 @media (min-width: 1100px) {
   #valstybes-trnautojams-slider .swiper-button-duk-prev,
@@ -2436,6 +2466,9 @@ footer img {
   }
   #info-tekstas-su-nuotrauka .orange-comment-box .max-w-420 {
     max-width: 100%;
+  }
+  #detali-mokymu-ogranizavimo-eiga .min-h-220 {
+    min-height: 220px;
   }
 }
 @media (max-width: 991px) {
@@ -2662,6 +2695,9 @@ footer img {
   }
   #kitu-kalbu-testo-forma .man-image {
     margin-left: 0%;
+  }
+  #detali-mokymu-ogranizavimo-eiga .min-h-220 {
+    min-height: auto;
   }
 }
 @media (max-width: 900px) {
@@ -2945,6 +2981,9 @@ footer img {
   #info-tekstas-su-nuotrauka .purple-arrow {
     margin-left: 10%;
   }
+  .mokymu-organizavimas-kainodara .max-w-280 {
+    max-width: 100% !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3178,6 +3217,11 @@ footer img {
     min-height: 260px;
   }
 
+  #centralizuoti-mokymai .timeline-item > div {
+    width: 300px;
+    min-height: 235px;
+  }
+
   #musu-vertybes {
     padding-top: 16px !important;
     padding-bottom: 16px !important;
@@ -3291,6 +3335,11 @@ footer img {
   #info-tekstas-su-nuotrauka .ligth-p-box {
     top: -40px;
     max-width: 120px;
+  }
+
+  #kreiptis .centralizuotas.orange-circle {
+    left: -3px;
+    max-width: 40px;
   }
 }
 

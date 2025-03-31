@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Language Club</title>
+  </head>
+  <body>
+    <!-- Header pradzia -->
+    <header>
+      <div id="top-nav" class="border-bottom grey-txt-color">
+        <div
+          class="main-container d-flex justify-content-between align-items-center py-3 px-12"
+        >
+          <div class="d-lg-none">
+            <a href="/Language-Club-V2/paskyra.html" class="cursor-pointer">
+              <img
+                class="max-w-25 me-2"
+                src="./icons/user.svg"
+                alt="User icon"
+              />
+            </a>
+            <a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/prisijungimas.html"
+              >Prisijungti</a
+            ><span class="fs-16 grey-txt-color"> / </span
+            ><a
+              class="fs-16 grey-txt-color grey-txt-color-hover"
+              href="/Language-Club-V2/registracija.html"
+              >Registruotis</a
+            >
+          </div>
+          <div class="social-wraper d-flex gap-3 d-none d-lg-block">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              alt="Facebook icon"
+              class="opacity-8"
+              ><img src="./icons/FB.svg"
+            /></a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              alt="Instagram icon"
+              class="opacity-8"
+              ><img src="./icons/IG.svg"
+            /></a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              alt="Linkedin icon"
+              class="opacity-8"
+              ><img src="./icons/Lin.svg"
+            /></a>
+          </div>
+
+          <div class="contacts-wraper gap-3 d-none d-lg-flex">
+            <div class="d-flex gap-1 align-items-center">
+              <img src="./icons/phone.svg" class="p-icon" alt="Phone icon" /><a
+                href="tel:37061863185"
+                class="fs-5 grey-txt-color fw-500 grey-txt-color-hover"
+                >+370 618 63 185</a
+              >
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+              <img src="./icons/envelope.svg" class="envelope-icon" /><a
+                href="mailto:info@languageclub.lt5"
+                class="fs-5 grey-txt-color fw-500 grey-txt-color-hover"
+                >info@languageclub.lt</a
+              >
+            </div>
+          </div>
+
+          <div class="faq-wraper d-flex gap-3">
+            <a
+              href="/Language-Club-V2/kontaktai.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
+              >Kontaktai</a
+            >
+            <a
+              href="/Language-Club/duk.html"
+              class="d-none d-lg-block fs-6 grey-txt-color grey-txt-color-hover"
+              >DUK</a
+            >
+            <div
+              class="language-wraper d-flex gap-1 align-items-center position-relative"
+            >
+              <img src="./icons/language.svg" alt="World icon" />
+              <div class="d-flex flex-column">
+                <a href="#" class="fs-6 grey-txt-color grey-txt-color-hover"
+                  >Lietuvių</a
+                >
+                <a
+                  href="#"
+                  class="fs-6 grey-txt-color grey-txt-color-hover language-english d-none position-absolute top-20"
+                  >English</a
+                >
+              </div>
+              <img
+                src="./icons/arrow_down_nav.svg"
+                id="select-lng"
+                class="cursor-pointer"
+                alt="Arrow down icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="middle-nav"
+        class="main-container d-flex justify-content-between align-items-center gap-2 py-4 px-12"
+      >
+        <div class="logo-wraper">
+          <a href="/Language-Club-V2/">
+            <img
+              class="header-logo"
+              src="./logo/main_logo.svg"
+              alt="Language Club Logo"
+            />
+          </a>
+        </div>
+        <div class="d-none d-lg-block search-wraper flex-grow-1">
+          <div class="input-group position-relative max-w-732 m-auto">
+            <input
+              type="text"
+              class="form-control search-bar border-15"
+              placeholder="Ieškoti"
+              aria-label="search-bar"
+              aria-describedby="search-btn"
+            />
+            <button class="position-absolute" type="button" id="search-btn">
+              <img
+                src="./icons/maginifying_glass.svg"
+                alt="Magnifying glass icon"
+                alt="Search icon"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="user-cart-wraper d-flex gap-3 align-items-center">
+          <a href="#" class="d-lg-none">
+            <img
+              src="./icons/maginifying_glass.svg"
+              alt="Maginifying Glass"
+              class="search-ico cursor-pointer"
+            />
+          </a>
+
+          <div class="d-none d-lg-flex paskyra-wraper gap-2 align-items-center">
+            <a href="/Language-Club-V2/paskyra.html">
+              <img class="max-w-40" src="./icons/user.svg" alt="User icon" />
+            </a>
+            <div class="paskyra-txt-wraper d-flex flex-column">
+              <a
+                href="/Language-Club-V2/paskyra.html"
+                class="m-0 fs-16 fw-500 fs-16 grey-txt-color"
+                >Paskyra</a
+              >
+              <div class="">
+                <a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/prisijungimas.html"
+                  >Prisijungti</a
+                ><span class="fs-16 grey-txt-color"> / </span
+                ><a
+                  class="fs-16 grey-txt-color grey-txt-color-hover"
+                  href="/Language-Club-V2/registracija.html"
+                  >Registruotis</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-wraper position-relative d-flex align-items-center">
+            <a href="/Language-Club-V2/krepselis.html" class="opacity-8">
+              <img src="./icons/cart.svg" alt="Cart icon" class="max-w-40" />
+            </a>
+          </div>
+          <div
+            class="hamburger-menu-toggle-wraper position-relative d-flex align-items-center d-lg-none"
+            role="button"
+          >
+            <div class="ham-line"></div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar main-container py-0 text-center flex-nowrap">
+        <ul class="d-none d-lg-flex gap-3 container-fluid pb-4">
+          <li>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              aria-current="page"
+              href="/Language-Club-V2/kategorijos.html"
+              >ANGLŲ KALBOS KURSAI</a
+            >
+          </li>
+          <li>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
+              >ĮMONĖMS</a
+            >
+          </li>
+          <li>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie-mokymus.html"
+              >MOKSLEIVIAMS IR VAIKAMS</a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#"
+              >KITŲ UŽSIENIO KALBŲ KURSAI</a
+            >
+          </li>
+          <li>
+            <a class="link fs-18 black-nav-txt-color" href="#"
+              >LYGIO NUSTATYMO TESTAI</a
+            >
+          </li>
+          <li>
+            <a
+              class="link fs-18 black-nav-txt-color"
+              href="/Language-Club-V2/apie.html"
+              >APIE MUS</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div
+        id="bottom-nav"
+        class="py-28 d-flex flex-column align-items-center justify-content-center d-lg-none"
+      >
+        <div>
+          <div class="close max-w-300 m-auto d-flex justify-content-end px-4">
+            <button class="btn-close mb-4"></button>
+          </div>
+          <nav class="navbar container-xxl py-0 text-center flex-nowrap">
+            <ul class="d-flex flex-column gap-3 container-fluid fw-500">
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  aria-current="page"
+                  href="/Language-Club-V2/kategorijos.html"
+                  >ANGLŲ KALBOS KURSAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >ĮMONĖMS</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie-mokymus.html"
+                  >MOKSLEIVIAMS IR VAIKAMS</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >KITŲ UŽSIENIO KALBŲ KURSAI</a
+                >
+              </li>
+              <li>
+                <a class="link fs-18 black-nav-txt-color" href="#"
+                  >LYGIO NUSTATYMO TESTAI</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link fs-18 black-nav-txt-color"
+                  href="/Language-Club-V2/apie.html"
+                  >APIE MUS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="search-bar-mobile" class="d-none px-12">
+        <div class="search-wraper position-relative text-end">
+          <div class="search-close-btn">
+            <img
+              id="close-search"
+              src="./icons/close.svg"
+              alt="Close button"
+              class="cursor-pointer"
+            />
+          </div>
+          <form action="">
+            <label
+              for="search"
+              class="visually-hidden"
+              aria-label="search"
+            ></label>
+            <input
+              type="text"
+              class="grey-input"
+              placeholder="Ieškoti"
+              id="search"
+            />
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Header pabaiga -->
+
+    <!-- Single image hero pradzia -->
+    <section id="single-img-hero">
+      <div class="min-h-680 h-100 position-relative">
+        <img
+          src="./img/Home_hero_8.jpg"
+          alt="Hero image"
+          class="img-cover position-absolute top-0"
+        />
+      </div>
+    </section>
+
+    <!-- Top bar pradzia -->
+    <section class="main-container position-relative" id="top-bar">
+      <div
+        class="top-bar d-flex bar-green justify-content-center align-items-center border-15 position-absolute py-4 w-100 px-12"
+      >
+        <div class="position-relative w-100 text-center">
+          <h1 class="mb-0 white-txt-color fs-48 fw-500 ibm-serif lh-1">
+            Mokymų <span class="fst-italic">kainodara</span>
+          </h1>
+          <img
+            src="./logo/LC-logo-Mark-white-500x600 4.svg"
+            alt="Logo"
+            class="max-w-50 position-absolute watermark-logo"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Top bar pabaiga -->
+    <!-- Info tekstas pradzia -->
+
+    <div class="light-grey mt-100 pt-60 pb-60">
+      <p class="fs-4 text-center mb-0 main-container px-12">
+        Ketinate gyventi Ispanijoje ir norėtumėte išmokti ispanų kalbos? Žavitės
+        ispanų kultūra ar dairotės verslo galimybių Lotynų Amerikoje? Ispanų
+        kalba yra viena iš populiariausių pasaulyje, ja kalba apie 500 milijonų
+        žmonių. Mokydamiesi ispanų kalbos, ne tik praturtinsite savo kultūrines
+        žinias, bet ir atversite duris į naujas profesines perspektyvas. Mūsų
+        užsienio kalbų mokykla kviečia jus prisijungti prie ispanų kalbos kursų.
+      </p>
+    </div>
+    <!-- Info tekstas pabaiga -->
+
+    <!-- Mokymo oranizavimo modelis pradzia -->
+    <section id="mokymo-modelis" class="mt-100">
+      <div class="main-container px-12">
+        <h2
+          class="kitu-klabu-heading fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif mt-100 max-w-943"
+        >
+          Kokį mokymų organizavimo modelį rinktis?
+        </h2>
+        <div class="d-flex flex-column flex-lg-row gap-5 gap-md-3 gap-xl-5">
+          <div class="d-flex flex-column gap-4 justify-content-between">
+            <div
+              class="bar-green white-txt-color border-15 px-3 py-5 p-sm-5 d-flex flex-column gap-5 justify-content-between flex-grow-1"
+            >
+              <p class="mb-0 fs-1 ibm-serif d-flex flex-column">
+                Centralizuotas
+                <span class="mb-0 fs-5 ibm-serif">Mokymų organizavimas</span>
+              </p>
+
+              <ul class="d-flex flex-column gap-4 modelis">
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Sutaupysite apie 20% nuo įprastos kalbų kursų kainos!
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Kalbų kursus inicijuoja įmonė ir apmoka pilną ar dalį mokymų
+                  kainos.
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Su įmonės atstovu suderinama visiems darbuotojams vienoda
+                  kalbų kursų organizavimo tvarka, registracija į juos, kursų
+                  pradžia.
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Grupės formuojamos dažniausiai tik iš įmonės darbuotojų, tad
+                  tai prilyginama darbuotojų „team-building’ui“.
+                </li>
+              </ul>
+            </div>
+            <button
+              id="centralizuotas"
+              class="main-btn w-100 max-w-200 outline-green-btn-black-txt ms-auto fw-500 bg-transparent"
+            >
+              Daugiau
+            </button>
+          </div>
+          <div class="d-flex flex-column gap-4">
+            <div
+              class="purple white-txt-color border-15 px-3 py-5 p-sm-5 d-flex flex-column justify-content-between gap-5 flex-grow-1"
+            >
+              <p class="mb-0 fs-1 ibm-serif d-flex flex-column">
+                Necentralizuotas
+                <span class="mb-0 fs-5 ibm-serif">Mokymų organizavimas</span>
+              </p>
+              <ul class="d-flex flex-column gap-4 modelis">
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Pasiūlysime tik jūsų įmonės darbuotojams patrauklias kursų
+                  kainas su pritaikyta specialia nuolaida nuo įprastos kainos.
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Įmonė pasidalina mūsų pasiūlymu su darbuotojais, ir
+                  darbuotojas moka pilną įmonei pasiūlytą specialią kainą.
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Įmonės darbuotojai individualiai kreipiasi į mus ir asmeniškai
+                  derina kursų pradžią.
+                </li>
+                <li class="fs-5 ibm-serif d-flex align-items-center">
+                  Grupės formuojamos iš klientų, besikreipiančių į mus.
+                </li>
+              </ul>
+            </div>
+            <button
+              id="necentralizuotas"
+              class="main-btn w-100 max-w-200 outline-purple-btn-black-txt ms-auto fw-500 bg-transparent"
+            >
+              Daugiau
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Individualus moymai info pradzia -->
+      <div id="mokymai-individualus" class="">
+        <div class="main-container px-12">
+          <h2
+            class="fw-500 fs-54 text-center mb-5 black-txt-color ibm-serif mt-100 border-15 border border-purple border-width-3 py-4 px-2"
+          >
+            <span class="fst-italic">Centralizuotas</span> mokymų organizavimas
+          </h2>
+        </div>
+
+        <!-- Kreiptis pradzia -->
+        <section id="kreiptis" class="mt-100">
+          <div
+            class="medium-container px-12 border-15 light-grey position-relative h-600 d-flex flex-column align-items-center justify-content-center"
+          >
+            <div
+              class="orange d-flex flex-column border-15 p-3 p-sm-5 max-w-850 w-100 gap-4 gap-sm-5"
+            >
+              <p class="max-w-390 white-txt-color fs-5 mb-0 ibm-serif">
+                Sutaupoma apie
+                <span class="position-relative"
+                  >20%
+                  <img
+                    src="./icons/circle_orange.svg"
+                    alt="Orange circle"
+                    class="centralizuotas orange-circle"
+                /></span>
+                nuo įprastos mokymų kainos!
+              </p>
+              <a
+                href="/Language-Club-V2/kontaktai.html"
+                class="small-btn transparent-btn border border-width-1 border-10 border-white position-relative z-2 max-w-170 white white-hover-btn"
+                >Kreiptis</a
+              >
+            </div>
+            <img src="./img/man_1.png" alt="Man image" class="man" />
+            <img
+              src="./img/Union-1.png"
+              alt="Comment box green"
+              class="green-comment-box"
+            />
+            <img
+              src="./img/Union.png"
+              alt="Comment box purple"
+              class="purple-comment-box"
+            />
+            <img
+              src="./icons/purple_arrow.svg"
+              alt="Purple arrow"
+              class="purple-arrow"
+            />
+          </div>
+        </section>
+        <!-- Kreiptis pabaiga -->
+
+        <!-- Svarbi informacija pradzia -->
+        <section id="svarbi-info" class="position-relative mt-80">
+          <h2
+            class="fw-500 fs-2 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+          >
+            Kaina priklauso nuo:
+          </h2>
+
+          <div class="half-gradient"></div>
+          <div class="main-container position-relative px-12">
+            <div
+              id="centralizuoti-mokymai"
+              class="timeline mt-4"
+              style="cursor: grab"
+            >
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/language_green.svg" alt="List" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">
+                    Užsienio kalbos, jos lygio ir specifikos
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/green_board.svg" alt="Green board" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">Darbuotojų skaičiaus</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/single_location_green.svg" alt="Book" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">Mokymų formato ir vietos</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div
+                  class="border-15 border border-width-4 border-orange-shade-1 d-flex flex-column justify-content-top align-items-center gap-4 px-3 pt-5 pb-4 scroll-item white"
+                >
+                  <div>
+                    <img src="./icons/clock_green.svg" alt="Book" />
+                  </div>
+                  <p class="fs-5 mb-0 text-center">
+                    Mokymų intensyvumo ir laiko
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Svarbi informacija pabaiga -->
+        <!-- Info tekstas pradzia -->
+        <div class="light-grey mt-100 pt-60 pb-60">
+          <p class="fs-4 text-center mb-0 main-container px-12">
+            Tik išgirdę jūsų įmonės lūkesčius, poreikius ir aptarę galimybes,
+            pasidaliname geriausiai jūsų įmonei tinkamais sprendimais bei
+            parengiame komercinį pasiūlymą, nurodydami kainą už vieno darbuotojo
+            mokymus. Tai leis iš anksto numatyti planuojamą bendrą mokymų
+            biudžetą.
+          </p>
+        </div>
+        <!-- Info tekstas pabaiga -->
+
+        <!-- Mokymo oranizavimo procesas pradzia -->
+        <section class="mt-100">
+          <div class="container-1600 px-12">
+            <h2
+              class="fw-500 fs-54 text-center main-container px-12 mb-5 black-txt-color ibm-serif"
+            >
+              Jūsų įmonės darbuotojų komandai užtikriname:
+            </h2>
+            <div
+              id="mokymu-organizavimas"
+              class="mt-100 px-12 mokymu-organizavimas-kainodara"
+            >
+              <div
+                class="d-flex flex-column align-items-center gap-4 max-w-300 w-100 mokymu-item"
+              >
+                <div
+                  class="d-flex flex-lg-column align-items-center gap-4 justify-content-start w-100"
+                >
+                  <div class="position-relative purple-circle-wraper">
+                    <img src="./icons/circle_purple.svg" alt="Purple circle" />
+                    <p
+                      class="position-absolute purple-circle-wraper top-0 start-0 d-flex justify-content-center align-items-center green-txt-shade-1 fw-500 fs-54"
+                    >
+                      1
+                    </p>
+                  </div>
+                  <h5 class="fw-500 lh-base fs-5 max-w-280 text-lg-center mb-0">
+                    Patrauklią kursų kainą
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center gap-4 max-w-300 w-100 mokymu-item"
+              >
+                <div
+                  class="d-flex flex-lg-column align-items-center gap-4 justify-content-start w-100"
+                >
+                  <div class="position-relative purple-circle-wraper">
+                    <img src="./icons/circle_purple.svg" alt="Purple circle" />
+                    <p
+                      class="position-absolute purple-circle-wraper top-0 start-0 d-flex justify-content-center align-items-center green-txt-shade-1 fw-500 fs-54"
+                    >
+                      2
+                    </p>
+                  </div>
+                  <h5 class="fw-500 lh-base fs-5 max-w-280 text-lg-center mb-0">
+                    Lankstų mokymų laiką, pritaikytą prie kolegų galimybių
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center gap-4 max-w-300 w-100 mokymu-item"
+              >
+                <div
+                  class="d-flex flex-lg-column align-items-center gap-4 justify-content-start w-100"
+                >
+                  <div class="position-relative purple-circle-wraper">
+                    <img src="./icons/circle_purple.svg" alt="Purple circle" />
+                    <p
+                      class="position-absolute purple-circle-wraper top-0 start-0 d-flex justify-content-center align-items-center green-txt-shade-1 fw-500 fs-54"
+                    >
+                      3
+                    </p>
+                  </div>
+                  <h5 class="fw-500 lh-base fs-5 max-w-280 text-lg-center mb-0">
+                    Individualizuotą mokymų turinį
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="d-flex flex-column align-items-center gap-4 max-w-300 w-100 mokymu-item"
+              >
+                <div
+                  class="d-flex flex-lg-column align-items-center gap-4 justify-content-start w-100"
+                >
+                  <div class="position-relative purple-circle-wraper">
+                    <img src="./icons/circle_purple.svg" alt="Purple circle" />
+                    <p
+                      class="position-absolute purple-circle-wraper top-0 start-0 d-flex justify-content-center align-items-center green-txt-shade-1 fw-500 fs-54"
+                    >
+                      4
+                    </p>
+                  </div>
+                  <h5 class="fw-500 lh-base fs-5 max-w-280 text-lg-center mb-0">
+                    Mokėjimų suadministravimą, jei dalį kainos už mokymus
+                    apmokės patys mokymų dalyviai
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Mokymo oranizavimo procesas pabaiga -->
+
+        <!-- Detali mokymo ogranizavimo eiga pradzia -->
+        <section id="detali-mokymu-ogranizavimo-eiga" class="mt-120">
+          <div class="main-container px-12">
+            <h2 class="fw-400 fs-54 text-center mb-5 black-txt-color ibm-serif">
+              <span class="fst-italic">Detali</span> mokymų organizavimo eiga
+            </h2>
+            <div class="d-flex flex-column flex-lg-row gap-5 gap-lg-3">
+              <div class="col-lg-6 d-flex flex-column gap-5">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        1 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Su įmonės atstovu aptariame lūkesčius, poreikį, galimybes,
+                    suderiname visas sąlygas;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        2 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Paruošiame sutartį, informacinį pranešimą įmonės
+                    darbuotojams apie planuojamus mokymus ir / ar registracijos
+                    formą;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        3 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Su darbuotojais įmonės atstovas pasidalina informaciniu
+                    pranešimu apie planuojamus mokymus, kuris supažindina su
+                    planuojamų mokymų sąlygomis ir organizacine eiga, tuo pačiu
+                    pradedama registracija, kuri tęsiasi iki suderintos datos;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        4 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Pasibaigus registracijai, įmonės atstovas atsiunčia mums
+                    užsiregistravusių darbuotojų sąrašą kartu su jų
+                    kontaktiniais duomenimis (galima registracija tiesiogiai per
+                    mūsų registracijos formą);
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        5 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Su kiekvienu užsiregistravusiu darbuotoju susisiekiame, kad
+                    suderintume užsienio kalbos žinių lygio nustatymo laiką:
+                    atliekamas online testas raštu ir trumpas pokalbis užsienio
+                    kalba darbuotojui patogiu laiku;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        6 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Nustatę visų užsiregistravusių darbuotojų užsienio kalbos
+                    žinių lygį, suformuojame grupes, kurių sudėtį suderiname su
+                    įmonės atstovu;
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex flex-column gap-5">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        7 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Jei nesusidaro norimo dydžio grupė, t. y. vieno ar dviejų
+                    darbuotojų lygiai skiriasi nuo kitų įmonės darbuotojų,
+                    pasiūlysime alternatyvą, pvz., jungtis prie LANGUAGE CLUB
+                    renkamos grupės ar kt.; 
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        8 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Gavę patvirtinimą dėl grupių sudėties, kiekvienai grupei
+                    priskiriame mokytoją; 
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        9 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Susisiekiame su kiekvienu mokymų dalyviu, kad suderintume
+                    mokymų pradžios datą ir tikslų laiką bei apmokėjimą už
+                    mokymus, jei dalį mokymų kainos apmoka darbuotojai;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        10 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Kuomet mokymai prasideda, su įmonės atsakingais asmenimis
+                    pasidaliname galutine suformuotų grupių, individualių mokymų
+                    dalyvių pamokų laiko ir mokymų pradžios datos informacija;
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        11 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Visų mokymų metu komunikuojame su mokymų dalyviais, prašome
+                    mokymų dalyvių pasidalyti atsiliepimais apie vykdomus
+                    mokymus ir pateikiame darbuotojų atsiliepimų apibendrinimą
+                    įmonės atstovui; 
+                  </p>
+                </div>
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-4 min-h-220"
+                >
+                  <div class="max-w-110 w-100">
+                    <div class="zingsnis height-50 py-2">
+                      <p
+                        class="position-relative mb-0 white-txt-color fs-18 text-center lh-1"
+                      >
+                        12 žingsnis
+                        <img
+                          src="./icons/green_single_line.svg"
+                          alt="Green single line"
+                        />
+                      </p>
+                    </div>
+                    <div class="comment-bottom-small purple"></div>
+                  </div>
+                  <p class="mb-0 fs-5">
+                    Sėkmingai baigus mokymus, išduodame įgyto užsienio kalbos
+                    lygio el. formos dvikalbį sertifikatą ir pateikiame
+                    ataskaitas, t. y. dėstytojų atsiliepimus apie mokymų dalyvių
+                    progresą, Jums to pageidaujant.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Detali mokymo ogranizavimo eiga pabaiga -->
+      </div>
+      <!-- Mokymai grupeje info pabaiga -->
+      <div id="mokymai-grupeje" class="d-none">Antras</div>
+      <!-- Mokymai grupeje info pabaiga -->
+    </section>
+    <!-- Mokymo oranizavimo modelis pabaiga -->
+
+    <!-- Turite klausimu pradzia -->
+    <section class="main-container position-relative z-2" id="info-bar-id">
+      <div
+        class="info-bar bar-green d-flex flex-column gap-4 gap-sm-0 flex-sm-row justify-content-between align-items-center"
+      >
+        <p class="mb-0 white-txt-color fs-4 fw-500 ibm-serif">
+          Turite
+          <span class="position-relative fst-italic z-2"
+            >klausimų?
+            <img
+              src="./icons/tw_green_lines.svg"
+              alt="Two green lines"
+              class="position-absolute green-lines"
+          /></span>
+        </p>
+        <a
+          href="/Language-Club-V2/kontaktai.html"
+          class="main-btn w-100 max-w-200 purple-btn white-btn-txt"
+          >Kreiptis</a
+        >
+      </div>
+    </section>
+    <!-- Turite klausimu pabaiga -->
+
+    <!-- Footer pradzia -->
+    <footer class="purple-shade-2">
+      <div
+        class="main-container pt-80 d-flex pb-60 px-12 d-flex flex-column flex-sm-row"
+      >
+        <div
+          class="footer-contact-wraper col-sm-5 col-lg-7 d-flex flex-sm-column justify-content-between justify-content-sm-start"
+        >
+          <img
+            src="./logo/LC-logo-2line-white 2.png"
+            alt="White logo"
+            class="mt-60 mb-5"
+          />
+          <div class="footer-contacts-main d-flex flex-column gap-2">
+            <div class="footer-social d-flex gap-2">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="./icons/facebook_white.svg"
+                  alt="Facebook icon"
+                  class="opacity-8"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="./icons/insta_white.svg"
+                  alt="instagram icon"
+                  class="opacity-8"
+              /></a>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><img
+                  src="./icons/lin_white.svg"
+                  alt="Linkedin icon"
+                  class="opacity-8"
+              /></a>
+            </div>
+            <div class="footer-contacts d-flex flex-column gap-2">
+              <a
+                href="mailto:info@languageclub.lt"
+                class="fs-5 fw-normal white-txt opacity-8"
+                >info@languageclub.lt</a
+              >
+              <a
+                href="tel:+37061863185"
+                class="fs-5 fw-normal white-txt opacity-8"
+                >+370 618 63 185</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm-7 col-lg-5 d-flex justify-content-between mt-60 gap-2"
+        >
+          <div class="d-flex flex-column gap-3">
+            <h5 class="fs-5 fw-bold white-txt-color mb-0">Language club</h5>
+            <ul class="d-flex flex-column gap-3 fw-normal">
+              <li>
+                <a
+                  href="/Language-Club-V2/apie.html"
+                  class="white-txt opacity-8"
+                  >Apie MUS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Language-Club-V2/karjera.html"
+                  class="white-txt opacity-8"
+                  >Karjera</a
+                >
+              </li>
+              <li>
+                <a href="#" class="white-txt opacity-8"
+                  >Lygio nustatymo TESTAI</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Language-Club-V2/dovanu_kuponas.html"
+                  class="white-txt opacity-8"
+                  >Dovanų kuponas</a
+                >
+              </li>
+              <li>
+                <a href="/Language-Club-V2/duk.html" class="white-txt opacity-8"
+                  >D.U.K.</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="d-flex flex-column gap-3">
+              <h5 class="fs-5 fw-bold white-txt-color mb-0">Informacija</h5>
+              <ul class="d-flex flex-column gap-3 fw-normal">
+                <li>
+                  <a href="#" class="white-txt opacity-8">Užklausos forma </a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Pinigų grąžinimas</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8"
+                    >Kitos sąlygos ir taisyklės</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Privatumo politika</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">Slapukų politika</a>
+                </li>
+                <li>
+                  <a href="#" class="white-txt opacity-8">ES projektai</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="text-center white-txt-color fs-14 py-4">
+          <p class="mb-0">
+            &copy; <span class="current-year"></span> Language club. Visos
+            teisės saugomos.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer pabaiga -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/mokymu-kainodara.js"></script>
+    <script src="./js/svarbi-info.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
