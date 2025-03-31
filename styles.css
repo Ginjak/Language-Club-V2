@@ -979,6 +979,10 @@ header #search-btn {
   transform: translateY(-50%);
 }
 
+header .navbar .link.black-nav-txt-color {
+  padding: 0;
+}
+
 header .navbar .link.active.black-nav-txt-color {
   font-weight: 500;
   color: var(--txt-purple_shade-1);
