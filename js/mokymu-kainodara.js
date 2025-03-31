@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Ensure other content is hidden if the button is clicked again
     if (buttonId === "centralizuotas") {
-      document.getElementById("mokymai-grupeje").classList.add("d-none");
+      document
+        .getElementById("necentralizuoti-mokymai")
+        .classList.add("d-none");
     } else if (buttonId === "necentralizuotas") {
-      document.getElementById("mokymai-individualus").classList.add("d-none");
+      document.getElementById("centralizuoti-mokymai").classList.add("d-none");
     }
   }
 
@@ -18,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("centralizuotas")
     .addEventListener("click", function () {
-      showContent("centralizuotas", "mokymai-individualus");
+      showContent("centralizuotas", "centralizuoti-mokymai");
     });
 
   document
     .getElementById("necentralizuotas")
     .addEventListener("click", function () {
-      showContent("necentralizuotas", "mokymai-grupeje");
+      showContent("necentralizuotas", "necentralizuoti-mokymai");
     });
 });
