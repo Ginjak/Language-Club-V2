@@ -2652,10 +2652,12 @@ footer img {
   #info-tekstas-su-nuotrauka .info-img img {
     width: 100%;
   }
-  #kontaktiniai-duomenys-ang-klb .border-left-15 {
+  #kontaktiniai-duomenys-ang-klb .border-left-15,
+  #ang-klb-testas-imones-darbuotojams .border-left-15 {
     border-radius: 15px 15px 0 0;
   }
-  #kontaktiniai-duomenys-ang-klb .border-rigth-15 {
+  #kontaktiniai-duomenys-ang-klb .border-rigth-15,
+  #ang-klb-testas-imones-darbuotojams .border-rigth-15 {
     border-radius: 0 0 15px 15px;
   }
   #kitu-kalbu-testo-forma .man-image {
@@ -2923,7 +2925,8 @@ footer img {
     margin-top: 30px;
   }
   #online-kontaktiniu .min-width-400,
-  #kontaktiniai-duomenys-ang-klb .min-width-400 {
+  #kontaktiniai-duomenys-ang-klb .min-width-400,
+  #ang-klb-testas-imones-darbuotojams .min-width-400 {
     min-width: 100%;
   }
   #online-kontaktiniu .border-left-15 {
