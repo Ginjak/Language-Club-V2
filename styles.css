@@ -3414,6 +3414,10 @@ footer img {
   #kodel-lc-slider .kodel-lc-slider-img {
     max-width: 100%;
   }
+  .ul-orange-circle {
+    min-width: 15px;
+    height: 15px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -3453,6 +3457,10 @@ footer img {
   }
   footer .footer-contacts-main {
     margin-top: 20px;
+  }
+  #kodel-lc-slider .px-15 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /* Media utilities */
