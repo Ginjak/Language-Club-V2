@@ -183,8 +183,12 @@ a.white {
   color: var(--white);
 }
 
-.black-txt-color {
+/* .black-txt-color {
   color: var(--txt-main-black);
+} */
+
+.black-txt-color-important {
+  color: var(--txt-main-black) !important;
 }
 
 .black-txt-shade-1 {
@@ -698,6 +702,9 @@ a.duk-black-txt-hover-pruple:hover {
   height: 912px;
 }
 /* Z index */
+.z-0 {
+  z-index: 0;
+}
 .z-2 {
   z-index: 2;
 }
@@ -1982,6 +1989,7 @@ footer img {
   height: 195px;
   border-left: 9px solid rgba(0, 0, 0, 0.1);
   border-right: 9px solid rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 .skale .item p {
   width: 220px;
@@ -2006,6 +2014,10 @@ footer img {
   background-image: url("./icons/a1_line.svg");
   background-size: cover;
   background-position: center;
+}
+
+.skale .a1.reduce::before {
+  opacity: 0.2;
 }
 
 .skale .a1-txt-1 {
@@ -2046,6 +2058,10 @@ footer img {
   background-position: center;
 }
 
+.skale .a2.reduce::before {
+  opacity: 0.2;
+}
+
 .skale .a2-txt-1 {
   position: absolute;
   left: 40px;
@@ -2082,6 +2098,10 @@ footer img {
   background-image: url("./icons/b1_line.svg");
   background-size: cover;
   background-position: center;
+}
+
+.skale .b1.reduce::before {
+  opacity: 0.2;
 }
 
 .skale .b1-txt-1 {
@@ -2122,6 +2142,10 @@ footer img {
   background-position: center;
 }
 
+.skale .b11.reduce::before {
+  opacity: 0.2;
+}
+
 .skale .b11-txt-1 {
   position: absolute;
   left: 40px;
@@ -2158,6 +2182,10 @@ footer img {
   background-image: url("./icons/b2_line.svg");
   background-size: cover;
   background-position: center;
+}
+
+.skale .b2.reduce::before {
+  opacity: 0.2;
 }
 
 .skale .b2-txt-1 {
@@ -2197,6 +2225,10 @@ footer img {
   background-position: center;
 }
 
+.skale .c1.reduce::before {
+  opacity: 0.2;
+}
+
 .skale .c1-txt-1 {
   position: absolute;
   left: 40px;
@@ -2233,6 +2265,10 @@ footer img {
   background-image: url("./icons/c2_line.svg");
   background-size: cover;
   background-position: center;
+}
+
+.skale .c2.reduce::before {
+  opacity: 0.2;
 }
 
 .skale .c2-txt-1 {
@@ -3472,11 +3508,13 @@ footer img {
 .test:hover {
   cursor: pointer;
 }
-.grid-skale:hover + .skale .a1 {
-  transform: scale(1.1);
-  z-index: 1;
-}
 
 .black-rgba {
   background: rgba(0, 0, 0, 0.8);
+}
+.black-rgba-opacity-1 {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+.black-rgba-color {
+  color: rgba(0, 0, 0, 0.3) !important;
 }
